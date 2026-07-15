@@ -4,6 +4,7 @@
       .card { fill: #131e35; stroke: #26365a; stroke-width: 1.5; }
       .num { font: 800 30px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #eaf2ff; }
       .cap { font: 600 13px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #8fa5c6; }
+      .capsm { font: 600 11px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #8fa5c6; }
       .accent-a { fill: #57d9a3; } .accent-b { fill: #4fc3f7; } .accent-c { fill: #b388ff; } .accent-d { fill: #ffb74d; }
     </style>
   </defs>
@@ -14,19 +15,19 @@
     <rect x="24" y="24" width="196" height="5" rx="2.5" class="accent-a"/>
     <text x="122" y="84" text-anchor="middle" class="num">236</text>
     <text x="122" y="112" text-anchor="middle" class="cap">mods in the pack</text>
-    <text x="122" y="132" text-anchor="middle" class="cap">58 hand-picked to replace 1.20-only</text>
+    <text x="122" y="132" text-anchor="middle" class="capsm">58 picked to replace 1.20-only</text>
   </g>
   <g>
     <rect x="236" y="24" width="196" height="132" rx="12" class="card"/>
     <rect x="236" y="24" width="196" height="5" rx="2.5" class="accent-b"/>
-    <text x="334" y="84" text-anchor="middle" class="num">23 300+</text>
+    <text x="334" y="84" text-anchor="middle" class="num">23,300+</text>
     <text x="334" y="112" text-anchor="middle" class="cap">recipes added by</text>
     <text x="334" y="132" text-anchor="middle" class="cap">the pack scripts</text>
   </g>
   <g>
     <rect x="448" y="24" width="196" height="132" rx="12" class="card"/>
     <rect x="448" y="24" width="196" height="5" rx="2.5" class="accent-c"/>
-    <text x="546" y="84" text-anchor="middle" class="num">1 194</text>
+    <text x="546" y="84" text-anchor="middle" class="num">1,194</text>
     <text x="546" y="112" text-anchor="middle" class="cap">quests in 25 chapters</text>
     <text x="546" y="132" text-anchor="middle" class="cap">localized in EN + RU</text>
   </g>
