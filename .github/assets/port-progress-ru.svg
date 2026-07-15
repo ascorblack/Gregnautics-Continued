@@ -17,55 +17,55 @@
     </style>
   </defs>
   <rect width="880" height="470" rx="16" fill="#0d1526"/>
-  <text x="32" y="44" class="hdr">Port completeness</text>
+  <text x="32" y="44" class="hdr">Насколько портировано · Port completeness</text>
   <line x1="32" y1="58" x2="848" y2="58" stroke="#22314f" stroke-width="1"/>
 
   <!-- row template: label y, bar y=label+12 -->
   <g>
-    <text x="32" y="92" class="lbl">Recipes &amp; mechanics · KubeJS scripts</text>
+    <text x="32" y="92" class="lbl">Крафты и механики · KubeJS scripts</text>
     <text x="848" y="92" text-anchor="end" class="pct">96%</text>
     <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
     <rect x="32" y="102" width="783" height="14" rx="7" fill="url(#bar)"/>
-    <text x="32" y="134" class="sub">65,500+ lines ported and debugged · 23,300+ recipes · leftovers marked [PORT-*] in code</text>
+    <text x="32" y="134" class="sub">65 500+ строк портировано и отлажено · 23 300+ рецептов · остатки помечены [PORT-*] в коде</text>
   </g>
 
   <g transform="translate(0,66)">
-    <text x="32" y="92" class="lbl">Quests · FTB Quests</text>
+    <text x="32" y="92" class="lbl">Квесты · FTB Quests</text>
     <text x="848" y="92" text-anchor="end" class="pct">93%</text>
     <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
     <rect x="32" y="102" width="759" height="14" rx="7" fill="url(#bar)"/>
-    <text x="32" y="134" class="sub">1,194 of 1,281 quests, 25 chapters · dropped ones only reference mods with no 1.21 build</text>
+    <text x="32" y="134" class="sub">1194 из 1281 квеста, 25 глав · выпавшие — только из модов без версии на 1.21</text>
   </g>
 
   <g transform="translate(0,132)">
-    <text x="32" y="92" class="lbl">GregTech materials · ~326 custom materials</text>
+    <text x="32" y="92" class="lbl">Материалы GregTech · ~326 кастомных материалов</text>
     <text x="848" y="92" text-anchor="end" class="pct">100%</text>
     <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
     <rect x="32" y="102" width="816" height="14" rx="7" fill="url(#bar)"/>
-    <text x="32" y="134" class="sub">unblocked by our own GregTech Modern fixes (3 PRs upstream)</text>
+    <text x="32" y="134" class="sub">разблокировано собственными фиксами GregTech Modern (3 PR в апстрим)</text>
   </g>
 
   <g transform="translate(0,198)">
-    <text x="32" y="92" class="lbl">Worldgen · ores, veins, features</text>
+    <text x="32" y="92" class="lbl">Генерация мира · руды, жилы, фичи</text>
     <text x="848" y="92" text-anchor="end" class="pct">88%</text>
     <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
     <rect x="32" y="102" width="718" height="14" rx="7" fill="url(#bar)"/>
-    <text x="32" y="134" class="sub">89 ore veins + geodes + features · volcanoes and some structures deferred</text>
+    <text x="32" y="134" class="sub">89 рудных жил + геоды + фичи · отложены вулканы и часть структур</text>
   </g>
 
   <g transform="translate(0,264)">
-    <text x="32" y="92" class="lbl">Textures &amp; models · assets</text>
+    <text x="32" y="92" class="lbl">Текстуры и модели · ассеты</text>
     <text x="848" y="92" text-anchor="end" class="pct">97%</text>
     <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
     <rect x="32" y="102" width="791" height="14" rx="7" fill="url(#bar)"/>
-    <text x="32" y="134" class="sub">3,380 files · incl. 315 compat models for AFC wood types · JEI is clean</text>
+    <text x="32" y="134" class="sub">3 380 файлов · включая 315 моделей-совместимостей для AFC-пород · JEI чист</text>
   </g>
 
   <g transform="translate(0,330)">
-    <text x="32" y="92" class="lbl">Space · reworking onto Stellaris</text>
-    <text x="848" y="92" text-anchor="end" class="pct">in progress</text>
+    <text x="32" y="92" class="lbl">Космос · переработка под Stellaris</text>
+    <text x="848" y="92" text-anchor="end" class="pct">в работе</text>
     <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
     <rect x="32" y="102" width="424" height="14" rx="7" fill="url(#barp)"/>
-    <text x="32" y="134" class="sub">Ad Astra does not exist for 1.21 — planets, ores and progression move to Stellaris</text>
+    <text x="32" y="134" class="sub">Ad Astra не существует для 1.21 — планеты, руды и прогрессия переезжают на Stellaris</text>
   </g>
 </svg>

@@ -2,123 +2,112 @@
   <img src=".github/assets/banner.svg" alt="Gregnautics Continued" width="100%">
 </p>
 
+<p align="right"><b>🇬🇧 English</b> · <a href="README.ru.md">🇷🇺 Русский</a></p>
+
 <p align="center">
-  <a href="#-установка"><img src="https://img.shields.io/badge/Minecraft-1.21.1-2ea44f?style=for-the-badge" alt="Minecraft 1.21.1"></a>
-  <a href="#-установка"><img src="https://img.shields.io/badge/NeoForge-21.1.235-f16436?style=for-the-badge" alt="NeoForge"></a>
-  <img src="https://img.shields.io/badge/%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-205-4fc3f7?style=for-the-badge" alt="205 mods">
-  <img src="https://img.shields.io/badge/%D0%BA%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D0%B2-1194-b388ff?style=for-the-badge" alt="1194 quests">
-  <img src="https://img.shields.io/badge/RU%20%2B%20EN-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-57d9a3?style=for-the-badge" alt="RU + EN">
+  <a href="#-installation"><img src="https://img.shields.io/badge/Minecraft-1.21.1-2ea44f?style=for-the-badge" alt="Minecraft 1.21.1"></a>
+  <a href="#-installation"><img src="https://img.shields.io/badge/NeoForge-21.1.235-f16436?style=for-the-badge" alt="NeoForge"></a>
+  <img src="https://img.shields.io/badge/mods-205-4fc3f7?style=for-the-badge" alt="205 mods">
+  <img src="https://img.shields.io/badge/quests-1194-b388ff?style=for-the-badge" alt="1194 quests">
+  <img src="https://img.shields.io/badge/localization-EN%20%2B%20RU-57d9a3?style=for-the-badge" alt="EN + RU">
 </p>
 
-<h3 align="center">Выживание каменного века → индустрия ГрегТеха → небесные корабли → другие планеты.<br>Легендарный TerraFirmaGreg — впервые на современном Minecraft.</h3>
+<h3 align="center">Stone-age survival → GregTech industry → flying ships → other planets.<br>The legendary TerraFirmaGreg — on modern Minecraft for the first time.</h3>
 
 ---
 
-## 🌍 Что это
+## 🌍 What is this
 
-**Gregnautics Continued** — ручной порт модпака **TerraFirmaGreg — Modern** (1.20.1) на **Minecraft 1.21.1 / NeoForge** с интеграцией **Create: Aeronautics** — мода, позволяющего строить летающие корабли из механизмов Create и путешествовать на них.
+**Gregnautics Continued** is a hand-made port of the **TerraFirmaGreg — Modern** modpack (1.20.1) to **Minecraft 1.21.1 / NeoForge**, integrated with **Create: Aeronautics** — the mod that lets you build flying ships out of Create machinery and travel on them.
 
-Это не «перевыпуск с новыми версиями модов» — это порт **65 000+ строк** скриптов, 1 200 квестов, генерации мира, ассетов и механик, вручную адаптированных под новые API. Всё, что нельзя было перенести напрямую (моды, оставшиеся на 1.20), получило тщательно подобранные замены.
+This is not a "re-release with newer mod versions" — it is a port of **65,000+ lines** of scripts, 1,200 quests, worldgen, assets and mechanics, adapted by hand to the new APIs. Everything that could not be carried over directly (mods that stayed on 1.20) received carefully chosen replacements.
 
 <p align="center">
-  <img src=".github/assets/lineage.svg" alt="Происхождение сборки" width="100%">
+  <img src=".github/assets/lineage.svg" alt="Pack lineage" width="100%">
 </p>
 
-## ✨ Путь игрока
+## ✨ The player's journey
 
-| Эпоха | Что вас ждёт |
+| Era | What awaits you |
 |---|---|
-| 🪨 **Каменный век** | Реалистичное выживание TerraFirmaCraft: сезоны, жажда, температура тела, ручная ковка |
-| ⚙️ **Металлургия** | Наковальни, сплавы, доменные печи — путь от меди до стали через настоящую металлургию |
-| 🏭 **Индустриализация** | GregTech CEu Modern: вольтажные эпохи ULV → UHV, автоматизация, химия, чистые комнаты |
-| 🚢 **Воздухоплавание** | Create: Aeronautics — постройте собственный летающий корабль из вращающихся механизмов |
-| 🚀 **Космос** | Stellaris: ракеты, Луна, Марс, Венера и дальше — за ресурсами высших эпох |
+| 🪨 **Stone Age** | Realistic TerraFirmaCraft survival: seasons, thirst, body temperature, hand forging |
+| ⚙️ **Metallurgy** | Anvils, alloys, blast furnaces — the road from copper to steel through real metallurgy |
+| 🏭 **Industrialization** | GregTech CEu Modern: voltage ages ULV → UHV, automation, chemistry, cleanrooms |
+| 🚢 **Aeronautics** | Create: Aeronautics — build your own flying ship out of rotating machinery |
+| 🚀 **Space** | Stellaris: rockets, the Moon, Mars, Venus and beyond — for late-game resources |
 
 <p align="center">
-  <img src=".github/assets/stats.svg" alt="Статистика сборки" width="100%">
+  <img src=".github/assets/stats.svg" alt="Pack stats" width="100%">
 </p>
 
-## 📊 Прогресс порта
+## 📊 Port completeness
 
-Порт делался фазами (Ф0–Ф10) с непрерывной проверкой на выделенном тестовом сервере — каждая итерация доводилась до «CLEAN: 0 ошибок, 0 битых рецептов».
+The port was done in phases (P0–P10) with continuous verification on a dedicated test server — every iteration was driven to "CLEAN: 0 errors, 0 broken recipes".
 
 <p align="center">
-  <img src=".github/assets/port-progress.svg" alt="Прогресс порта" width="100%">
+  <img src=".github/assets/port-progress.svg" alt="Port progress" width="100%">
 </p>
 
 <details>
-<summary><b>Что именно означало «портировать» (клик)</b></summary>
+<summary><b>What "porting" actually meant (click)</b></summary>
 
-Между 1.20.1/Forge и 1.21.1/NeoForge поменялось практически всё:
+Between 1.20.1/Forge and 1.21.1/NeoForge, practically everything changed:
 
-- **KubeJS 6 → 7**: другой скоуп скриптов, другие API регистраций, NBT → data components;
-- **GregTech CEu 1.x → 8.0**: реестр материалов стал ванильным Registry, переименованы теги, предметы и жидкости, переписаны схемы рецептов;
-- **TerraFirmaCraft 3.x → 4.x**: новые кодеки данных (теплота, климат, размеры предметов), новые форматы рецептов;
-- **Forge-теги → общие `c:`-конвенции** NeoForge — сотни переименований;
-- мод **TFG-Core** (ядро оригинала, только 1.20) — воссоздан скриптами и датапаками с нуля.
+- **KubeJS 6 → 7**: different script scoping, different registration APIs, NBT → data components;
+- **GregTech CEu 1.x → 8.0**: the material registry became a vanilla Registry; tags, items and fluids renamed; recipe schemas rewritten;
+- **TerraFirmaCraft 3.x → 4.x**: new data codecs (heat, climate, item sizes), new recipe formats;
+- **Forge tags → common `c:` conventions** of NeoForge — hundreds of renames;
+- the **TFG-Core** mod (the original's core, 1.20-only) — recreated from scratch with scripts and datapacks.
 
-Каждое отступление от оригинала помечено в коде маркерами `[PORT]` / `[PORT-FIX]` / `[PORT-Ф*]` — их около тысячи, и по ним можно проследить каждое решение.
+Every deviation from the original is marked in code with `[PORT]` / `[PORT-FIX]` / `[PORT-Ф*]` markers — there are about a thousand of them, and every decision can be traced through them.
 
-Полный технический дневник порта (фазы, найденные баги апстрима, дорого добытые факты об API 1.21) — в [`docs/PORTING_NOTES.md`](docs/PORTING_NOTES.md).
+The full technical diary of the port (phases, upstream bugs found, hard-won 1.21 API facts) lives in [`docs/PORTING_NOTES.md`](docs/PORTING_NOTES.md) *(in Russian)*.
 </details>
 
-## 🔧 Вклад в апстрим
+## 🔧 Upstream contributions
 
-В процессе порта были найдены и исправлены баги в самих модах — исправления отправлены авторам:
+Along the way, bugs were found and fixed in the mods themselves — the fixes were submitted to the authors:
 
-| Мод | Проблема | PR |
+| Mod | Problem | PR |
 |---|---|---|
-| GregTech CEu Modern | Материалы KubeJS с неймспейсом не-мода теряли регистрацию блоков (краш реестров) | [#5111](https://github.com/GregTechCEu/GregTech-Modern/pull/5111) |
-| GregTech CEu Modern | NPE при объявлении research-рецепта без иных условий | [#5109](https://github.com/GregTechCEu/GregTech-Modern/pull/5109) |
-| GregTech CEu Modern | Краш клиента: обращение к JEI-runtime во время регистрации | [#5115](https://github.com/GregTechCEu/GregTech-Modern/pull/5115) |
-| KubeJS TFC | Билдер листвы несовместим с TFC 4.2.4+ (NoSuchMethodError) | [#41](https://github.com/Notenoughmail/KubeJS-TFC/pull/41) |
+| GregTech CEu Modern | KubeJS materials with a non-mod namespace lost their block registration (registry crash) | [#5111](https://github.com/GregTechCEu/GregTech-Modern/pull/5111) |
+| GregTech CEu Modern | NPE when declaring a research recipe without other conditions | [#5109](https://github.com/GregTechCEu/GregTech-Modern/pull/5109) |
+| GregTech CEu Modern | Client crash: JEI runtime accessed during registration | [#5115](https://github.com/GregTechCEu/GregTech-Modern/pull/5115) |
+| KubeJS TFC | Leaves builder incompatible with TFC 4.2.4+ (NoSuchMethodError) | [#41](https://github.com/Notenoughmail/KubeJS-TFC/pull/41) |
 
-До принятия PR сборка использует собственные патченные сборки этих модов (исходники — в форках автора сборки, лицензии LGPL-3.0 соблюдены).
+Until the PRs are merged, the pack ships its own patched builds of these mods (sources are in the pack author's forks; LGPL-3.0 licenses respected).
 
-## 📦 Установка
+## 📦 Installation
 
-> 🚧 Сборка готовится к публикации на CurseForge. Ссылка появится здесь.
+> 🚧 The pack is being prepared for publication on CurseForge. The link will appear here.
 
-Пока сборка не опубликована, можно собрать инстанс вручную: список модов — в [`docs/MODLIST.md`](docs/MODLIST.md), содержимое `kubejs/`, `config/` и `defaultconfigs/` — из этого репозитория.
+Until it is published, you can assemble the instance manually: the mod list is in [`docs/MODLIST.md`](docs/MODLIST.md), and the contents of `kubejs/`, `config/` and `defaultconfigs/` come from this repository.
 
-**Требования**: 8 ГБ+ выделенной памяти (рекомендуется 16), Java 21.
+**Requirements**: 8 GB+ of allocated memory (16 recommended), Java 21.
 
-## 🗂 Структура репозитория
+## 🗂 Repository layout
 
 ```
-kubejs/            — скрипты сборки (startup / server), ассеты, датапак
-  */tfg_port/      — портированный контент TerraFirmaGreg (все изменения помечены [PORT])
-  server_scripts/gregnautics_*.js — собственные скрипты интеграции форка
-config/ftbquests/  — 1194 квеста в 25 главах
-defaultconfigs/    — серверные конфиги по умолчанию
-docs/              — заметки порта, список модов, лицензии ассетов
+kubejs/            — pack scripts (startup / server), assets, datapack
+  */tfg_port/      — ported TerraFirmaGreg content (all changes marked [PORT])
+  server_scripts/gregnautics_*.js — the fork's own integration scripts
+config/ftbquests/  — 1,194 quests in 25 chapters
+defaultconfigs/    — default server configs
+docs/              — porting notes, mod list, asset licenses
 ```
 
-## ⚠️ Известные ограничения
+## ⚠️ Known limitations
 
-- **Космо-контент** переезжает с Ad Astra (мода нет на 1.21) на Stellaris — часть механик в процессе переработки;
-- поставленные в мир повозки AFC-пород могут отображаться без текстур (генератор скинов мода не знает о новых породах — иконки и названия уже исправлены);
-- несколько битых рецептов у сторонних модов (woodencog и др.) — ошибки самих модов, на игру не влияют;
-- ComputerCraft вернётся, когда стабилизируется его сборка под 1.21.1.
+- **Space content** is moving from Ad Astra (no 1.21 version exists) to Stellaris — some mechanics are still being reworked;
+- AFC-wood carts placed in the world may render untextured (the mod's skin generator doesn't know the new wood types — icons and names are already fixed);
+- a few broken recipes in third-party mods (woodencog and others) — bugs of those mods, no gameplay impact;
+- ComputerCraft will return once its 1.21.1 build stabilizes.
 
-## 🙏 Благодарности и атрибуция
+## 🙏 Credits and attribution
 
-- **[TerraFirmaGreg Team](https://github.com/TerraFirmaGreg-Team)** — за оригинальную сборку TerraFirmaGreg — Modern, контент которой лёг в основу порта;
-- автор оригинального **Gregnautics** — за идею союза TFG и Create: Aeronautics;
-- команды **TerraFirmaCraft**, **GregTech CEu Modern**, **Create** и **Create: Aeronautics**, **Stellaris** — за моды, вокруг которых всё построено;
-- авторы всех 205 модов сборки.
+- **[TerraFirmaGreg Team](https://github.com/TerraFirmaGreg-Team)** — for the original TerraFirmaGreg — Modern pack, whose content forms the foundation of this port;
+- the author of the original **Gregnautics** — for the idea of marrying TFG with Create: Aeronautics;
+- the **TerraFirmaCraft**, **GregTech CEu Modern**, **Create** / **Create: Aeronautics** and **Stellaris** teams — for the mods everything is built around;
+- the authors of all 205 mods in the pack.
 
-Лицензии заимствованных ассетов задокументированы в [`docs/ASSET_LICENSES.md`](docs/ASSET_LICENSES.md).
-
----
-
-<details>
-<summary><b>🇬🇧 English summary</b></summary>
-
-**Gregnautics Continued** is a hand-made port of the **TerraFirmaGreg — Modern** modpack (MC 1.20.1) to **Minecraft 1.21.1 / NeoForge**, integrated with **Create: Aeronautics** (buildable flying ships) and **Stellaris** (planets & rockets, replacing 1.20-only Ad Astra).
-
-The port covers 65,000+ lines of KubeJS scripts, 1,194 quests across 25 chapters (RU+EN), worldgen (89 ore veins + features), assets and mechanics — all adapted to the new KubeJS 7 / GregTech CEu 8 / TFC 4 APIs, with every deviation marked with `[PORT]` comments. Bugs found in upstream mods along the way were fixed and submitted as PRs (see table above).
-
-Progression: stone-age survival (TerraFirmaCraft) → real metallurgy → GregTech voltage ages → flying ships (Create: Aeronautics) → space (Stellaris).
-
-</details>
+Licenses of borrowed assets are documented in [`docs/ASSET_LICENSES.md`](docs/ASSET_LICENSES.md) *(in Russian)*.
