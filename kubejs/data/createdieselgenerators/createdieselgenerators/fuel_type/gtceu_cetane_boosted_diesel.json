@@ -1,0 +1,20 @@
+{
+  "fluid": "gtceu:cetane_boosted_diesel",
+  "normal": {
+    "speed": 112.0,
+    "strength": 7168.0,
+    "burn_rate": 0.055
+  },
+  "modular": {
+    "speed": 112.0,
+    "strength": 9728.0,
+    "burn_rate": 0.055
+  },
+  "huge": {
+    "speed": 256.0,
+    "strength": 19456.0,
+    "burn_rate": 0.055
+  },
+  "sound_pitch": 0.95,
+  "burner_multiplier": 0.7
+}

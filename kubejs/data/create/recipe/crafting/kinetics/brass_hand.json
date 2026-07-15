@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "B": {
+      "tag": "c:plates/brass"
+    }
+  },
+  "pattern": [
+    " A ",
+    "BBB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:brass_hand"
+  }
+}

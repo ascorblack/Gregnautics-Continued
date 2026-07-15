@@ -1,0 +1,19 @@
+{
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "tfc:powder/sulfur"
+    }
+  ],
+  "item_output": [
+    {
+      "id": "gtceu:rubber_ingot"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "afc:latex",
+    "amount": 250
+  },
+  "duration": 1000,
+  "temperature": 600
+}

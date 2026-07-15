@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" },
+    { "item": "gtceu:rubber_ingot" }
+  ],
+  "results": [
+    {
+      "id": "gtceu:rubber_block"
+    }
+  ]
+}

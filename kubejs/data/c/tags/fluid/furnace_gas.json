@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:natural_gas",
+    "gtceu:flowing_natural_gas",
+    "gtceu:refinery_gas",
+    "gtceu:flowing_refinery_gas",
+    "gtceu:sulfuric_gas",
+    "gtceu:flowing_sulfuric_gas"
+  ]
+}

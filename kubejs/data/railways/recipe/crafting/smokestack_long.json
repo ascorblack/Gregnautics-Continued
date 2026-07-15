@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "+": {
+      "item": "minecraft:campfire"
+    },
+    ".": {
+      "item": "gtceu:wrought_iron_screw"
+    }
+  },
+  "pattern": [
+    ".+."
+  ],
+  "result": {
+    "count": 1,
+    "id": "railways:smokestack_long"
+  }
+}

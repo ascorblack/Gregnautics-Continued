@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "gtceu:styrene_butadiene_rubber_plate"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "gtceu:styrene_butadiene_rubber_foil"
+    }
+  ]
+}

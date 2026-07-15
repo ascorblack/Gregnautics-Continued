@@ -1,0 +1,75 @@
+// priority: -100
+"use strict";
+
+const GREGNAUTICS_CREATE_ANDESITE_ALLOY_ITEMS = [
+	"create:andesite_alloy",
+	"create:andesite_alloy_block",
+	"createdeco:andesite_sheet"
+];
+
+const GREGNAUTICS_CREATE_ANDESITE_ALLOY_REPLACE_FILTERS = [
+	{ type: "minecraft:crafting_shaped" },
+	{ type: "minecraft:crafting_shapeless" },
+	{ type: "minecraft:stonecutting" },
+	{ type: "create:cutting" },
+	{ type: "create:item_application" },
+	{ type: "create:mechanical_crafting" },
+	{ type: "create:mixing" },
+	{ type: "create:pressing" },
+	{ type: "create:sequenced_assembly" },
+	{ type: "createdieselgenerators:compression_molding" },
+	{ type: "bits_n_bobs:feature_item_enabled" }
+];
+
+function gregnauticsCreateAndesiteAlloyItemExists(item) {
+	return Item.exists(item);
+}
+
+function gregnauticsReplaceAndesiteAlloyInput(event, from, to) {
+	event.replaceInput(GREGNAUTICS_CREATE_ANDESITE_ALLOY_REPLACE_FILTERS, from, to);
+}
+
+ServerEvents.tags("item", event => {
+	GREGNAUTICS_CREATE_ANDESITE_ALLOY_ITEMS.forEach(item => {
+		if (!gregnauticsCreateAndesiteAlloyItemExists(item)) {
+			return;
+		}
+
+		event.add("c:hidden_from_recipe_viewers", item);
+		event.add("forge:hidden_from_recipe_viewers", item);
+	});
+
+	event.remove("c:ingots/andesite_alloy", "create:andesite_alloy");
+	event.remove("forge:ingots/andesite_alloy", "create:andesite_alloy");
+	event.remove("c:storage_blocks/andesite_alloy", "create:andesite_alloy_block");
+	event.remove("forge:storage_blocks/andesite_alloy", "create:andesite_alloy_block");
+	event.remove("c:plates/andesite_alloy", "createdeco:andesite_sheet");
+	event.remove("forge:plates/andesite_alloy", "createdeco:andesite_sheet");
+});
+
+ServerEvents.recipes(event => {
+	console.info("[Gregnautics] progress: create_andesite_alloy_replacement recipes event start");
+	GREGNAUTICS_CREATE_ANDESITE_ALLOY_ITEMS.forEach(item => event.remove({ output: item }));
+
+	gregnauticsReplaceAndesiteAlloyInput(event, "create:andesite_alloy", "gtceu:wrought_iron_ingot");
+	gregnauticsReplaceAndesiteAlloyInput(event, "#c:ingots/andesite_alloy", "gtceu:wrought_iron_ingot");
+	gregnauticsReplaceAndesiteAlloyInput(event, "#forge:ingots/andesite_alloy", "gtceu:wrought_iron_ingot");
+	gregnauticsReplaceAndesiteAlloyInput(event, "create:andesite_alloy_block", "gtceu:wrought_iron_block");
+	gregnauticsReplaceAndesiteAlloyInput(event, "#c:storage_blocks/andesite_alloy", "gtceu:wrought_iron_block");
+	gregnauticsReplaceAndesiteAlloyInput(event, "#forge:storage_blocks/andesite_alloy", "gtceu:wrought_iron_block");
+	gregnauticsReplaceAndesiteAlloyInput(event, "createdeco:andesite_sheet", "gtceu:wrought_iron_plate");
+	gregnauticsReplaceAndesiteAlloyInput(event, "#c:plates/andesite_alloy", "gtceu:wrought_iron_plate");
+	gregnauticsReplaceAndesiteAlloyInput(event, "#forge:plates/andesite_alloy", "gtceu:wrought_iron_plate");
+
+	[
+		"create:crafting/materials/andesite_alloy",
+		"create:crafting/materials/andesite_alloy_from_zinc",
+		"create:mixing/andesite_alloy",
+		"create:mixing/andesite_alloy_from_zinc",
+		"create:crafting/materials/andesite_alloy_block",
+		"create:crafting/materials/andesite_alloy_from_block",
+		"createdeco:pressing/andesite_sheet"
+	].forEach(id => event.remove({ id: id }));
+
+	console.info("[Gregnautics] Create andesite alloy replacement: alloy outputs removed and alloy inputs replaced.");
+});

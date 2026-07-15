@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:diesel",
+    "gtceu:flowing_diesel",
+    "gtceu:cetane_boosted_diesel",
+    "gtceu:flowing_cetane_boosted_diesel"
+  ]
+}

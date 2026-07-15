@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "gtceu:rubber_plate"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "gtceu:rubber_foil"
+    }
+  ]
+}

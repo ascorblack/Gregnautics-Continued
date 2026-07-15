@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "gtceu:rubber_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "gtceu:rubber_plate"
+    }
+  ]
+}

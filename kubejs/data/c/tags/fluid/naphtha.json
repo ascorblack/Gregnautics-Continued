@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:naphtha",
+    "gtceu:flowing_naphtha",
+    "gtceu:sulfuric_naphtha",
+    "gtceu:flowing_sulfuric_naphtha"
+  ]
+}

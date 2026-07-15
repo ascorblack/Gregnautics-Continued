@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "i": {
+      "item": "gtceu:wrought_iron_screw"
+    }
+  },
+  "pattern": [
+    "iIi",
+    "III",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createbigcannons:solid_shot"
+  }
+}

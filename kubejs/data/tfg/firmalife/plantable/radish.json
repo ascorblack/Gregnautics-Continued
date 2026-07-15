@@ -1,0 +1,29 @@
+{
+	"crop": {
+		"count": 1,
+		"id": "tfg:radish_product"
+	},
+	"extra_seed_chance": 0.15,
+	"ingredient": {
+		"item": "tfg:radish_seeds"
+	},
+	"nutrient": {
+		"nitrogen": -0.2,
+		"phosphorous": -0.2,
+		"potassium": 0.75
+	},
+	"planter": "quad",
+	"seed": {
+		"count": 1,
+		"id": "tfg:radish_seeds"
+	},
+	"specials": [],
+	"stages": 3,
+	"textures": [
+		"tfg:block/crop/radish_2",
+		"tfg:block/crop/radish_3",
+		"tfg:block/crop/radish_4",
+		"tfg:block/crop/radish_5"
+	],
+	"tier": 0
+}

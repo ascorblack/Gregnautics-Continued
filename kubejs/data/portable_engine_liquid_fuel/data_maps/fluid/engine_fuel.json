@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": {
+    "gtceu:creosote":              { "burn_time": 6000 },
+    "gtceu:diesel":                { "burn_time": 20000 },
+    "gtceu:cetane_boosted_diesel": { "burn_time": 24000 },
+    "gtceu:light_fuel":            { "burn_time": 14000 },
+    "gtceu:sulfuric_light_fuel":   { "burn_time": 10000 },
+    "gtceu:heavy_fuel":            { "burn_time": 12000 },
+    "gtceu:sulfuric_heavy_fuel":   { "burn_time": 9000 },
+    "gtceu:naphtha":               { "burn_time": 8000 },
+    "gtceu:sulfuric_naphtha":      { "burn_time": 5000 },
+    "gtceu:refinery_gas":          { "burn_time": 9000 },
+    "gtceu:natural_gas":           { "burn_time": 8000 },
+    "gtceu:lpg":                   { "burn_time": 8500 },
+    "gtceu:oil":                   { "burn_time": 3000 },
+    "gtceu:raw_oil":               { "burn_time": 2500 },
+    "gtceu:light_oil":             { "burn_time": 4000 },
+    "gtceu:heavy_oil":             { "burn_time": 3500 },
+    "gtceu:ethanol":               { "burn_time": 5000 },
+    "gtceu:biomass":               { "burn_time": 2000 }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#c:diesel",
+    "#c:creosote",
+    "#c:naphtha",
+    "#c:crude_oil",
+    "#c:heavy_oil",
+    "#c:kerosene",
+    "#c:furnace_gas",
+    "#c:lpg",
+    "gtceu:light_oil",
+    "gtceu:flowing_light_oil",
+    "gtceu:ethanol",
+    "gtceu:flowing_ethanol",
+    "gtceu:biomass",
+    "gtceu:flowing_biomass"
+  ]
+}

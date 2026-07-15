@@ -1,0 +1,71 @@
+<svg width="880" height="470" viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Port completeness">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#57d9a3"/>
+      <stop offset="1" stop-color="#4fc3f7"/>
+    </linearGradient>
+    <linearGradient id="barp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b388ff"/>
+      <stop offset="1" stop-color="#4fc3f7"/>
+    </linearGradient>
+    <style>
+      .lbl { font: 600 16px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #c9d6ea; }
+      .pct { font: 800 16px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #eaf2ff; }
+      .sub { font: 400 12.5px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #7f93b3; }
+      .hdr { font: 800 22px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #f4f7ff; }
+      .track { fill: #1b2740; }
+    </style>
+  </defs>
+  <rect width="880" height="470" rx="16" fill="#0d1526"/>
+  <text x="32" y="44" class="hdr">Насколько портировано · Port completeness</text>
+  <line x1="32" y1="58" x2="848" y2="58" stroke="#22314f" stroke-width="1"/>
+
+  <!-- row template: label y, bar y=label+12 -->
+  <g>
+    <text x="32" y="92" class="lbl">Крафты и механики · KubeJS scripts</text>
+    <text x="848" y="92" text-anchor="end" class="pct">96%</text>
+    <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
+    <rect x="32" y="102" width="783" height="14" rx="7" fill="url(#bar)"/>
+    <text x="32" y="134" class="sub">65 500+ строк портировано и отлажено · 23 300+ рецептов · остатки помечены [PORT-*] в коде</text>
+  </g>
+
+  <g transform="translate(0,66)">
+    <text x="32" y="92" class="lbl">Квесты · FTB Quests</text>
+    <text x="848" y="92" text-anchor="end" class="pct">93%</text>
+    <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
+    <rect x="32" y="102" width="759" height="14" rx="7" fill="url(#bar)"/>
+    <text x="32" y="134" class="sub">1194 из 1281 квеста, 25 глав · выпавшие — только из модов без версии на 1.21</text>
+  </g>
+
+  <g transform="translate(0,132)">
+    <text x="32" y="92" class="lbl">Материалы GregTech · ~326 кастомных материалов</text>
+    <text x="848" y="92" text-anchor="end" class="pct">100%</text>
+    <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
+    <rect x="32" y="102" width="816" height="14" rx="7" fill="url(#bar)"/>
+    <text x="32" y="134" class="sub">разблокировано собственными фиксами GregTech Modern (3 PR в апстрим)</text>
+  </g>
+
+  <g transform="translate(0,198)">
+    <text x="32" y="92" class="lbl">Генерация мира · руды, жилы, фичи</text>
+    <text x="848" y="92" text-anchor="end" class="pct">88%</text>
+    <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
+    <rect x="32" y="102" width="718" height="14" rx="7" fill="url(#bar)"/>
+    <text x="32" y="134" class="sub">89 рудных жил + геоды + фичи · отложены вулканы и часть структур</text>
+  </g>
+
+  <g transform="translate(0,264)">
+    <text x="32" y="92" class="lbl">Текстуры и модели · ассеты</text>
+    <text x="848" y="92" text-anchor="end" class="pct">97%</text>
+    <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
+    <rect x="32" y="102" width="791" height="14" rx="7" fill="url(#bar)"/>
+    <text x="32" y="134" class="sub">3 380 файлов · включая 315 моделей-совместимостей для AFC-пород · JEI чист</text>
+  </g>
+
+  <g transform="translate(0,330)">
+    <text x="32" y="92" class="lbl">Космос · переработка под Stellaris</text>
+    <text x="848" y="92" text-anchor="end" class="pct">в работе</text>
+    <rect x="32" y="102" width="816" height="14" rx="7" class="track"/>
+    <rect x="32" y="102" width="424" height="14" rx="7" fill="url(#barp)"/>
+    <text x="32" y="134" class="sub">Ad Astra не существует для 1.21 — планеты, руды и прогрессия переезжают на Stellaris</text>
+  </g>
+</svg>

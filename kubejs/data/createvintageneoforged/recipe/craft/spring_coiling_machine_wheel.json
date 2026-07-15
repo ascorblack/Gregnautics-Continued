@@ -1,0 +1,14 @@
+{
+  "type": "createvintageneoforged:turning",
+  "ingredients": [
+    {
+      "tag": "c:stones/hardened"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "createvintageneoforged:spring_coiling_machine_wheel"
+    }
+  ]
+}

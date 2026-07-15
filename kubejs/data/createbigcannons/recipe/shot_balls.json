@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "i": {
+      "item": "gtceu:wrought_iron_screw"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iIi",
+    "iii"
+  ],
+  "result": {
+    "count": 2,
+    "id": "createbigcannons:shot_balls"
+  }
+}

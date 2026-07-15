@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    "ZKZ",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "Z": {
+      "tag": "c:ingots/zinc"
+    },
+    "K": {
+      "item": "gtceu:rubber_block"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:pumpjack_head"
+  }
+}

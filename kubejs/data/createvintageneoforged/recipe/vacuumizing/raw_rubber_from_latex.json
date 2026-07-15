@@ -1,0 +1,16 @@
+{
+  "type": "createvintageneoforged:vacuumizing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "afc:latex"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "gtceu:raw_rubber_ingot"
+    }
+  ]
+}

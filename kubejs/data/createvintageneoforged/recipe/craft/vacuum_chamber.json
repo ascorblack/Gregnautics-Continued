@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vacuum_chambers",
+  "key": {
+    "P": {
+      "item": "create:mechanical_pump"
+    },
+	"S": {
+      "item": "simulated:spring"
+    },
+	"C": {
+      "item": "create:andesite_casing"
+    },
+	"A": {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  },
+  "pattern": [
+    "SCS",
+    "APA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createvintageneoforged:vacuum_chamber"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:slimeballs"
+    },
+    "N": {
+      "item": "gtceu:wrought_iron_screw"
+    },
+    "S": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    "AS",
+    "NA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:super_glue"
+  }
+}

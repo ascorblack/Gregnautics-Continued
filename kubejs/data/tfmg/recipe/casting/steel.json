@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "type": "neoforge:tag",
+      "amount": 144,
+      "tag": "c:molten_steel"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "gtceu:steel_ingot"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "P": {
+      "item": "create:fluid_pipe"
+    },
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    " I ",
+    "IPI",
+    "IPI",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createbigcannons:fluid_shell"
+  }
+}

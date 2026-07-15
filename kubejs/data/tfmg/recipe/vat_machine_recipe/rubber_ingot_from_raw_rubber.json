@@ -1,0 +1,26 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowed_vat_types": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "gtceu:raw_rubber_ingot"
+    },
+    {
+      "tag": "c:dusts/sulfur"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "min_size": 1,
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "gtceu:rubber_ingot"
+    }
+  ]
+}

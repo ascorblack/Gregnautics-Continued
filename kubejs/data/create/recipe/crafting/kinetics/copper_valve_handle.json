@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "tag": "c:rings/copper"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "S": {
+      "tag": "c:rods/copper"
+    }
+  },
+  "pattern": [
+    " R ",
+    " C ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:copper_valve_handle"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "create:crushed_raw_iron"
+    }
+  ],
+  "results": [
+    {
+      "count": 9,
+      "id": "gtceu:wrought_iron_screw"
+    },
+    {
+      "chance": 0.75,
+      "id": "minecraft:redstone"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    {
+      "item": "create:andesite_casing"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:depot"
+  }
+}

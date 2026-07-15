@@ -1,0 +1,28 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowed_vat_types": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "afc:latex"
+    },
+    {
+      "tag": "c:dusts/sulfur"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "min_size": 1,
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "gtceu:rubber_ingot"
+    }
+  ]
+}

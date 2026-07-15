@@ -1,0 +1,13 @@
+{
+  "type": "createdieselgenerators:hammering",
+  "ingredients": [
+    {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "gtceu:wrought_iron_plate"
+    }
+  ]
+}

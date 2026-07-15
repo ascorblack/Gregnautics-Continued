@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA"
+  ],
+  "key": {
+    "B": {
+      "tag": "c:barrels/wooden"
+    },
+    "A": {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:bulk_fermenter"
+  }
+}

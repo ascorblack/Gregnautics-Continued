@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A  ",
+    " R ",
+    "  Z"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/steel"
+    },
+    "R": {
+      "tag": "c:rods/iron"
+    },
+    "Z": {
+      "item": "gtceu:steel_ring"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:engine_piston"
+  },
+
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "neoforge:rods/iron"
+      }
+    }
+  ]
+}

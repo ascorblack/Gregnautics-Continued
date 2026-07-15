@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AIA",
+    "ISI",
+    "SIA"
+  ],
+  "key": {
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "A": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "I": {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:hammer"
+  }
+}

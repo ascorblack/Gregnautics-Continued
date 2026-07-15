@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    {
+      "item": "tfc:metal/trapdoor/wrought_iron"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:item_hatch"
+  }
+}

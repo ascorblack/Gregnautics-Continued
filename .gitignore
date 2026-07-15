@@ -1,0 +1,8 @@
+# локальные/генерируемые данные — не попадают в репозиторий
+kubejs/exported/
+logs/
+crash-reports/
+*.log
+*.bak
+Thumbs.db
+.DS_Store

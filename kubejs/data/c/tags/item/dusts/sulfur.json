@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:sulfur_dust",
+    "tfc:powder/sulfur",
+    "tfmg:sulfur_dust"
+  ]
+}

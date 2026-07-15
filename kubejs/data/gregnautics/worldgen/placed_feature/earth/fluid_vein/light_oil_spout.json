@@ -1,0 +1,39 @@
+{
+	"feature": "gregnautics:earth/fluid_vein/light_oil_spout",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 180
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [0, -1, 0],
+				"blocks": "#tfc:can_carve"
+			}
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"absolute": 0
+				},
+				"max_inclusive": {
+					"absolute": 160
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

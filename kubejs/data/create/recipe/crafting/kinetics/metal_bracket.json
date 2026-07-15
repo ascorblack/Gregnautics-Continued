@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "P": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "S": {
+      "item": "gtceu:wrought_iron_screw"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "PCP"
+  ],
+  "result": {
+    "count": 4,
+    "id": "create:metal_bracket"
+  }
+}

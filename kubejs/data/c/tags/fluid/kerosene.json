@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:light_fuel",
+    "gtceu:flowing_light_fuel",
+    "gtceu:sulfuric_light_fuel",
+    "gtceu:flowing_sulfuric_light_fuel"
+  ]
+}

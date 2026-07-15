@@ -1,0 +1,43 @@
+// priority: 0
+"use strict";
+
+function registerTFGOresMaterialModification(event) {
+	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
+	//const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials"); // [PORT] Greate отсутствует в сборке 1.21.1
+	
+	// Ores
+	// [PORT] GTM8: setProperty бросает "Material Property ore already registered!",
+	// если свойство уже есть (GTM 1.x перезаписывал молча) — ставим только при отсутствии.
+	if (!GTMaterials.Bismuth.hasProperty(PropertyKey.ORE)) GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	if (!GTMaterials.Borax.hasProperty(PropertyKey.ORE)) GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+
+	// [PORT] Greate отсутствует в сборке 1.21.1 — руда розового кварца не настраивается
+	//let rose_quartz = $GreateMaterials.RoseQuartz;
+	//rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY(6, 1, true));
+	//rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
+
+	// Change byproducts so you can't get certus from normal quartzite
+	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
+	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
+
+	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
+
+	// Change any Ores that have Rutile
+	GTMaterials.Ilmenite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Iron, GTMaterials.Ilmenite, GTMaterials.IlmeniteSlag, GTMaterials.IlmeniteSlag);
+	GTMaterials.Aluminium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Bauxite, GTMaterials.Bauxite, GTMaterials.Ilmenite, GTMaterials.IlmeniteSlag);
+	GTMaterials.Bauxite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Grossular, GTMaterials.Ilmenite, GTMaterials.Gallium, GTMaterials.Gallium);
+
+	// Change Ores that have Chromium for Chromite
+	GTMaterials.Ruby.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Chromite, GTMaterials.GarnetRed, GTMaterials.Chromite);
+
+	// Remove old stone dusts
+	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_felsic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
+	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_mafic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
+	
+	// Change ore multipliers
+	GTMaterials.Cassiterite.getProperty(PropertyKey.ORE).setOreMultiplier(1);
+	GTMaterials.CassiteriteSand.getProperty(PropertyKey.ORE).setOreMultiplier(1);
+	GTMaterials.Coal.getProperty(PropertyKey.ORE).setOreMultiplier(1);
+}

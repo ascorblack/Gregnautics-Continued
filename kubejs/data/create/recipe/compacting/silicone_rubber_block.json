@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" },
+    { "item": "gtceu:silicone_rubber_ingot" }
+  ],
+  "results": [
+    {
+      "id": "gtceu:silicone_rubber_block"
+    }
+  ]
+}

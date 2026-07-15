@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "tfmg:heavy_machinery_casing"
+    },
+    "N": {
+      "item": "tfmg:circuit_board"
+    },
+    "P": {
+      "item": "tfc:fire_bricks"
+    },
+    "R": {
+      "tag": "c:sheets/rubber"
+    },
+    "T": {
+      "item": "tfmg:steel_chemical_vat"
+    }
+  },
+  "pattern": [
+    "PRP",
+    "NTN",
+    "PHP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tfmg:fireproof_chemical_vat"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A  ",
+    " S ",
+    "  Z"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/steel"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "Z": {
+      "item": "gtceu:steel_ring"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:engine_piston"
+  }
+}

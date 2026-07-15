@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "results": [
+    {
+      "id": "tfc:metal/ingot/cast_iron"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "gtceu:silicone_rubber_plate"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "gtceu:silicone_rubber_foil"
+    }
+  ]
+}

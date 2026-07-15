@@ -1,0 +1,21 @@
+{
+  "ingredient": {
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:plates"
+    },
+    "subtracted": [
+      {
+        "item": "minecraft:paper"
+      },
+      {
+        "item": "gtceu:wood_plate"
+      },
+      {
+        "item": "gtceu:treated_wood_plate"
+      }
+    ]
+  },
+  "size": "large",
+  "weight": "medium"
+}

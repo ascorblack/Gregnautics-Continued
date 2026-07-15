@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "gregnautics:create_mechanical_saw_blades"
+    },
+    "C": {
+      "item": "create:andesite_casing"
+    },
+    "I": {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  },
+  "pattern": [
+    " B ",
+    " I ",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:mechanical_saw"
+  }
+}

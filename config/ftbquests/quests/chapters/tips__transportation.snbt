@@ -1,0 +1,948 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips__transportation"
+	group: "19428C6E7A36D463"
+	id: "577081F95F02BDC2"
+	images: [
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_2.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			alpha: 150
+			height: 3.0d
+			image: "minecraft:textures/particle/big_smoke_4.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -8.0d
+			y: 8.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -8.0d
+			y: 6.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			alpha: 100
+			color: 4946175
+			height: 2.35d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.35d
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			alpha: 150
+			height: 3.5d
+			image: "minecraft:textures/particle/big_smoke_3.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			alpha: 100
+			color: 2401566
+			height: 2.35d
+			image: "tfc:block/grass_top"
+			rotation: 0.0d
+			width: 2.35d
+			x: 4.5d
+			y: -3.5d
+		}
+	]
+	order_index: 1
+	quest_links: [{
+		id: "704C995D4B6CE874"
+		linked_quest: "46C92B938921A0AC"
+		x: 4.5d
+		y: 0.5d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"2B84F34BFA37C828"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.tfg_tips.canoe_materials.desc}"
+			]
+			guide_page: "tfc:field_guide tfc:firmaciv/canoe"
+			id: "32C854110D49A77D"
+			subtitle: "{quests.tfg_tips.canoe_materials.subtitle}"
+			tasks: [
+				{
+					id: "2FD18ABB3A2738AA"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:tools/saw)"
+						}
+					}
+					title: "{quests.tasktype.item.any} Saws"
+					type: "item"
+				}
+				{
+					id: "32C041E87DCFDE1C"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:axes)"
+						}
+					}
+					title: "{quests.tasktype.item.any} Axes"
+					type: "item"
+				}
+				{
+					id: "1426E13B36E1ABE2"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "or(item(minecraft:flint_and_steel)item(tfc:firestarter))"
+						}
+					}
+					title: "{quests.tfg_tips.canoe_materials.task}"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4810FFFD04014DCF"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:stripped_softwood)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfg:stripped_softwood"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.canoe_materials.title}"
+			x: -4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"2B84F34BFA37C828"
+			]
+			description: [
+				"{quests.tfg_tips.kayak_materials.desc}"
+			]
+			guide_page: "tfc:field_guide tfc:firmaciv/kayak"
+			id: "03696C9BBC53AB26"
+			subtitle: "{quests.tfg_tips.kayak_materials.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "0BE3E082261E16FC"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:string)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #c:string"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7D12F1F3D84274D6"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lumber)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:lumber"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.kayak_materials.title}"
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2B84F34BFA37C828"
+			]
+			description: [
+				"{quests.tfg_tips.rowboat_materials.desc}"
+			]
+			guide_page: "tfc:field_guide tfc:firmaciv/rowboat"
+			id: "3DF4F4848B231980"
+			subtitle: "{quests.tfg_tips.rowboat_materials.subtitle}"
+			tasks: [{
+				id: "44BCD5B14DE0C81D"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:hammers)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:hammers"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.rowboat_materials.title}"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2B84F34BFA37C828"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.tfg_tips.sloop_under_construction_materials.desc}"
+			]
+			guide_page: "tfc:field_guide tfc:firmaciv/sloop"
+			id: "2746958D3D4A0885"
+			subtitle: "{quests.tfg_tips.sloop_under_construction_materials.subtitle}"
+			tasks: [
+				{
+					count: 16L
+					id: "269828143DC2013C"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "or(item(afc:wood/lumber/ironwood)item(tfc:wood/lumber/acacia)item(tfc:wood/lumber/ash)item(tfc:wood/lumber/aspen)item(tfc:wood/lumber/birch)item(tfc:wood/lumber/blackwood)item(tfc:wood/lumber/chestnut)item(tfc:wood/lumber/hickory)item(tfc:wood/lumber/maple)item(tfc:wood/lumber/oak)item(tfc:wood/lumber/rosewood)item(tfc:wood/lumber/sycamore)item(afc:wood/lumber/baobab)item(afc:wood/lumber/eucalyptus)item(afc:wood/lumber/mahogany)item(afc:wood/lumber/hevea)item(afc:wood/lumber/teak)item(afc:wood/lumber/ipe))"
+						}
+					}
+					title: "{quests.tfg_tips.sloop_under_construction_materials.task}"
+					type: "item"
+				}
+				{
+					count: 34L
+					id: "5979FB98DD21EE7E"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:stripped_hardwood)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfg:stripped_hardwood"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.sloop_under_construction_materials.title}"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2B84F34BFA37C828"
+			]
+			description: [
+				"{quests.tfg_tips.beneathxfirmaciv.desc}"
+			]
+			icon: "createdeco:decal_fire"
+			id: "252EB7FA56D1F88E"
+			shape: "diamond"
+			subtitle: "{quests.tfg_tips.beneathxfirmaciv.subtitle}"
+			tasks: [{
+				id: "6C19AB80033D5E24"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.beneathxfirmaciv.title}"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"60497014785301EB"
+			]
+			description: [
+				"{quests.tfg_tips.firmaciv.desc}"
+			]
+			guide_page: "tfc:field_guide tfc:firmaciv/watercraft"
+			id: "2B84F34BFA37C828"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.firmaciv.subtitle}"
+			tasks: [{
+				id: "41793C99EC45695A"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.firmaciv.title}"
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"60497014785301EB"
+			]
+			description: [
+				"{quests.tfg_tips.astikorcarts.desc}"
+			]
+			icon: "tfcastikorcarts:wheel/ash"
+			id: "05528D09F7EE6E33"
+			subtitle: "{quests.tfg_tips.astikorcarts.subtitle}"
+			tasks: [{
+				id: "7D268BC46A5F6014"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.astikorcarts.title}"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"05528D09F7EE6E33"
+			]
+			description: [
+				"{quests.tfg_tips.supply_cart.desc}"
+			]
+			id: "6CC2DE7963434FAD"
+			subtitle: "{quests.tfg_tips.supply_cart.subtitle}"
+			tasks: [{
+				id: "2F45CE2D7364E06B"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:supply_cart)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfcastikorcarts:supply_cart"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.supply_cart.title}"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"05528D09F7EE6E33"
+			]
+			description: [
+				"{quests.tfg_tips.equines.desc}"
+			]
+			id: "1594C2564FC7982D"
+			subtitle: "{quests.tfg_tips.equines.subtitle}"
+			tasks: [
+				{
+					id: "39B185B16CC5E612"
+					observe_type: 6
+					timer: 0L
+					title: "{quests.tasktype.lookat} #tfc:horses"
+					to_observe: "#tfc:horses"
+					type: "observation"
+				}
+				{
+					id: "1B207BDB3745F667"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.equines.title}"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"05528D09F7EE6E33"
+			]
+			description: [
+				"{quests.tfg_tips.animal_cart.desc}"
+			]
+			id: "3C4B7CE42195A466"
+			subtitle: "{quests.tfg_tips.animal_cart.subtitle}"
+			tasks: [{
+				id: "661B1D97980E0D09"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:animal_cart)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfcastikorcarts:animal_cart"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.animal_cart.title}"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"05528D09F7EE6E33"
+			]
+			description: [
+				"{quests.tfg_tips.plow.desc}"
+			]
+			id: "68B4990C3A20E27C"
+			subtitle: "{quests.tfg_tips.plow.subtitle}"
+			tasks: [{
+				id: "579F6AF5B08FC4CC"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:plow)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfcastikorcarts:plow"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.plow.title}"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{quests.tfg_tips.transportation.desc}"
+			]
+			disable_toast: true
+			id: "60497014785301EB"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "{quests.tfg_tips.transportation.subtitle}"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "2DDB6C944649BEDF"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
+			}]
+			title: "{quests.tfg_tips.transportation.title}"
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"60497014785301EB"
+			]
+			description: [
+				"{quests.tfg_tips.immersive_aircraft.desc}"
+			]
+			id: "62FD3E7A836D2E0A"
+			subtitle: "{quests.tfg_tips.immersive_aircraft.subtitle}"
+			tasks: [{
+				id: "5A1E6B47737C6071"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.immersive_aircraft.title}"
+			x: 14.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"62FD3E7A836D2E0A"
+			]
+			description: [
+				"{quests.tfg_tips.steam_upgrades.desc}"
+			]
+			id: "414A9A145910A9D4"
+			subtitle: "{quests.tfg_tips.steam_upgrades.subtitle}"
+			tasks: [{
+				id: "7FF1F5F3F2F10425"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "item(tfg:black_steel_plated_airplane_propeller)"
+					}
+				}
+				title: "{quests.tfg_tips.steam_upgrades.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.steam_upgrades.title}"
+			x: 14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"414A9A145910A9D4"
+			]
+			description: [
+				"{quests.tfg_tips.lv_upgrades.desc}"
+			]
+			id: "2F39D369639C40FD"
+			subtitle: "{quests.tfg_tips.lv_upgrades.subtitle}"
+			tasks: [{
+				id: "431AB936AD02B843"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "or(item(tfg:lv_aircraft_engine)item(tfg:redblu_steel_plated_airplane_propeller)item(tfg:redblu_steel_landing_gear)item(tfg:redblu_steel_hull_reinforcement))"
+					}
+				}
+				title: "{quests.tfg_tips.lv_upgrades.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.lv_upgrades.title}"
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2F39D369639C40FD"
+			]
+			description: [
+				"{quests.tfg_tips.mv_upgrades.desc}"
+			]
+			id: "614CC5FB31A030B3"
+			subtitle: "{quests.tfg_tips.mv_upgrades.subtitle}"
+			tasks: [{
+				id: "383347322A8B639C"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "or(item(tfg:aluminium_landing_gear)item(tfg:aluminium_hull_reinforcement))"
+					}
+				}
+				title: "{quests.tfg_tips.mv_upgrades.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.mv_upgrades.title}"
+			x: 14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"614CC5FB31A030B3"
+			]
+			description: [
+				"{quests.tfg_tips.hv_upgrades.desc}"
+			]
+			id: "47409DED94FCC2BC"
+			subtitle: "{quests.tfg_tips.hv_upgrades.subtitle}"
+			tasks: [{
+				id: "30455F8446278832"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "or(item(tfg:hv_aircraft_engine)item(tfg:stainless_steel_plated_airplane_propeller)item(tfg:stainless_steel_landing_gear)item(tfg:stainless_steel_hull_reinforcement))"
+					}
+				}
+				title: "{quests.tfg_tips.hv_upgrades.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.hv_upgrades.title}"
+			x: 14.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"47409DED94FCC2BC"
+			]
+			description: [
+				"{quests.tfg_tips.ev_upgrades.desc}"
+			]
+			id: "3317B9525E02F617"
+			subtitle: "{quests.tfg_tips.ev_upgrades.subtitle}"
+			tasks: [{
+				id: "2224FC4D297B983F"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "or(item(tfg:ev_aircraft_engine)item(tfg:titanium_plated_airplane_propeller)item(tfg:titanium_landing_gear)item(tfg:titanium_hull_reinforcement))"
+					}
+				}
+				title: "{quests.tfg_tips.ev_upgrades.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.ev_upgrades.title}"
+			x: 14.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"05528D09F7EE6E33"
+				"5917B0D4708BF534"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"[Ф2: кастомные материалы TFG появятся в Фазе 2]"
+				""
+				"{quests.tfg_tips.transportation_tips.rnr_plow.desc}"
+			]
+			guide_page: "tfc:field_guide tfc:roadsandroofs/paving_cart 0"
+			id: "533F32CCAD9D5B51"
+			subtitle: "{quests.tfg_tips.transportation_tips.rnr_plow.subtitle}"
+			tasks: [{
+				id: "44773CB0898D2375"
+				type: "checkmark"
+				optional_task: true
+			}]
+			title: "{quests.tfg_tips.transportation_tips.rnr_plow.title}"
+			x: 8.5d
+			y: -1.5d
+		}
+	]
+	subtitle: [
+		"{quests.tfg_tips.transportation_tips.subtitle}"
+	]
+	title: "{quests.tfg_tips.transportation_tips.title}"
+}

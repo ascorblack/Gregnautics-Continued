@@ -1,0 +1,29 @@
+{
+	"crop": {
+		"count": 1,
+		"id": "tfg:lentil_product"
+	},
+	"extra_seed_chance": 0.15,
+	"ingredient": {
+		"item": "tfg:lentil_seeds"
+	},
+	"nutrient": {
+		"nitrogen": -0.2,
+		"phosphorous": 0.75,
+		"potassium": -0.2
+	},
+	"planter": "quad",
+	"seed": {
+		"count": 1,
+		"id": "tfg:lentil_seeds"
+	},
+	"specials": [],
+	"stages": 3,
+	"textures": [
+		"tfg:block/crop/lentil_1",
+		"tfg:block/crop/lentil_3",
+		"tfg:block/crop/lentil_4",
+		"tfg:block/crop/lentil_5"
+	],
+	"tier": 0
+}

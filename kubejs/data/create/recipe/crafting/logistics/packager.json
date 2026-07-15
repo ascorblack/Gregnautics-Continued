@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:cardboard_block"
+    },
+    "C": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CAC",
+    "RCR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:packager"
+  }
+}

@@ -1,0 +1,29 @@
+{
+	"crop": {
+		"count": 1,
+		"id": "tfg:sunflower_product"
+	},
+	"extra_seed_chance": 0.15,
+	"ingredient": {
+		"item": "tfg:sunflower_seeds"
+	},
+	"nutrient": {
+		"nitrogen": 0.75,
+		"phosphorous": -0.2,
+		"potassium": -0.2
+	},
+	"planter": "large",
+	"seed": {
+		"count": 1,
+		"id": "tfg:sunflower_seeds"
+	},
+	"specials": [],
+	"stages": 3,
+	"textures": [
+		"tfg:block/crop/sunflower_greenhouse_0",
+		"tfg:block/crop/sunflower_greenhouse_1",
+		"tfg:block/crop/sunflower_greenhouse_2",
+		"tfg:block/crop/sunflower_greenhouse_3"
+	],
+	"tier": 0
+}

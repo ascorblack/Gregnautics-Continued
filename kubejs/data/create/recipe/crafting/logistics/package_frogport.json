@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:item_vault"
+    },
+    "B": {
+      "tag": "c:storage_blocks/rubber"
+    },
+    "C": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    }
+  },
+  "pattern": [
+    "EBE",
+    " A ",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:package_frogport"
+  }
+}

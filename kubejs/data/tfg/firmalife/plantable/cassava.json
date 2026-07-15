@@ -1,0 +1,29 @@
+{
+	"crop": {
+		"count": 1,
+		"id": "tfg:cassava_product"
+	},
+	"extra_seed_chance": 0.15,
+	"ingredient": {
+		"item": "tfg:cassava_seeds"
+	},
+	"nutrient": {
+		"nitrogen": 0.75,
+		"phosphorous": -0.2,
+		"potassium": -0.2
+	},
+	"planter": "quad",
+	"seed": {
+		"count": 1,
+		"id": "tfg:cassava_seeds"
+	},
+	"specials": [],
+	"stages": 3,
+	"textures": [
+		"tfg:block/crop/cassava_1",
+		"tfg:block/crop/cassava_2",
+		"tfg:block/crop/cassava_4",
+		"tfg:block/crop/cassava_5"
+	],
+	"tier": 2
+}

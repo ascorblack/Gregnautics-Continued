@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "gtceu:wrought_iron_screw"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdeco:iron_coin"
+    }
+  ]
+}

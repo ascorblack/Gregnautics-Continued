@@ -1,0 +1,8 @@
+{
+  "block.railways.track_create_andesite_narrow": "Narrow Wrought Iron Train Track",
+  "block.railways.track_create_andesite_wide": "Wide Wrought Iron Train Track",
+  "block.railways.track_switch_andesite": "Wrought Iron Track Switch",
+  "item.railways.track_incomplete_create_andesite_narrow": "Incomplete Narrow Wrought Iron Track",
+  "item.railways.track_incomplete_create_andesite_wide": "Incomplete Wide Wrought Iron Track",
+  "railways.ponder.conductor_constructing.text_1": "Conductors are constructed with a wrought iron casing."
+}

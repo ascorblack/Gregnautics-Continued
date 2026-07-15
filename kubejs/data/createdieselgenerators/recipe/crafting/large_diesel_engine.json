@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "SDS",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "D": {
+      "item": "createdieselgenerators:diesel_engine"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/cast_iron"
+    },
+    "S": {
+      "tag": "c:plates/brass"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:large_diesel_engine"
+  }
+}

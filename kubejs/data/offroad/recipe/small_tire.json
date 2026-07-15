@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create:shaft"
+    },
+    {
+      "item": "gtceu:rubber_plate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "offroad:small_tire"
+  }
+}

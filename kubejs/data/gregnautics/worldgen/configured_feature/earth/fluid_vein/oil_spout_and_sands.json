@@ -1,0 +1,10 @@
+{
+	"type": "lithostitched:composite",
+	"config": {
+		"features": [
+			"gregnautics:earth/fluid_vein/raw_oil_spout",
+			"gregnautics:earth/fluid_vein/oilsands_disks"
+		],
+		"placement_type": "never_cancel"
+	}
+}

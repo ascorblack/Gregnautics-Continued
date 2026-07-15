@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "SIS",
+    " I "
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "S": {
+      "tag": "c:plates/iron"
+    },
+    "I": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:clock"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:oil_scanner",
+    "count": 1
+  }
+}

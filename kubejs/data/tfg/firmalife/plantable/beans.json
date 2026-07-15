@@ -1,0 +1,29 @@
+{
+	"crop": {
+		"count": 1,
+		"id": "tfg:beans_product"
+	},
+	"extra_seed_chance": 0.15,
+	"ingredient": {
+		"item": "tfg:beans_seeds"
+	},
+	"nutrient": {
+		"nitrogen": -0.2,
+		"phosphorous": -0.2,
+		"potassium": 0.75
+	},
+	"planter": "quad",
+	"seed": {
+		"count": 1,
+		"id": "tfg:beans_seeds"
+	},
+	"specials": [],
+	"stages": 3,
+	"textures": [
+		"tfg:block/crop/beans_2",
+		"tfg:block/crop/beans_3",
+		"tfg:block/crop/beans_4",
+		"tfg:block/crop/beans_5"
+	],
+	"tier": 2
+}

@@ -1,0 +1,34 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "key": {
+    "B": {
+      "tag": "c:storage_blocks/iron"
+    },
+    "S": {
+      "item": "simulated:spring"
+    },
+	"C": {
+      "item": "create:andesite_casing"
+    },
+	"s": {
+      "item": "create:shaft"
+    },
+	"P": {
+      "item": "create:precision_mechanism"
+    },
+	"A": {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  },
+  "pattern": [
+    " PSA ",
+    "sCCBs",
+    "  SA "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createvintageneoforged:lathe"
+  }
+}
+

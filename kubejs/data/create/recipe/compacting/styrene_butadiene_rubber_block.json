@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" },
+    { "item": "gtceu:styrene_butadiene_rubber_ingot" }
+  ],
+  "results": [
+    {
+      "id": "gtceu:styrene_butadiene_rubber_block"
+    }
+  ]
+}

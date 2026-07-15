@@ -1,0 +1,14 @@
+{
+	"type":"createvintageneoforged:coiling",
+	"ingredients": [ {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  ],
+	"results": [
+		{
+			"id": "createvintageneoforged:iron_rod",
+			"count": 1
+		}
+	],
+  "processing_time": 120
+}

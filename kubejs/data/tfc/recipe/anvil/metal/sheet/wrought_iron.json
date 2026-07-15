@@ -1,0 +1,16 @@
+{
+	"type": "tfc:anvil",
+	"ingredient": {
+		"tag": "c:ingots/wrought_iron"
+	},
+	"result": {
+		"count": 1,
+		"id": "gtceu:wrought_iron_plate"
+	},
+	"rules": [
+		"hit_last",
+		"hit_second_last",
+		"hit_third_last"
+	],
+	"tier": 3
+}

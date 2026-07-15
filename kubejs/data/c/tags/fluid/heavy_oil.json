@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:heavy_oil",
+    "gtceu:flowing_heavy_oil",
+    "gtceu:heavy_fuel",
+    "gtceu:flowing_heavy_fuel",
+    "gtceu:sulfuric_heavy_fuel",
+    "gtceu:flowing_sulfuric_heavy_fuel"
+  ]
+}

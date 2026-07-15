@@ -1,0 +1,20 @@
+{
+ "feature": "gregnautics:earth/crop/vanilla_patch",
+ "placement": [
+  {
+   "type": "minecraft:rarity_filter",
+   "chance": 80
+  },
+  {
+   "type": "minecraft:in_square"
+  },
+  {
+   "type": "tfc:climate",
+   "min_temperature": 18,
+   "max_temperature": 30,
+   "min_groundwater": 200,
+   "min_forest": 3,
+   "max_forest": 4
+  }
+ ]
+}

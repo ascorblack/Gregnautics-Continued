@@ -1,0 +1,20 @@
+{
+  "fluid": "#c:naphtha",
+  "normal": {
+    "speed": 64.0,
+    "strength": 3584.0,
+    "burn_rate": 0.06
+  },
+  "modular": {
+    "speed": 64.0,
+    "strength": 4608.0,
+    "burn_rate": 0.06
+  },
+  "huge": {
+    "speed": 160.0,
+    "strength": 9216.0,
+    "burn_rate": 0.06
+  },
+  "sound_pitch": 0.8,
+  "burner_multiplier": 0.45
+}

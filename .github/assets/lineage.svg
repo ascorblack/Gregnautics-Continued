@@ -1,0 +1,45 @@
+<svg width="880" height="300" viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pack lineage">
+  <defs>
+    <linearGradient id="lg-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#57d9a3"/>
+      <stop offset="0.5" stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#b388ff"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#4fc3f7"/>
+    </marker>
+    <style>
+      .card { fill: #131e35; stroke: #26365a; stroke-width: 1.5; }
+      .t1 { font: 800 19px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #f4f7ff; }
+      .t2 { font: 400 13px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #93a8c8; }
+      .t3 { font: 600 12px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #7ce8b8; }
+      .hdr { font: 800 22px 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #f4f7ff; }
+    </style>
+  </defs>
+  <rect width="880" height="300" rx="16" fill="#0d1526"/>
+  <text x="32" y="44" class="hdr">Происхождение · Lineage</text>
+  <line x1="32" y1="58" x2="848" y2="58" stroke="#22314f" stroke-width="1"/>
+
+  <!-- parent 1 -->
+  <rect x="40" y="86" width="330" height="84" rx="12" class="card"/>
+  <text x="60" y="118" class="t1">TerraFirmaGreg — Modern</text>
+  <text x="60" y="140" class="t2">v0.13.3 · Minecraft 1.20.1 · Forge</text>
+  <text x="60" y="158" class="t3">контент, квесты, баланс, худ. стиль</text>
+
+  <!-- parent 2 -->
+  <rect x="40" y="188" width="330" height="84" rx="12" class="card"/>
+  <text x="60" y="220" class="t1">Gregnautics</text>
+  <text x="60" y="242" class="t2">Minecraft 1.21.1 · NeoForge</text>
+  <text x="60" y="260" class="t3">идея: TFG + Create: Aeronautics</text>
+
+  <!-- arrows -->
+  <path d="M370 128 C 440 128, 440 178, 500 178" fill="none" stroke="#4fc3f7" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M370 230 C 440 230, 440 180, 500 180" fill="none" stroke="#4fc3f7" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- child -->
+  <rect x="506" y="120" width="334" height="118" rx="14" fill="#15233f" stroke="url(#lg-accent)" stroke-width="2.5"/>
+  <text x="530" y="156" class="t1">Gregnautics Continued</text>
+  <text x="530" y="180" class="t2">Minecraft 1.21.1 · NeoForge · GregTech CEu 8</text>
+  <text x="530" y="200" class="t2">ручной порт: 65k+ строк скриптов, квесты,</text>
+  <text x="530" y="218" class="t2">worldgen, ассеты + фиксы в апстрим-моды</text>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "gtceu:rubber_block"
+    },
+    "S": {
+      "item": "create:shaft"
+    }
+  },
+  "pattern": [
+    " R ",
+    "RSR",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "offroad:monstrous_tire"
+  }
+}

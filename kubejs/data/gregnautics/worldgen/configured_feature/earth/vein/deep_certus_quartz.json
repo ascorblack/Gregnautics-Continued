@@ -1,0 +1,208 @@
+{
+  "__credits__": "Added for GTCEu ore parity in TFC worldgen.",
+  "type": "tfc:cluster_vein",
+  "config": {
+    "size": 25,
+    "rarity": 300,
+    "density": 0.2,
+    "min_y": -30,
+    "max_y": 40,
+    "random_name": "deep_certus_quartz",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:granite_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:granite_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:diorite_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:diorite_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:gabbro_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:gabbro_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:quartzite_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:quartzite_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:slate_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:slate_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:phyllite_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:phyllite_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:schist_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:schist_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:gneiss_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:gneiss_barite_ore",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_certus_quartz_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:marble_nether_quartz_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:marble_barite_ore",
+            "weight": 4
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 20,
+      "depth": 35,
+      "underground_rarity": 48,
+      "underground_count": 160,
+      "blocks": [
+        {
+          "block": "gtceu:certus_quartz_indicator",
+          "weight": 12
+        },
+        {
+          "block": "gtceu:nether_quartz_indicator",
+          "weight": 8
+        },
+        {
+          "block": "gtceu:barite_indicator",
+          "weight": 4
+        }
+      ]
+    }
+  }
+}

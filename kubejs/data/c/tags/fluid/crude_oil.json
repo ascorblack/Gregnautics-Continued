@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:oil",
+    "gtceu:flowing_oil",
+    "gtceu:raw_oil",
+    "gtceu:flowing_raw_oil"
+  ]
+}

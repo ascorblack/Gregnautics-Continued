@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "L": {
+      "item": "createbigcannons:shot_balls"
+    },
+    "P": {
+      "tag": "createbigcannons:gunpowder"
+    },
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    " I ",
+    "ILI",
+    "IPI",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createbigcannons:shrapnel_shell"
+  }
+}

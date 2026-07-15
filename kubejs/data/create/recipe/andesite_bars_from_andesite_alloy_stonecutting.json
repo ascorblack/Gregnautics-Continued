@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gtceu:wrought_iron_ingot"
+  },
+  "result": {
+    "count": 4,
+    "id": "create:andesite_bars"
+  }
+}

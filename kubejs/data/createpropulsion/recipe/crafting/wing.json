@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IBI",
+    "BAB",
+    "IBI"
+  ],
+  "key": {
+    "I": {
+      "item": "gtceu:aluminium_plate"
+    },
+    "A": {
+      "item": "gtceu:aluminium_rod"
+    },
+    "B": {
+      "item": "gtceu:aluminium_screw"
+    }
+  },
+  "result": {
+    "id": "createpropulsion:wing",
+    "count": 4
+  }
+}

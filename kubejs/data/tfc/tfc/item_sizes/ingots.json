@@ -1,0 +1,21 @@
+{
+  "ingredient": {
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:ingots"
+    },
+    "subtracted": [
+      {
+        "item": "minecraft:brick"
+      },
+      {
+        "item": "minecraft:nether_brick"
+      },
+      {
+        "item": "minecraft:clay_ball"
+      }
+    ]
+  },
+  "size": "large",
+  "weight": "medium"
+}

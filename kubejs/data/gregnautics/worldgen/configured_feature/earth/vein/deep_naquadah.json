@@ -1,0 +1,78 @@
+{
+  "__credits__": "Added for GTCEu ore parity in TFC worldgen.",
+  "type": "tfc:cluster_vein",
+  "config": {
+    "size": 25,
+    "rarity": 900,
+    "density": 0.16,
+    "min_y": -50,
+    "max_y": -10,
+    "random_name": "deep_naquadah",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_naquadah_ore",
+            "weight": 18
+          },
+          {
+            "block": "gtceu:granite_plutonium_239_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_naquadah_ore",
+            "weight": 18
+          },
+          {
+            "block": "gtceu:diorite_plutonium_239_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_naquadah_ore",
+            "weight": 18
+          },
+          {
+            "block": "gtceu:gabbro_plutonium_239_ore",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 48,
+      "depth": 15,
+      "underground_rarity": 72,
+      "underground_count": 80,
+      "blocks": [
+        {
+          "block": "gtceu:naquadah_indicator",
+          "weight": 18
+        },
+        {
+          "block": "gtceu:plutonium_239_indicator",
+          "weight": 1
+        }
+      ]
+    }
+  }
+}

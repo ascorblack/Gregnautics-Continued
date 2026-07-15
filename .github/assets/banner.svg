@@ -1,0 +1,85 @@
+<svg width="1280" height="340" viewBox="0 0 1280 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gregnautics Continued">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#101b33"/>
+      <stop offset="1" stop-color="#1a0f2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#57d9a3"/>
+      <stop offset="0.5" stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#b388ff"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="0.35" cy="0.3" r="1">
+      <stop offset="0" stop-color="#ff9e66"/>
+      <stop offset="0.6" stop-color="#c1553a"/>
+      <stop offset="1" stop-color="#7a2e22"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4fc3f7" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#4fc3f7" stop-opacity="0"/>
+    </radialGradient>
+    <g id="gear">
+      <path fill="currentColor" d="M60 0 L74 6 76 24 92 32 108 24 122 34 114 52 124 66 142 66 148 82 132 92 132 110 148 120 142 136 124 136 114 150 122 168 108 178 92 170 76 178 74 196 60 202 46 196 44 178 28 170 12 178 -2 168 6 150 -4 136 -22 136 -28 120 -12 110 -12 92 -28 82 -22 66 -4 66 6 52 -2 34 12 24 28 32 44 24 46 6 Z" transform="scale(0.5) translate(30,30)"/>
+      <circle fill="#0b1020" cx="45" cy="65.5" r="22"/>
+    </g>
+  </defs>
+
+  <rect width="1280" height="340" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="90" cy="50" r="1.4" opacity="0.8"/><circle cx="220" cy="120" r="1" opacity="0.5"/>
+    <circle cx="350" cy="40" r="1.2" opacity="0.6"/><circle cx="500" cy="90" r="1" opacity="0.45"/>
+    <circle cx="640" cy="30" r="1.5" opacity="0.7"/><circle cx="760" cy="70" r="1" opacity="0.5"/>
+    <circle cx="880" cy="45" r="1.2" opacity="0.65"/><circle cx="1010" cy="100" r="1" opacity="0.5"/>
+    <circle cx="1120" cy="35" r="1.4" opacity="0.75"/><circle cx="1230" cy="80" r="1" opacity="0.5"/>
+    <circle cx="160" cy="250" r="1" opacity="0.4"/><circle cx="1180" cy="270" r="1.2" opacity="0.5"/>
+    <circle cx="70" cy="300" r="1" opacity="0.4"/><circle cx="960" cy="300" r="1" opacity="0.45"/>
+  </g>
+
+  <!-- mars-like planet -->
+  <circle cx="1120" cy="180" r="150" fill="url(#glow)"/>
+  <circle cx="1120" cy="180" r="96" fill="url(#planet)"/>
+  <ellipse cx="1090" cy="150" rx="26" ry="10" fill="#8a3a28" opacity="0.7"/>
+  <ellipse cx="1150" cy="205" rx="34" ry="12" fill="#8a3a28" opacity="0.6"/>
+  <ellipse cx="1115" cy="235" rx="18" ry="7" fill="#93402c" opacity="0.6"/>
+  <!-- orbit + tiny rocket -->
+  <ellipse cx="1120" cy="180" rx="140" ry="52" fill="none" stroke="#4fc3f7" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="3 7" transform="rotate(-18 1120 180)"/>
+  <g transform="rotate(-18 1120 180) translate(985,168) rotate(-62)">
+    <path d="M0 0 C4 -10 4 -20 0 -30 C-4 -20 -4 -10 0 0 Z" fill="#e8eaf6"/>
+    <path d="M0 -30 C2 -25 2 -23 0 -21 C-2 -23 -2 -25 0 -30 Z" fill="#4fc3f7"/>
+    <path d="M-3 -6 L-7 0 L-2 -1 Z" fill="#b388ff"/>
+    <path d="M3 -6 L7 0 L2 -1 Z" fill="#b388ff"/>
+    <ellipse cx="0" cy="3" rx="2.2" ry="4" fill="#ffb74d"/>
+  </g>
+
+  <!-- gears cluster -->
+  <g transform="translate(60,196)" color="#2e4a6b"><use href="#gear"/></g>
+  <g transform="translate(140,120) scale(0.72)" color="#3d6b57"><use href="#gear"/></g>
+  <g transform="translate(38,80) scale(0.5)" color="#5a4a86"><use href="#gear"/></g>
+
+  <!-- leaf (TFC) -->
+  <g transform="translate(215,225) rotate(24)">
+    <path d="M0 0 C26 -34 66 -40 96 -22 C74 14 30 22 0 0 Z" fill="#57d9a3" opacity="0.9"/>
+    <path d="M4 -2 C36 -16 64 -20 90 -20" stroke="#0b1020" stroke-width="3" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- title (центрировано по x=640) -->
+  <text x="640" y="150" text-anchor="middle" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="64" letter-spacing="0.5"><tspan font-weight="800" fill="#f4f7ff">Gregnautics</tspan><tspan font-weight="300" fill="url(#accent)">Continued</tspan></text>
+  <text x="640" y="196" text-anchor="middle" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="22" fill="#9fb3d1">TerraFirmaGreg × Create: Aeronautics — reborn on Minecraft 1.21.1 / NeoForge</text>
+
+  <!-- badges row -->
+  <g font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">
+    <rect x="331" y="222" rx="14" width="128" height="28" fill="#12325a"/>
+    <text x="395" y="241" text-anchor="middle" fill="#8fd0ff">MC 1.21.1</text>
+    <rect x="467" y="222" rx="14" width="128" height="28" fill="#123a2e"/>
+    <text x="531" y="241" text-anchor="middle" fill="#7ce8b8">NeoForge</text>
+    <rect x="603" y="222" rx="14" width="150" height="28" fill="#2c1f4d"/>
+    <text x="678" y="241" text-anchor="middle" fill="#cbb2ff">GregTech CEu</text>
+    <rect x="761" y="222" rx="14" width="188" height="28" fill="#3a2413"/>
+    <text x="855" y="241" text-anchor="middle" fill="#ffc487">Create: Aeronautics</text>
+  </g>
+
+  <rect x="0" y="332" width="1280" height="8" fill="url(#accent)"/>
+</svg>

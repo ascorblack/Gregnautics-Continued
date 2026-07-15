@@ -1,0 +1,20 @@
+{
+ "feature": "gregnautics:earth/crop/rapeseed_patch",
+ "placement": [
+  {
+   "type": "minecraft:rarity_filter",
+   "chance": 100
+  },
+  {
+   "type": "minecraft:in_square"
+  },
+  {
+   "type": "tfc:climate",
+   "min_temperature": -7,
+   "max_temperature": 25,
+   "min_groundwater": 50,
+   "max_groundwater": 350,
+   "max_forest": 2
+  }
+ ]
+}

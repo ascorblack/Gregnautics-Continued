@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "gtceu:wrought_iron_screw"
+    },
+    "p": {
+      "tag": "c:plates/iron"
+    },
+    "t": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "pattern": [
+    "n",
+    "t",
+    "p"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:red_iron_lamp"
+  }
+}

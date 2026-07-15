@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "tfc:crucible"
+    },
+    "S": {
+      "item": "gtceu:steel_plate"
+    }
+  },
+  "pattern": [
+    "S S",
+    "SCS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:basin"
+  }
+}

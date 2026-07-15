@@ -1,0 +1,60 @@
+{
+  "__credits__": "Added for GTCEu ore parity in TFC worldgen.",
+  "type": "tfc:cluster_vein",
+  "config": {
+    "size": 27,
+    "rarity": 520,
+    "density": 0.18,
+    "min_y": -50,
+    "max_y": 0,
+    "random_name": "deep_sheldonite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_bornite_ore",
+            "weight": 12
+          },
+          {
+            "block": "gtceu:gabbro_cooperite_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:gabbro_platinum_ore",
+            "weight": 8
+          },
+          {
+            "block": "gtceu:gabbro_palladium_ore",
+            "weight": 4
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 32,
+      "depth": 15,
+      "underground_rarity": 56,
+      "underground_count": 120,
+      "blocks": [
+        {
+          "block": "gtceu:platinum_indicator",
+          "weight": 8
+        },
+        {
+          "block": "gtceu:cooperite_indicator",
+          "weight": 8
+        },
+        {
+          "block": "gtceu:palladium_indicator",
+          "weight": 4
+        }
+      ]
+    }
+  }
+}

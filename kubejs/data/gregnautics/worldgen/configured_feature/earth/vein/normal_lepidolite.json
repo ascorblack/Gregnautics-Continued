@@ -1,0 +1,49 @@
+{
+  "__credits__": "Added for GTCEu ore parity in TFC worldgen.",
+  "type": "tfc:disc_vein",
+  "config": {
+    "height": 8,
+    "size": 21,
+    "rarity": 260,
+    "density": 0.22,
+    "min_y": 10,
+    "max_y": 70,
+    "random_name": "normal_lepidolite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_lepidolite_ore",
+            "weight": 14
+          },
+          {
+            "block": "gtceu:granite_spodumene_ore",
+            "weight": 14
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 22,
+      "depth": 70,
+      "underground_rarity": 48,
+      "underground_count": 160,
+      "blocks": [
+        {
+          "block": "gtceu:lepidolite_indicator",
+          "weight": 14
+        },
+        {
+          "block": "gtceu:spodumene_indicator",
+          "weight": 14
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AZA",
+    "ZBZ",
+    "AZA"
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "Z": {
+      "tag": "c:ingots/zinc"
+    },
+    "B": {
+      "item": "create:mechanical_bearing"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:pumpjack_bearing"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "gtceu:wrought_iron_ingot"
+    },
+    "p": {
+      "tag": "gregnautics:plates/wrought_iron"
+    },
+    "t": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "pattern": [
+    "n",
+    "t",
+    "p"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:green_andesite_lamp"
+  }
+}

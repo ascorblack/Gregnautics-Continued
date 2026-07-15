@@ -1,0 +1,56 @@
+{
+  "__credits__": "Added for GTCEu ore parity in TFC worldgen.",
+  "type": "tfc:cluster_vein",
+  "config": {
+    "size": 29,
+    "rarity": 360,
+    "density": 0.2,
+    "min_y": -50,
+    "max_y": 20,
+    "random_name": "deep_chromite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_chromite_ore",
+            "weight": 18
+          },
+          {
+            "block": "tfc:ore/poor_magnetite/gabbro",
+            "weight": 3
+          },
+          {
+            "block": "tfc:ore/normal_magnetite/gabbro",
+            "weight": 2
+          },
+          {
+            "block": "tfc:ore/rich_magnetite/gabbro",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 24,
+      "depth": 15,
+      "underground_rarity": 48,
+      "underground_count": 160,
+      "blocks": [
+        {
+          "block": "gtceu:chromite_indicator",
+          "weight": 18
+        },
+        {
+          "block": "tfc:ore/small_magnetite",
+          "weight": 6
+        }
+      ]
+    }
+  }
+}

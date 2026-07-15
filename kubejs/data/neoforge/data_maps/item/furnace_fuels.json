@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": {
+    "tfc:ore/lignite":          { "burn_time": 1200 },
+    "tfc:ore/bituminous_coal":  { "burn_time": 1600 },
+    "tfc:peat":                 { "burn_time": 600  },
+    "gtceu:coke_gem":           { "burn_time": 3200 },
+    "gtceu:coke_dust":          { "burn_time": 1600 },
+    "gtceu:coal_dust":          { "burn_time": 1200 },
+    "gtceu:charcoal_block":     { "burn_time": 16000 }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "block.railways.track_create_andesite_narrow": "Узкий путь из кованого железа",
+  "block.railways.track_create_andesite_wide": "Широкий путь из кованого железа",
+  "block.railways.track_switch_andesite": "Стрелочный перевод из кованого железа",
+  "item.railways.track_incomplete_create_andesite_narrow": "Незаконченный узкий путь из кованого железа",
+  "item.railways.track_incomplete_create_andesite_wide": "Незаконченный широкий путь из кованого железа",
+  "railways.ponder.conductor_constructing.text_1": "Механический подмастерье создаётся кликом фуражкой машиниста по корпусу из кованого железа"
+}

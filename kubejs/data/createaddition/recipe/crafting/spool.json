@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "gtceu:wrought_iron_screw"
+    },
+    "P": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    "P",
+    "N",
+    "P"
+  ],
+  "result": {
+    "count": 16,
+    "id": "createaddition:spool"
+  }
+}

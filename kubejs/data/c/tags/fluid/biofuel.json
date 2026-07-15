@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "gtceu:biomass",
+    "gtceu:flowing_biomass"
+  ]
+}

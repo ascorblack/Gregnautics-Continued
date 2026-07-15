@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "m": {
+      "item": "gtceu:wrought_iron_ingot"
+    }
+  },
+  "pattern": [
+    "mm",
+    "mm"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdeco:andesite_trapdoor"
+  }
+}

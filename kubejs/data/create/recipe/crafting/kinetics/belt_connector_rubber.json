@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "tag": "c:sheets/rubber"
+    }
+  },
+  "pattern": [
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:belt_connector"
+  }
+}
