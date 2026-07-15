@@ -1,6 +1,6 @@
 # Modlist
 
-Active mods: **236**
+Active mods: **235**
 
 | Mod | Version | modId | File |
 |---|---|---|---|
@@ -182,6 +182,7 @@ Active mods: **236**
 | PrickleMC | 21.1.11 | `prickle` | `prickle-neoforge-1.21.1-21.1.11.jar` |
 | Puzzles Lib | 21.1.52 | `puzzleslib` | `PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar` |
 | Recipe Generator | 0.3.0 | `recipe_generator` | `recipe_generator-0.3.0_release-neoforge-1.21.1.jar` |
+| Reese's Sodium Options | 2.2.3+mc1.21.1 | `reeses_sodium_options` | `reeses-sodium-options-neoforge-2.2.3+mc1.21.1.jar` |
 | Rhino | 2101.2.7-build.85 | `rhino` | `rhino-2101.2.7-build.85.jar` |
 | Ritchie's Projectile Library | 2.1.2 | `ritchiesprojectilelib` | `ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar` |
 | Roads and Roofs | 1.0.4-1.21.1 | `rnr` | `rnr-1.0.4-1.21.1.jar` |
@@ -194,7 +195,6 @@ Active mods: **236**
 | Simple Voice Chat | 1.21.1-2.6.20 | `voicechat` | `voicechat-neoforge-1.21.1-2.6.20.jar` |
 | Sodium | 0.8.12+mc1.21.1 | `sodium` | `sodium-neoforge-0.8.12+mc1.21.1.jar` |
 | Sodium Dynamic Lights | 1.0.9 | `sodiumdynamiclights` | `sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar` |
-| Sodium Options API | 1.0.10 | `sodiumoptionsapi` | `sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar` |
 | Sophisticated Backpacks | 3.25.70 | `sophisticatedbackpacks` | `sophisticatedbackpacks-1.21.1-3.25.70.1985.jar` |
 | Sophisticated Backpacks Create Integration | 0.1.8 | `sophisticatedbackpackscreateintegration` | `sophisticatedbackpackscreateintegration-1.21.1-0.1.8.134.jar` |
 | Sophisticated Core | 1.4.73 | `sophisticatedcore` | `sophisticatedcore-1.21.1-1.4.73.2151.jar` |
@@ -202,7 +202,6 @@ Active mods: **236**
 | Sounds | 2.4.22+lts | `sounds` | `sounds-2.4.22+lts+1.21.1-neoforge.jar` |
 | spark | 1.10.124 | `spark` | `spark-1.10.124-neoforge.jar` |
 | Spindles TFC | 1.0.5 | `tfc_spindles` | `tfc_spindles-1.21.1-neoforge-1.0.5.jar` |
-| Star Wars Planets | 1.0.2 | `swplanets` | `swplanets-1.21-neoforge-1.0.2.jar` |
 | Stellaris | 1.4.25 | `stellaris` | `stellaris-1.21-neoforge-1.4.25.jar` |
 | Stellaris Extra | 1.2.21 | `stellaris_extra` | `NeoForge-StellarisExtra-1.2.21-1.21.1.jar` |
 | Stellaris: Per Spatium Et Tempus | 1.21.1-1.1.0 | `perspatium` | `perspatium-1.21.1-1.1.0.jar` |

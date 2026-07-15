@@ -13,7 +13,7 @@
   <g>
     <rect x="24" y="24" width="196" height="132" rx="12" class="card"/>
     <rect x="24" y="24" width="196" height="5" rx="2.5" class="accent-a"/>
-    <text x="122" y="84" text-anchor="middle" class="num">236</text>
+    <text x="122" y="84" text-anchor="middle" class="num">235</text>
     <text x="122" y="112" text-anchor="middle" class="cap">модов в сборке</text>
     <text x="122" y="132" text-anchor="middle" class="capsm">58 подобраны взамен 1.20-only</text>
   </g>
