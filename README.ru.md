@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#-установка"><img src="https://img.shields.io/badge/Minecraft-1.21.1-2ea44f?style=for-the-badge" alt="Minecraft 1.21.1"></a>
   <a href="#-установка"><img src="https://img.shields.io/badge/NeoForge-21.1.235-f16436?style=for-the-badge" alt="NeoForge"></a>
-  <img src="https://img.shields.io/badge/%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-209-4fc3f7?style=for-the-badge" alt="209 mods">
+  <img src="https://img.shields.io/badge/%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-236-4fc3f7?style=for-the-badge" alt="236 mods">
   <img src="https://img.shields.io/badge/%D0%BA%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D0%B2-1194-b388ff?style=for-the-badge" alt="1194 quests">
   <img src="https://img.shields.io/badge/RU%20%2B%20EN-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-57d9a3?style=for-the-badge" alt="RU + EN">
 </p>
@@ -107,6 +107,6 @@ docs/              — заметки порта, список модов, ли�
 - **[TerraFirmaGreg Team](https://github.com/TerraFirmaGreg-Team)** — за оригинальную сборку TerraFirmaGreg — Modern, контент которой лёг в основу порта;
 - автор оригинального **Gregnautics** — за идею союза TFG и Create: Aeronautics;
 - команды **TerraFirmaCraft**, **GregTech CEu Modern**, **Create** и **Create: Aeronautics**, **Stellaris** — за моды, вокруг которых всё построено;
-- авторы всех 209 модов сборки.
+- авторы всех 236 модов сборки.
 
 Лицензии заимствованных ассетов задокументированы в [`docs/ASSET_LICENSES.md`](docs/ASSET_LICENSES.md).
