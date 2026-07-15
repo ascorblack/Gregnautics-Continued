@@ -86,6 +86,7 @@
 | `*-curseforge.zip` | CurseForge App, Prism, ATLauncher | Импорт как CurseForge-пак — недостающие моды скачаются сами |
 | `*.mrpack` | Modrinth App, Prism Launcher | Импортируй файл — моды скачаются с Modrinth автоматически |
 | `*-multimc.zip` | MultiMC / Prism (оффлайн) | Импорт как инстанс — **всё уже внутри**, ничего не качается |
+| `*-server.zip` | **Выделенный сервер** | Распакуй, запусти `install.sh` / `install.bat`, прими EULA, стартуй — клиентские моды вырезаны, LuckPerms внутри |
 
 **Или установка прямо из клона репозитория** (в репозитории есть всё, включая моды):
 
@@ -102,6 +103,7 @@
 
 ```
 mods/              — все 236 модов, включая патченную сборку GregTech
+server-mods/       — доп. моды для выделенного сервера (LuckPerms) + гайд по серверу
 kubejs/            — скрипты сборки (startup / server), ассеты, датапак
   */tfg_port/      — портированный контент TerraFirmaGreg (все изменения помечены [PORT])
   server_scripts/gregnautics_*.js — собственные скрипты интеграции форка
