@@ -116,6 +116,11 @@ global.forEachMaterial = function (iterator) {
 	// [PORT-GTM-HEAD] GTCEuAPI.materialManager удалён в HEAD (1023cb75+) -> GTRegistries.MATERIALS
 	// [PORT-GTM-HEAD] (MaterialRegistry implements Iterable<Material>, поэтому for..of работает).
 	for (const material of GTRegistries.MATERIALS) {
+		// [PORT-FIX 2026-07-15] На КЛИЕНТЕ после дисконнекта с сервера реестр может
+		// отдавать null (незабинденные intrusive holders при пересборке datapack'ов —
+		// родственник GTM#5111). Итерация без guard'а роняла ServerEvents.tags:
+		// NullPointerException в guava Iterators.transform -> краш экрана создания мира.
+		if (material == null) continue
 		iterator(material)
 	}
 }
