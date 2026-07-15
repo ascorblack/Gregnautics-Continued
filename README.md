@@ -79,15 +79,29 @@ Until the PRs are merged, the pack ships its own patched builds of these mods (s
 
 ## 📦 Installation
 
-> 🚧 The pack is being prepared for publication on CurseForge. The link will appear here.
+Pick whichever format suits your launcher — all of them are on the [**Releases**](../../releases) page:
 
-Until it is published, you can assemble the instance manually: the mod list is in [`docs/MODLIST.md`](docs/MODLIST.md), and the contents of `kubejs/`, `config/` and `defaultconfigs/` come from this repository.
+| File | For | How |
+|---|---|---|
+| `*-curseforge.zip` | CurseForge App, Prism, ATLauncher | Import as a CurseForge pack — missing mods download automatically |
+| `*.mrpack` | Modrinth App, Prism Launcher | Import the file — mods download from Modrinth automatically |
+| `*-multimc.zip` | MultiMC / Prism (offline) | Import as instance — **everything is bundled**, nothing to download |
+
+**Or install straight from a clone of this repository** (everything is committed, mods included):
+
+1. `git clone https://github.com/ascorblack/Gregnautics-Continued.git`
+2. Create a **Minecraft 1.21.1 + NeoForge 21.1.235** instance in your launcher.
+3. Copy `mods/`, `config/`, `kubejs/`, `defaultconfigs/`, `resourcepacks/`, `shaderpacks/` into the instance folder.
+4. Allocate memory and play.
+
+> 🚧 The CurseForge page is awaiting moderation — the link will appear here once approved.
 
 **Requirements**: 8 GB+ of allocated memory (16 recommended), Java 21.
 
 ## 🗂 Repository layout
 
 ```
+mods/              — all 236 mods, incl. the patched GregTech build
 kubejs/            — pack scripts (startup / server), assets, datapack
   */tfg_port/      — ported TerraFirmaGreg content (all changes marked [PORT])
   server_scripts/gregnautics_*.js — the fork's own integration scripts
