@@ -1,9 +1,10 @@
 # Modlist
 
-Active mods: **206**
+Active mods: **209**
 
 | Mod | Version | modId | File |
 |---|---|---|---|
+| Advanced Peripherals | 0.7.62b | `advancedperipherals` | `AdvancedPeripherals-1.21.1-0.7.62b.jar` |
 | AE2WTLib | 19.5.0 | `ae2wtlib` | `ae2wtlib-19.5.0.jar` |
 | aero_copycats | 1.1.0 | `aerocopycats` | `aerocopycats-1.1.1.jar` |
 | AeronauticsCompat | 1.1.3 | `aeronauticscompat` | `aeronauticscompat-1.1.3.jar` |
@@ -22,6 +23,7 @@ Active mods: **206**
 | Bookshelf | 21.1.81 | `bookshelf` | `bookshelf-neoforge-1.21.1-21.1.81.jar` |
 | Carry On | 2.2.5 | `carryon` | `carryon-neoforge-1.21.1-2.2.5.8.jar` |
 | CC: Tweaked | 1.120.0 | `computercraft` | `cc-tweaked-1.21.1-forge-1.120.0.jar` |
+| CC:C Bridge | 1.7.3 | `cccbridge` | `cccbridge-mc1.21.1-v1.7.3-neoforge.jar` |
 | Chat Heads | 0.15.2 | `chat_heads` | `chat_heads-0.15.2-neoforge-1.21.jar` |
 | Cherished Worlds | 10.1.1+1.21.1 | `cherishedworlds` | `cherishedworlds-neoforge-10.1.1+1.21.1.jar` |
 | Chunky | 1.4.23 | `chunky` | `Chunky-NeoForge-1.4.23.jar` |
@@ -149,6 +151,7 @@ Active mods: **206**
 | ModernFix | 5.27.15+mc1.21.1 | `modernfix` | `modernfix-neoforge-5.27.15+mc1.21.1.jar` |
 | Moonlight Lib | 1.21.1-3.1.1 | `moonlight` | `moonlight-neoforge-1.21.1-3.1.1.jar` |
 | More Red | 6.0.0.3 | `morered` | `morered-1.21.1-6.0.0.3.jar` |
+| More Red x CC:Tweaked Compat | 1.21.1-1.3.0 | `moreredxcctcompat` | `MoreRed-CCT-Compat-1.21.1-1.3.0.jar` |
 | Mouse Tweaks | 2.26.1 | `mousetweaks` | `MouseTweaks-neoforge-mc1.21-2.26.1.jar` |
 | NotEnoughAnimations | 1.12.4 | `notenoughanimations` | `notenoughanimations-neoforge-1.12.4-mc1.21.1.jar` |
 | PacketFixer | 3.3.1 | `packetfixer` | `packetfixer-3.3.1-1.20.5-1.21.X-merged.jar` |

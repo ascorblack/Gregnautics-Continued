@@ -3,33 +3,59 @@
 	default_quest_shape: ""
 	filename: "cc"
 	group: "31B01EAD21CA863A"
+	icon: "computercraft:computer_advanced"
 	id: "1A6D6B70EC13DDC6"
-	images: [{
-		click: "https://gregtechceu.github.io/GregTech-Modern/1.20.1/Gameplay/Central-Monitor/"
-		height: 1.0d
-		hover: [
-			"quests.computer.gregtech_wiki_monitor.title"
-		]
-		image: "patchouli:item/book_blue"
-		rotation: 0.0d
-		width: 1.0d
-		x: 7.0d
-		y: -1.5d
-	}]
+	images: [
+		{
+			click: "https://tweaked.cc/"
+			height: 1.0d
+			hover: [
+				"quests.computer.cc_tweaked_wiki.title"
+			]
+			image: "computercraft:item/printed_book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			click: "https://docs.advanced-peripherals.de/latest/"
+			height: 1.0d
+			hover: [
+				"quests.computer.advanced_peripherals_wiki.title"
+			]
+			image: "advancedperipherals:item/book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			click: "https://gregtechceu.github.io/GregTech-Modern/1.20.1/Gameplay/Central-Monitor/"
+			height: 1.0d
+			hover: [
+				"quests.computer.gregtech_wiki_monitor.title"
+			]
+			image: "patchouli:item/book_blue"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.0d
+			y: -1.5d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.welcome.desc}"
 			]
 			id: "5F2D9F4908401D0D"
 			subtitle: "{quests.computer.welcome.subtitle}"
 			tasks: [{
 				id: "2E906826F6FDAF5F"
-				type: "checkmark"
+				item: "computercraft:computer_normal"
+				type: "item"
 			}]
 			title: "{quests.computer.welcome.title}"
 			x: -6.0d
@@ -40,8 +66,6 @@
 				"5F2D9F4908401D0D"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.advanced_computers.desc}"
 			]
 			id: "791B05ACA5FD85FC"
@@ -49,19 +73,23 @@
 			tasks: [
 				{
 					id: "065C2D0A373063AB"
-					type: "checkmark"
+					item: "computercraft:computer_advanced"
+					type: "item"
 				}
 				{
 					id: "6694EF08DED64B71"
-					type: "checkmark"
+					item: "computercraft:turtle_advanced"
+					type: "item"
 				}
 				{
 					id: "6BEF24FE2926ACF0"
-					type: "checkmark"
+					item: "computercraft:pocket_computer_advanced"
+					type: "item"
 				}
 				{
 					id: "6F32EA6613583DD1"
-					type: "checkmark"
+					item: "computercraft:monitor_advanced"
+					type: "item"
 				}
 			]
 			title: "{quests.computer.advanced_computers.title}"
@@ -73,15 +101,14 @@
 				"5F2D9F4908401D0D"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.pocket.desc}"
 			]
 			id: "4CD956A0E923C1B6"
 			subtitle: "{quests.computer.pocket.subtitle}"
 			tasks: [{
 				id: "74F8BAFCA9F2881B"
-				type: "checkmark"
+				item: "computercraft:pocket_computer_normal"
+				type: "item"
 			}]
 			title: "{quests.computer.pocket.title}"
 			x: -7.0d
@@ -92,8 +119,6 @@
 				"5F2D9F4908401D0D"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.turtles.desc}"
 			]
 			hide_dependent_lines: true
@@ -101,7 +126,8 @@
 			subtitle: "{quests.computer.turtles.subtitle}"
 			tasks: [{
 				id: "5E8B93E5E8506DEF"
-				type: "checkmark"
+				item: "computercraft:turtle_normal"
+				type: "item"
 			}]
 			title: "{quests.computer.turtles.title}"
 			x: -6.0d
@@ -112,15 +138,14 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.monitor.desc}"
 			]
 			id: "0B29A2BF94C63336"
 			subtitle: "{quests.computer.monitor.subtitle}"
 			tasks: [{
 				id: "616B08AEEACAD536"
-				type: "checkmark"
+				item: "computercraft:monitor_normal"
+				type: "item"
 			}]
 			title: "{quests.computer.monitor.title}"
 			x: -1.0d
@@ -131,15 +156,14 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.speaker.desc}"
 			]
 			id: "1BBFCD620C85DB80"
 			subtitle: "{quests.computer.speaker.subtitle}"
 			tasks: [{
 				id: "7DD0AB6A9A957F8B"
-				type: "checkmark"
+				item: "computercraft:speaker"
+				type: "item"
 			}]
 			title: "{quests.computer.speaker.title}"
 			x: 0.0d
@@ -150,8 +174,6 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.disk_drive.desc}"
 			]
 			id: "5B1A8D8CC62FC5B1"
@@ -159,12 +181,19 @@
 			tasks: [
 				{
 					id: "09F3121204F7195A"
-					type: "checkmark"
+					item: "computercraft:disk_drive"
+					type: "item"
 				}
 				{
 					id: "2691C1EABAAF0305"
+					item: {
+						id: "ftbfiltersystem:smart_filter"
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:disks)"
+						}
+					}
 					title: "{quests.tasktype.item.any} #computercraft:disks"
-					type: "checkmark"
+					type: "item"
 				}
 			]
 			title: "{quests.computer.disk_drive.title}"
@@ -176,15 +205,19 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.computer_peripheral.desc}"
 			]
 			id: "21EAABD0D38C744D"
 			subtitle: "{quests.computer.computer_peripheral.subtitle}"
 			tasks: [{
 				id: "3079507A3939B9C7"
-				type: "checkmark"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "or(item(computercraft:computer_normal)item(computercraft:computer_advanced))"
+					}
+				}
+				type: "item"
 			}]
 			title: "{quests.computer.computer_peripheral.title}"
 			x: -1.0d
@@ -195,15 +228,19 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.wireless_modem.desc}"
 			]
 			id: "029B6ECECAE729D8"
 			subtitle: "{quests.computer.wireless_modem.subtitle}"
 			tasks: [{
 				id: "681E084FFAE1538B"
-				type: "checkmark"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "or(item(computercraft:wireless_modem_normal)item(computercraft:wireless_modem_advanced))"
+					}
+				}
+				type: "item"
 			}]
 			title: "{quests.computer.wireless_modem.title}"
 			x: 0.0d
@@ -214,8 +251,6 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.wired_modem.desc}"
 			]
 			id: "47D9E37D0E20B6F5"
@@ -223,11 +258,13 @@
 			tasks: [
 				{
 					id: "340F93D39415017C"
-					type: "checkmark"
+					item: "computercraft:wired_modem"
+					type: "item"
 				}
 				{
 					id: "77520C95616AC4DF"
-					type: "checkmark"
+					item: "computercraft:cable"
+					type: "item"
 				}
 			]
 			title: "{quests.computer.wired_modem.title}"
@@ -239,15 +276,14 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.printer.desc}"
 			]
 			id: "7DC9A7FA540C670C"
 			subtitle: "{quests.computer.printer.title}"
 			tasks: [{
 				id: "277E212F93FC34B5"
-				type: "checkmark"
+				item: "computercraft:printer"
+				type: "item"
 			}]
 			title: "{quests.computer.printer.title}"
 			x: -1.0d
@@ -258,15 +294,14 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.redstone_relay.desc}"
 			]
 			id: "08C8C4E751DF5CBA"
 			subtitle: "{quests.computer.redstone_relay.subtitle}"
 			tasks: [{
 				id: "754E959DC88029F6"
-				type: "checkmark"
+				item: "computercraft:redstone_relay"
+				type: "item"
 			}]
 			title: "{quests.computer.redstone_relay.title}"
 			x: 0.0d
@@ -277,15 +312,14 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.environment_detector.desc}"
 			]
 			id: "366B73FA1A626DBD"
 			subtitle: "{quests.computer.environment_detector.subtitle}"
 			tasks: [{
 				id: "7FEE9F7879B91E48"
-				type: "checkmark"
+				item: "advancedperipherals:environment_detector"
+				type: "item"
 			}]
 			title: "{quests.computer.environment_detector.title}"
 			x: 2.5d
@@ -296,15 +330,14 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.chat_box.desc}"
 			]
 			id: "780995E2158D5314"
 			subtitle: "{quests.computer.chat_box.subtitle}"
 			tasks: [{
 				id: "597B5BD38B0AF794"
-				type: "checkmark"
+				item: "advancedperipherals:chat_box"
+				type: "item"
 			}]
 			title: "{quests.computer.chat_box.title}"
 			x: 3.5d
@@ -315,15 +348,14 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.player_detector.desc}"
 			]
 			id: "2421D1ADA60C3BB3"
 			subtitle: "{quests.computer.player_detector.subtitle}"
 			tasks: [{
 				id: "56CA2DC49B25B0BA"
-				type: "checkmark"
+				item: "advancedperipherals:player_detector"
+				type: "item"
 			}]
 			title: "{quests.computer.player_detector.title}"
 			x: 4.5d
@@ -334,15 +366,14 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.me_bridge.desc}"
 			]
 			id: "01950B026EAAECE2"
 			subtitle: "{quests.computer.me_bridge.subtitle}"
 			tasks: [{
 				id: "6C0E708A4AC5812A"
-				type: "checkmark"
+				item: "advancedperipherals:me_bridge"
+				type: "item"
 			}]
 			title: "{quests.computer.me_bridge.title}"
 			x: 2.5d
@@ -353,8 +384,6 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.inventory_manager.desc}"
 			]
 			id: "562C44506B8D6B5B"
@@ -362,11 +391,13 @@
 			tasks: [
 				{
 					id: "5926DDE12F4A3C9F"
-					type: "checkmark"
+					item: "advancedperipherals:inventory_manager"
+					type: "item"
 				}
 				{
 					id: "3FAE91F369EAEB3D"
-					type: "checkmark"
+					item: "advancedperipherals:memory_card"
+					type: "item"
 				}
 			]
 			title: "{quests.computer.inventory_manager.title}"
@@ -378,15 +409,14 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.block_reader.desc}"
 			]
 			id: "4DE6ED0D9603524C"
 			subtitle: "{quests.computer.block_reader.subtitle}"
 			tasks: [{
 				id: "255D175973D44694"
-				type: "checkmark"
+				item: "advancedperipherals:block_reader"
+				type: "item"
 			}]
 			title: "{quests.computer.block_reader.title}"
 			x: 4.5d
@@ -397,15 +427,14 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.nbt_storage.desc}"
 			]
 			id: "5F5865233C224165"
 			subtitle: "{quests.computer.nbt_storage.subtitle}"
 			tasks: [{
 				id: "3DA1EA7E49A65DDE"
-				type: "checkmark"
+				item: "advancedperipherals:nbt_storage"
+				type: "item"
 			}]
 			title: "{quests.computer.nbt_storage.title}"
 			x: 2.5d
@@ -417,8 +446,6 @@
 				"3C6A84E06D46CD0F"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.automata_core.desc}"
 			]
 			hide_dependent_lines: true
@@ -426,7 +453,8 @@
 			subtitle: "{quests.computer.automata_core.subtitle}"
 			tasks: [{
 				id: "546F1E11F9556CE6"
-				type: "checkmark"
+				item: "advancedperipherals:weak_automata_core"
+				type: "item"
 			}]
 			title: "{quests.computer.automata_core.title}"
 			x: 2.5d
@@ -438,8 +466,6 @@
 				"3C6A84E06D46CD0F"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.husbandry_core.desc}"
 			]
 			hide_dependent_lines: true
@@ -447,7 +473,8 @@
 			subtitle: "{quests.computer.husbandry_core.subtitle}"
 			tasks: [{
 				id: "066FB2E7EB270C86"
-				type: "checkmark"
+				item: "advancedperipherals:husbandry_automata_core"
+				type: "item"
 			}]
 			title: "{quests.computer.husbandry_core.title}"
 			x: 3.5d
@@ -459,8 +486,6 @@
 				"3C6A84E06D46CD0F"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.ender_core.desc}"
 			]
 			hide_dependent_lines: true
@@ -468,7 +493,8 @@
 			subtitle: "{quests.computer.ender_core.subtitle}"
 			tasks: [{
 				id: "10CC3F9AA5628EAB"
-				type: "checkmark"
+				item: "advancedperipherals:end_automata_core"
+				type: "item"
 			}]
 			title: "{quests.computer.ender_core.title}"
 			x: 4.5d
@@ -479,15 +505,14 @@
 				"3058785E70954678"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.geo_scanner.desc}"
 			]
 			id: "1F08650436F72A14"
 			subtitle: "{quests.computer.geo_scanner.subtitle}"
 			tasks: [{
 				id: "1E5F565820EC3D9F"
-				type: "checkmark"
+				item: "advancedperipherals:geo_scanner"
+				type: "item"
 			}]
 			title: "{quests.computer.geo_scanner.title}"
 			x: 3.5d
@@ -498,8 +523,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.sticker.desc}"
 			]
 			id: "4C206263E6B050FD"
@@ -518,8 +541,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.nixie_tube.desc}"
 			]
 			id: "27B1F8D84A175533"
@@ -538,8 +559,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.speed_and_stress_meters.desc}"
 			]
 			id: "1A762A3711D318C2"
@@ -563,8 +582,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.rotation_speed_controller.desc}"
 			]
 			id: "713468372470E589"
@@ -583,8 +600,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.sequenced_gearshift.desc}"
 			]
 			id: "1843BA5ED0802687"
@@ -603,8 +618,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.electric_motor.desc}"
 			]
 			id: "5675D8377D055291"
@@ -623,8 +636,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.display_link.desc}"
 			]
 			id: "28D25C4245AEBFA5"
@@ -643,8 +654,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.train_station.desc}"
 			]
 			id: "6F907DA4DEF43EEF"
@@ -663,8 +672,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.train_signal.desc}"
 			]
 			id: "3DE09E83BF456B89"
@@ -683,8 +690,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.train_observer.desc}"
 			]
 			id: "0A1E9AC6454093B7"
@@ -703,8 +708,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.stock_ticker.desc}"
 			]
 			id: "62DD9C3DFD21CBE9"
@@ -723,8 +726,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.packager.desc}"
 			]
 			id: "4F89686AA5873267"
@@ -748,8 +749,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.frogport.desc}"
 			]
 			id: "7D6913812D5323AC"
@@ -768,8 +767,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.redstone_requester.desc}"
 			]
 			id: "1BAAC23D8E7EB515"
@@ -788,8 +785,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.table_cover.desc}"
 			]
 			id: "4CDA6CC955EFFCA2"
@@ -814,8 +809,6 @@
 				"6226DDF4F16D439B"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.postbox.desc}"
 			]
 			id: "782E097F31659E4D"
@@ -840,8 +833,6 @@
 				"0B55AC33D41FED67"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.cc_peripherals.desc}"
 			]
 			hide_dependent_lines: true
@@ -861,8 +852,6 @@
 				"0B55AC33D41FED67"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.ap_peripherals.desc}"
 			]
 			hide_dependent_lines: true
@@ -882,8 +871,6 @@
 				"0B55AC33D41FED67"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.create_peripherals.desc}"
 			]
 			hide_dependent_lines: true
@@ -902,8 +889,6 @@
 				"5F2D9F4908401D0D"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.peripherals.desc}"
 			]
 			icon: "gtceu:terminal"
@@ -924,8 +909,6 @@
 				"160EC57392A6C5D5"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.bundled_cable.desc}"
 			]
 			id: "0E61A782522AC382"
@@ -947,8 +930,6 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.overpowered_cores.desc}"
 			]
 			hide_dependency_lines: false
@@ -956,7 +937,13 @@
 			subtitle: "{quests.computer.overpowered_cores.subtitle}"
 			tasks: [{
 				id: "46CE286E8AC42D2C"
-				type: "checkmark"
+				item: {
+					id: "ftbfiltersystem:smart_filter"
+					components: {
+						"ftbfiltersystem:filter": "or(item(advancedperipherals:overpowered_weak_automata_core)item(advancedperipherals:overpowered_husbandry_automata_core))"
+					}
+				}
+				type: "item"
 			}]
 			title: "{quests.computer.overpowered_cores.title}"
 			x: 3.5d
@@ -967,8 +954,6 @@
 				"7D22D66DC480F2A7"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.inventory.desc}"
 			]
 			icon: "minecraft:chest"
@@ -987,8 +972,6 @@
 				"7D22D66DC480F2A7"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.tank.desc}"
 			]
 			icon: "create:fluid_tank"
@@ -1007,8 +990,6 @@
 				"7D22D66DC480F2A7"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.battery.desc}"
 			]
 			icon: "createaddition:modular_accumulator"
@@ -1027,8 +1008,6 @@
 				"0B55AC33D41FED67"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.generic_peripherals.desc}"
 			]
 			hide_dependent_lines: true
@@ -1049,8 +1028,6 @@
 				"0B55AC33D41FED67"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.gregtech_peripherals.desc}"
 			]
 			id: "3F927702B5072A68"
@@ -1068,8 +1045,6 @@
 				"3F927702B5072A68"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.central_monitor.desc}"
 			]
 			hide_dependency_lines: true
@@ -1089,8 +1064,6 @@
 				"3F927702B5072A68"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.computer_monitor_cover.desc}"
 			]
 			hide_dependency_lines: true
@@ -1110,8 +1083,6 @@
 				"3F927702B5072A68"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.large_turbine.desc}"
 			]
 			disable_toast: true
@@ -1133,8 +1104,6 @@
 				"3F927702B5072A68"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.gregtech_machine.desc}"
 			]
 			hide_dependency_lines: true
@@ -1155,8 +1124,6 @@
 				"3F927702B5072A68"
 			]
 			description: [
-				"[Ф10: CC:Tweaked будет добавлен в Фазе 10]"
-				""
 				"{quests.computer.energy_storage.desc}"
 			]
 			hide_dependency_lines: true
