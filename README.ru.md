@@ -5,6 +5,7 @@
 <p align="right"><a href="README.md">🇬🇧 English</a> · <b>🇷🇺 Русский</b></p>
 
 <p align="center">
+  <a href="https://www.curseforge.com/minecraft/modpacks/gregnautics-continued"><img src="https://img.shields.io/badge/CurseForge-download-f16436?style=for-the-badge&logo=curseforge&logoColor=white" alt="CurseForge"></a>
   <a href="#-установка"><img src="https://img.shields.io/badge/Minecraft-1.21.1-2ea44f?style=for-the-badge" alt="Minecraft 1.21.1"></a>
   <a href="#-установка"><img src="https://img.shields.io/badge/NeoForge-21.1.235-f16436?style=for-the-badge" alt="NeoForge"></a>
   <img src="https://img.shields.io/badge/%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-238-4fc3f7?style=for-the-badge" alt="238 mods">
@@ -95,7 +96,7 @@
 3. Скопируй `mods/`, `config/`, `kubejs/`, `defaultconfigs/`, `resourcepacks/`, `shaderpacks/` в папку инстанса.
 4. Выдели память и играй.
 
-> 🚧 Страница на CurseForge проходит модерацию — ссылка появится здесь после одобрения.
+> 🎮 **Удобнее через CurseForge App?** Сборка опубликована и там: [**Gregnautics Continued на CurseForge**](https://www.curseforge.com/minecraft/modpacks/gregnautics-continued) — установка в один клик, с автообновлением.
 
 **Требования**: 8 ГБ+ выделенной памяти (рекомендуется 16), Java 21.
 
