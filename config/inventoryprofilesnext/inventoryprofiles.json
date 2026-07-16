@@ -1,0 +1,10 @@
+{
+    "ModSettings": {
+        "first_run": false
+    },
+    "Features": {
+        "enable_lock_slots": {
+            "value": false
+        }
+    }
+}
