@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#-installation"><img src="https://img.shields.io/badge/Minecraft-1.21.1-2ea44f?style=for-the-badge" alt="Minecraft 1.21.1"></a>
   <a href="#-installation"><img src="https://img.shields.io/badge/NeoForge-21.1.235-f16436?style=for-the-badge" alt="NeoForge"></a>
-  <img src="https://img.shields.io/badge/mods-235-4fc3f7?style=for-the-badge" alt="235 mods">
+  <img src="https://img.shields.io/badge/mods-238-4fc3f7?style=for-the-badge" alt="238 mods">
   <img src="https://img.shields.io/badge/quests-1194-b388ff?style=for-the-badge" alt="1194 quests">
   <img src="https://img.shields.io/badge/localization-EN%20%2B%20RU-57d9a3?style=for-the-badge" alt="EN + RU">
 </p>
@@ -102,7 +102,7 @@ Pick whichever format suits your launcher — all of them are on the [**Releases
 ## 🗂 Repository layout
 
 ```
-mods/              — all 235 mods, incl. the patched GregTech build
+mods/              — all 238 mods, incl. the patched GregTech build
 server-mods/       — dedicated-server guide (required-on-server mods, tuning)
 kubejs/            — pack scripts (startup / server), assets, datapack
   */tfg_port/      — ported TerraFirmaGreg content (all changes marked [PORT])
@@ -123,6 +123,6 @@ docs/              — porting notes, mod list, asset licenses
 - **[TerraFirmaGreg Team](https://github.com/TerraFirmaGreg-Team)** — for the original TerraFirmaGreg — Modern pack, whose content forms the foundation of this port;
 - the author of the original **Gregnautics** — for the idea of marrying TFG with Create: Aeronautics;
 - the **TerraFirmaCraft**, **GregTech CEu Modern**, **Create** / **Create: Aeronautics** and **Stellaris** teams — for the mods everything is built around;
-- the authors of all 235 mods in the pack.
+- the authors of all 238 mods in the pack.
 
 Licenses of borrowed assets are documented in [`docs/ASSET_LICENSES.md`](docs/ASSET_LICENSES.md) *(in Russian)*.

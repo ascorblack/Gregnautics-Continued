@@ -1,6 +1,6 @@
 # Modlist
 
-Active mods: **235**
+Active mods: **238**
 
 | Mod | Version | modId | File |
 |---|---|---|---|
@@ -139,6 +139,7 @@ Active mods: **235**
 | I <3 TFC | 1.1.3 | `ihearttfc` | `I Heart TFC-1.21.1-1.1.3.jar` |
 | Immersive Paintings | 0.7.8 | `immersive_paintings` | `immersive_paintings-neoforge-1.21.1-0.7.8.jar` |
 | Inventory HUD+ | 3.4.28 | `inventoryhud` | `inventoryhud.neoforged.1.21.1-3.4.28.jar` |
+| Inventory Profiles Next | 2.2.5 | `inventoryprofilesnext` | `InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar` |
 | InvMove | 0.9.3 | `invmove` | `InvMove-0.9.3+1.21.1-NeoForge.jar` |
 | Iris | 1.8.14-beta.1+mc1.21.1 | `iris` | `iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` |
 | Jade | 15.10.5+neoforge | `jade` | `Jade-1.21.1-NeoForge-15.10.5.jar` |
@@ -154,6 +155,7 @@ Active mods: **235**
 | KubeJS Create | 2101.3.1-build.18 | `kubejs_create` | `kubejs-create-neoforge-2101.3.1-build.18.jar` |
 | KubeJS TFC | 2.0.1 | `kubejs_tfc` | `kubejs_tfc-1.21.1-2.0.1.jar` |
 | Let Me Despawn | 1.5.0 | `letmedespawn` | `letmedespawn-1.21.x-neoforge-1.5.0.jar` |
+| libIPN | 6.6.3 | `libipn` | `libIPN-neoforge-1.21.1-6.6.3.jar` |
 | Lithium | 0.15.4+mc1.21.1 | `lithium` | `lithium-neoforge-0.15.4+mc1.21.1.jar` |
 | Lithostitched | 1.7.13 | `lithostitched` | `lithostitched-1.7.13-neoforge-21.1.jar` |
 | LootJS | 1.21.1-3.7.0 | `lootjs` | `lootjs-neoforge-1.21.1-3.7.0.jar` |
@@ -190,6 +192,7 @@ Active mods: **235**
 | Sable Physics Tree | 0.1.0 | `sable_physics_tree` | `sable-physics-tree-0.1.0.jar` |
 | Sable Xaero Bridge | 0.1.11 | `sable_xaero_bridge` | `sable_xaero_bridge-0.1.11.jar` |
 | Searchables | 1.0.2 | `searchables` | `Searchables-neoforge-1.21.1-1.0.2.jar` |
+| Shoulder Surfing Reloaded | 1.21.1-5.0.6 | `shouldersurfing` | `ShoulderSurfing-NeoForge-1.21.1-5.0.6.jar` |
 | ShulkerBoxTooltip | 5.1.9+1.21.1 | `shulkerboxtooltip` | `shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar` |
 | Simple Backups | 1.21-4.0.21 | `simplebackups` | `SimpleBackups-1.21-4.0.21.jar` |
 | Simple Voice Chat | 1.21.1-2.6.20 | `voicechat` | `voicechat-neoforge-1.21.1-2.6.20.jar` |
