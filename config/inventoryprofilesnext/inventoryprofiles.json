@@ -2,8 +2,11 @@
     "ModSettings": {
         "first_run": false
     },
-    "Features": {
-        "enable_lock_slots": {
+    "AutoRefillSettings": {
+        "auto_refill_enable_indicator_icons": {
+            "value": false
+        },
+        "auto_refill_enable_horbar_indicator_icons": {
             "value": false
         }
     }
