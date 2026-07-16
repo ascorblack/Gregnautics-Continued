@@ -32,26 +32,6 @@
                 "min": 8
               },
               "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion: \"minecraft:poison\"}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primitive_creatures:grh",
-          "weight": 80,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
             }
           ]
         },
@@ -121,102 +101,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "tfg:antipoison_pill",
-          "weight": 100,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfg:poison_pill",
-          "weight": 50,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfg:combat_powder",
-          "weight": 80,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfg:recovery_powder",
-          "weight": 80,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfg:acrobat_powder",
-          "weight": 80,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfg:mining_powder",
-          "weight": 80,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:bowl",
           "weight": 40,
           "functions": [
@@ -234,24 +118,12 @@
         {
           "type": "minecraft:item",
           "name": "tfc:volcanic_glass_bottle",
-          "weight": 80,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{fluid:{Amount:400,FluidName:\"minecraft:water\"}}"
-            }
-          ]
+          "weight": 80
         },
         {
           "type": "minecraft:item",
           "name": "tfc:ceramic/jug",
-          "weight": 100,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{fluid:{Amount:100,FluidName:\"minecraft:water\"}}"
-            }
-          ]
+          "weight": 100
         },
         {
           "type": "minecraft:item",

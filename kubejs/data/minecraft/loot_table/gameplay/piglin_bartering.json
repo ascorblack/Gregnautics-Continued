@@ -242,21 +242,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "beneath:ghost_pepper",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 6,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "weight": 100
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:gunpowder",
           "functions": [
             {

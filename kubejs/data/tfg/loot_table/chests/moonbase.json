@@ -7,45 +7,12 @@
         {
           "type": "minecraft:item",
           "name": "gtceu:aluminium_fluid_cell",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Fluid: {Amount: 1000, FluidName: \"gtceu:rocket_fuel\"}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "ad_astra:gas_tank",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{BotariumData: {StoredFluids: [{Amount: 1000, Fluid: \"tfg:compressed_heliox_3\"}]}}"
-            }
-          ]
+          "weight": 30
         },
         {
           "type": "minecraft:item",
           "name": "gtceu:long_aluminium_rod",
           "weight": 50
-        },
-        {
-          "type": "minecraft:item",
-          "name": "createvintageneoforged:aluminum_sheet",
-          "weight": 50,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
         },
         {
           "type": "minecraft:item",
@@ -182,13 +149,7 @@
         {
           "type": "minecraft:item",
           "name": "gtceu:hv_sodium_battery",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Charge: 1200000}"
-            }
-          ]
+          "weight": 20
         },
         {
           "type": "minecraft:item",
@@ -376,11 +337,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "species:music_disc_dial",
-          "weight": 8
-        },
-        {
-          "type": "minecraft:item",
           "name": "gtceu:ruby_gem",
           "weight": 50,
           "functions": [
@@ -470,54 +426,6 @@
                 "type": "minecraft:uniform",
                 "max": 3,
                 "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "ad_astra:desh_ingot",
-          "weight": 30,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "ad_astra:desh_plate",
-          "weight": 30,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "ad_astra:raw_desh",
-          "weight": 30,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 10,
-                "min": 3
               },
               "function": "minecraft:set_count"
             }

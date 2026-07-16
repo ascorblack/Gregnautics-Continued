@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gtceu:poor_raw_certus_quartz"
+          "name": "gtceu:raw_certus_quartz"
         },
         {
           "type": "minecraft:item",
@@ -19,7 +19,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "gtceu:rich_raw_certus_quartz"
+          "name": "gtceu:raw_certus_quartz"
         }
       ],
       "rolls": 3.0

@@ -352,21 +352,6 @@
               "function": "minecraft:set_count"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "chalk:gray_chalk",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:item",
-          "name": "chalk:light_gray_chalk",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:item",
-          "name": "species:music_disc_lapidarian",
-          "weight": 10
         }
       ],
       "rolls": {

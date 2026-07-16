@@ -7,24 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "gtceu:aluminium_fluid_cell",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Fluid: {Amount: 1000, FluidName: \"gtceu:rocket_fuel\"}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "ad_astra:gas_tank",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{BotariumData: {StoredFluids: [{Amount: 1000, Fluid: \"tfg:compressed_nitrox\"}]}}"
-            }
-          ]
+          "weight": 30
         },
         {
           "type": "minecraft:item",
@@ -145,13 +128,7 @@
         {
           "type": "minecraft:item",
           "name": "gtceu:ev_vanadium_battery",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Charge: 1200000}"
-            }
-          ]
+          "weight": 20
         },
         {
           "type": "minecraft:item",
@@ -255,7 +232,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "gtceu:uranium_ingot",
+          "name": "gtceu:uranium_238_ingot",
           "weight": 20,
           "functions": [
             {
@@ -319,12 +296,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "species:music_disk_spawner",
-          "weight": 8
-        },
-        {
-          "type": "minecraft:item",
-          "name": "gtceu:rich_raw_pitchblende",
+          "name": "gtceu:raw_pitchblende",
           "weight": 50,
           "functions": [
             {
@@ -356,7 +328,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "gtceu:poor_raw_pitchblende",
+          "name": "gtceu:raw_pitchblende",
           "weight": 50,
           "functions": [
             {
@@ -372,7 +344,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "gtceu:rich_raw_thorium",
+          "name": "gtceu:raw_thorium",
           "weight": 50,
           "functions": [
             {
@@ -388,7 +360,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "gtceu:poor_raw_thorium",
+          "name": "gtceu:raw_thorium",
           "weight": 50,
           "functions": [
             {

@@ -6,22 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfg:silk_fibers",
-          "weight": 100,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:string",
           "weight": 100,
           "functions": [
@@ -123,21 +107,6 @@
           "weight": 3
         },
         {
-          "type": "minecraft:item",
-          "name": "sns:straw_basket",
-          "weight": 50
-        },
-        {
-          "type": "minecraft:item",
-          "name": "sns:leather_sack",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "sns:burlap_sack",
-          "weight": 15
-        },
-        {
           "type": "minecraft:tag",
           "name": "tfg:medicine/powders",
           "expand": true,
@@ -173,24 +142,12 @@
         {
           "type": "minecraft:item",
           "name": "gtceu:invar_lighter",
-          "weight": 50,
-          "functions": [
-            {
-              "tag": "{Fluid:{Amount:100,FluidName:\"gtceu:propane\"},lighterOpen:0b}",
-              "function": "minecraft:set_nbt"
-            }
-          ]
+          "weight": 50
         },
         {
           "type": "minecraft:item",
           "name": "gtceu:platinum_lighter",
-          "weight": 10,
-          "functions": [
-            {
-              "tag": "{Fluid:{Amount:1000,FluidName:\"gtceu:butane\"},lighterOpen:0b}",
-              "function": "minecraft:set_nbt"
-            }
-          ]
+          "weight": 10
         },
         {
           "type": "minecraft:item",

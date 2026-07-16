@@ -118,22 +118,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primitive_creatures:grh",
-          "weight": 100,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "tfc:wool_yarn",
           "weight": 100,
           "functions": [
@@ -173,21 +157,6 @@
           "type": "minecraft:item",
           "name": "tfc:ceramic/light_gray_glazed_vessel",
           "weight": 50
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primitive_creatures:totem_0",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primitive_creatures:totem_2",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primitive_creatures:totem_3",
-          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -548,21 +517,6 @@
               "function": "minecraft:set_count"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "chalk:gray_chalk",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:item",
-          "name": "chalk:light_gray_chalk",
-          "weight": 70
-        },
-        {
-          "type": "minecraft:item",
-          "name": "species:music_disc_lapidarian",
-          "weight": 10
         }
       ],
       "rolls": {

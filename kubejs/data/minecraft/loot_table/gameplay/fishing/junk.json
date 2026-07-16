@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:plant/water_lily",
+          "name": "tfc:plant/white_water_lily",
           "weight": 17
         },
         {

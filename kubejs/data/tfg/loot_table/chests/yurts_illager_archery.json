@@ -70,10 +70,6 @@
                 "min": 4
               },
               "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion: \"minecraft:poison\"}"
             }
           ]
         },
@@ -90,10 +86,6 @@
                 "min": 4
               },
               "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion: \"minecraft:weakness\"}"
             }
           ]
         },
@@ -110,10 +102,6 @@
                 "min": 3
               },
               "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion: \"minecraft:harming\"}"
             }
           ]
         },

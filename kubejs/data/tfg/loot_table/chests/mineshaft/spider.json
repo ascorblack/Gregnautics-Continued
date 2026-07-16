@@ -6,22 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfg:silk_fibers",
-          "weight": 100,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:string",
           "weight": 100,
           "functions": [
@@ -118,26 +102,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "sns:straw_basket",
-          "weight": 50
-        },
-        {
-          "type": "minecraft:item",
-          "name": "sns:leather_sack",
-          "weight": 15
-        },
-        {
-          "type": "minecraft:item",
-          "name": "sns:burlap_sack",
-          "weight": 25
-        },
-        {
-          "type": "minecraft:item",
-          "name": "sns:ore_sack",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:rib_armor_trim_smithing_template",
           "weight": 10
         },
@@ -155,22 +119,6 @@
           "type": "minecraft:item",
           "name": "minecraft:tide_armor_trim_smithing_template",
           "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfg:antipoison_pill",
-          "weight": 100,
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 2
-              },
-              "function": "minecraft:set_count"
-            }
-          ]
         },
         {
           "type": "minecraft:tag",
@@ -192,46 +140,22 @@
         {
           "type": "minecraft:item",
           "name": "tfc:olivine_glass_bottle",
-          "weight": 80,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{fluid:{Amount:400,FluidName:\"minecraft:water\"}}"
-            }
-          ]
+          "weight": 80
         },
         {
           "type": "minecraft:item",
           "name": "tfc:silica_glass_bottle",
-          "weight": 80,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{fluid:{Amount:400,FluidName:\"tfg:muddy_water\"}}"
-            }
-          ]
+          "weight": 80
         },
         {
           "type": "minecraft:item",
           "name": "tfc:hematitic_glass_bottle",
-          "weight": 60,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{fluid:{Amount:400,FluidName:\"gtceu:seed_oil\"}}"
-            }
-          ]
+          "weight": 60
         },
         {
           "type": "minecraft:item",
           "name": "tfc:ceramic/jug",
-          "weight": 100,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{fluid:{Amount:100,FluidName:\"tfg:muddy_water\"}}"
-            }
-          ]
+          "weight": 100
         },
         {
           "type": "minecraft:item",
@@ -252,24 +176,12 @@
         {
           "type": "minecraft:item",
           "name": "gtceu:invar_lighter",
-          "weight": 50,
-          "functions": [
-            {
-              "tag": "{Fluid:{Amount:100,FluidName:\"gtceu:propane\"},lighterOpen:0b}",
-              "function": "minecraft:set_nbt"
-            }
-          ]
+          "weight": 50
         },
         {
           "type": "minecraft:item",
           "name": "gtceu:platinum_lighter",
-          "weight": 10,
-          "functions": [
-            {
-              "tag": "{Fluid:{Amount:1000,FluidName:\"gtceu:butane\"},lighterOpen:0b}",
-              "function": "minecraft:set_nbt"
-            }
-          ]
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -516,21 +428,6 @@
               "function": "minecraft:set_count"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "gtceu:copper_pickaxe",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0.3,
-                "max": 0.5
-              }
-            }
-          ],
-          "weight": 90
         }
       ],
       "rolls": {
