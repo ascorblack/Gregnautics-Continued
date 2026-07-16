@@ -38,38 +38,16 @@ StartupEvents.registry('fluid', event => {
 		}
 	});
 
-	// [PORT-FIX] Пищевые жидкости TFG (в оригинале — GT-материалы из materials.food.js:
-	// rich_stock/light_stock/brown_gravy/cultured_milk/peanut_oil). В GTM8-SNAPSHOT b71dec5
-	// .liquid() у KubeJS-материалов с namespace tfg: НЕ регистрирует flюid (в реестре нет
-	// ни tfg:*, ни gtceu:*-варианта — рецепты падали с "Fluid with ID tfg:cultured_milk
-	// does not exist"). Регистрируем напрямую через KubeJS до фикса апстрима
-	// (при переходе на патченный GTM jar с рабочими материальными жидкостями — УБРАТЬ,
-	// иначе будет дубль id). Цвета подобраны — [PORT-CHECK].
-	/**
-	 * Food fluid registration helper (аналог createAlcohol).
-	 * @param {string} id Fluid ID, example: "tfg:rich_stock"
-	 * @param {number} color Tint color, example: 0xB98C4A
-	 * @param {number} temperature Temperature in K
-	 */
-	function createFoodFluid(id, color, temperature) {
-		event.create(id, 'thin')
-			.tint(color)
-			.noBlock()
-			.type(t => t.temperature(temperature));
-	};
-
-	createFoodFluid('tfg:rich_stock', 0xB98C4A, 360);
-	createFoodFluid('tfg:light_stock', 0xE0C68C, 360);
-	createFoodFluid('tfg:brown_gravy', 0x6B4A2B, 360);
-	createFoodFluid('tfg:cultured_milk', 0xF2EFE6, 300);
-	createFoodFluid('tfg:peanut_oil', 0xE0B75E, 300);
+	// [PORT-Ф2-DONE 2026-07-16] Пищевые жидкости (rich_stock/light_stock/brown_gravy/
+	// cultured_milk/peanut_oil) БОЛЬШЕ ЗДЕСЬ НЕ РЕГИСТРИРУЮТСЯ: их даёт патченный GTM
+	// из GT-материалов с .liquid() (tfg.materials.food.js). Прямая регистрация была
+	// воркэраундом для GTM8-SNAPSHOT b71dec5 и после перехода на патченный jar стала
+	// ДУБЛЁМ id: клиент (235 модов) и сервер (205) резолвили дубль в разном порядке ->
+	// у клиента 8 жидкостей+вёдер не регистрировались -> при синхронизации реестров
+	// появлялись null-дыры -> TFC (for (Item item : BuiltInRegistries.ITEM)) падал в
+	// RecipesUpdatedEvent -> JEI не стартовал -> краш при открытии инвентаря.
 });
 
-// [PORT-Ф2-TEMP] Каучуковая ветка: GT-материалы latex/conifer_pitch/vulcanized_latex не регистрируют
-// жидкости (диспетчер Ф2 отключён) — временные прямые регистрации, УДАЛИТЬ с патченным GTM.
-StartupEvents.registry('fluid', event => {
-	console.info('[Gregnautics] progress: tfg_port rubber fluids registry start');
-	event.create('tfg:latex', 'thin').tint(0xF5F1E0).noBlock();
-	event.create('tfg:conifer_pitch', 'thin').tint(0x6B4F2A).noBlock();
-	event.create('tfg:vulcanized_latex', 'thin').tint(0x3B3B3B).noBlock();
-});
+// [PORT-Ф2-DONE 2026-07-16] Каучуковая ветка (latex/conifer_pitch/vulcanized_latex)
+// тоже убрана: GT-материалы в tfg.materials.primitive.js объявлены с .liquid(),
+// патченный GTM регистрирует эти жидкости сам. См. комментарий выше про дубль id.
