@@ -1,0 +1,111 @@
+#!/bin/bash
+# Управление сервером Gregnautics Continued.
+#   mc start | stop | restart | status | console | exec "<команда>" | log [N] | errors [N]
+set -u
+
+SVC=gregnautics
+DIR=/home/dev/minecraft-server
+LOG="$DIR/logs/latest.log"
+
+# Enter для screen — это именно ^M. НЕ использовать $(printf \r): подставится буква "r".
+CR='^M'
+
+strip_prefix() { sed -E 's/^\[[^]]*\] \[[^]]*\] \[[^]]*\]: //'; }
+
+wait_ready() {
+	local n=${1:-48}
+	for _ in $(seq 1 "$n"); do
+		if grep -q "Done (" "$LOG" 2>/dev/null; then
+			echo "готов: $(grep -oE 'Done \([0-9.]+s\)' "$LOG" | tail -1)"
+			return 0
+		fi
+		sleep 5
+	done
+	echo "!! за $((n * 5)) c не увидел «Done» — смотри: mc log"
+	return 1
+}
+
+running() { screen -list 2>/dev/null | grep -q '\.mc'; }
+
+do_exec() {
+	local cmd="$*"
+	running || { echo "сервер не запущен"; return 1; }
+	local before
+	before=$(wc -l < "$LOG" 2>/dev/null || echo 0)
+	screen -S mc -X stuff "${cmd}${CR}"
+	sleep 1
+	tail -n "+$((before + 1))" "$LOG" 2>/dev/null | strip_prefix
+}
+
+case "${1:-}" in
+start)
+	running && { echo "уже запущен"; exit 0; }
+	sudo systemctl start "$SVC" && echo "запускаю..." && sleep 5 && wait_ready
+	;;
+stop)
+	running || { echo "уже остановлен"; exit 0; }
+	echo "останавливаю (мир сохраняется)..."
+	sudo systemctl stop "$SVC" && echo "остановлен"
+	;;
+restart)
+	echo "перезапуск..."
+	sudo systemctl restart "$SVC" && sleep 5 && wait_ready
+	;;
+status)
+	if systemctl is-active --quiet "$SVC"; then echo "статус: РАБОТАЕТ"; else echo "статус: остановлен"; exit 1; fi
+	echo "автозапуск: $(systemctl is-enabled "$SVC" 2>/dev/null)"
+	pid=$(pgrep -f user_jvm_args | head -1)
+	if [ -n "${pid:-}" ]; then
+		rss=$(awk '/VmRSS/{printf "%.1f ГБ", $2/1048576}' "/proc/$pid/status" 2>/dev/null)
+		echo "PID=$pid | память=$rss | аптайм=$(ps -o etime= -p "$pid" | tr -d ' ')"
+	fi
+	do_exec list | tail -1
+	;;
+console)
+	running || { echo "сервер не запущен"; exit 1; }
+	echo "Живая консоль. Выход: Ctrl+A затем D."
+	echo "НЕ нажимай Ctrl+C — это остановит сервер."
+	sleep 2
+	screen -r mc
+	;;
+exec)
+	shift
+	[ $# -eq 0 ] && { echo 'нужна команда, напр.: mc exec "say привет"'; exit 1; }
+	do_exec "$@"
+	;;
+log)
+	tail -n "${2:-60}" "$LOG" | strip_prefix
+	;;
+errors)
+	echo "=== значимые ошибки (штатный шум отфильтрован) ==="
+	grep -aE '/(ERROR|FATAL)\]' "$LOG" 2>/dev/null \
+		| grep -avE 'RuntimeDistCleaner|invalid dist DEDICATED_SERVER|Mixin apply for mod|\[mixin/\]' \
+		| strip_prefix | tail -n "${2:-40}"
+	total=$(grep -acE '/(ERROR|FATAL)\]' "$LOG" 2>/dev/null || echo 0)
+	noise=$(grep -acE 'RuntimeDistCleaner|Mixin apply for mod' "$LOG" 2>/dev/null || echo 0)
+	echo "--- всего ERROR/FATAL: $total, из них штатного шума: $noise"
+	;;
+*)
+	cat <<'USAGE'
+Gregnautics Continued — управление сервером
+
+  mc start             запустить
+  mc stop              остановить (мир сохраняется)
+  mc restart           перезапустить
+  mc status            статус, память, аптайм, игроки онлайн
+  mc console           живая консоль (выход: Ctrl+A, затем D)
+  mc exec "<команда>"  выполнить команду сервера и показать ответ
+  mc log [N]           последние N строк лога (по умолчанию 60)
+  mc errors [N]        только значимые ошибки, без штатного шума
+
+Примеры:
+  mc exec list
+  mc exec "say всем привет"
+  mc exec "op Scorpis"
+  mc exec "chunky radius 3000"
+  mc exec "chunky start"
+USAGE
+	[ -n "${1:-}" ] && exit 1
+	exit 0
+	;;
+esac
