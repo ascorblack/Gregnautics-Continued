@@ -30,10 +30,17 @@ global.TFG_parseItem = function (s) {
 /** Тихая проверка существования предмета. Теги ('#...') считаются существующими. */
 global.TFG_itemExists = function (s) {
 	try {
-		const id = global.TFG_parseItem(s).id;
+		// [PORT-FIX 2026-07-16] ТОЛЬКО let, не const! `const` внутри try Rhino роняет с
+		// "InternalError: TypeError: redeclaration of var id", а catch ниже это глотал =>
+		// функция возвращала false НА ВСЁ (даже minecraft:apple) => вся еда TFG теряла
+		// данные TFC и была несъедобна. См. HANDOFF, раздел про const-в-try.
+		let id = global.TFG_parseItem(s).id;
 		if (id.startsWith('#')) return true;
 		return $FoodBuiltInRegistries.ITEM.containsKey($FoodResourceLocation.parse(id));
 	} catch (e) {
+		// Отсутствующий предмет сюда НЕ попадает (containsKey просто вернёт false),
+		// поэтому любое исключение здесь — реальный баг. Молчать нельзя.
+		console.warn(`[Gregnautics] TFG_itemExists('${s}') упал: ${e}`);
 		return false;
 	}
 };
@@ -41,10 +48,12 @@ global.TFG_itemExists = function (s) {
 /** Тихая проверка существования жидкости ('ns:fluid' или 'ns:fluid 100'). Теги считаются существующими. */
 global.TFG_fluidExists = function (s) {
 	try {
-		const id = String(s).trim().split(/\s+/)[0];
+		// [PORT-FIX 2026-07-16] ТОЛЬКО let, не const (см. TFG_itemExists выше).
+		let id = String(s).trim().split(/\s+/)[0];
 		if (id.startsWith('#')) return true;
 		return $FoodBuiltInRegistries.FLUID.containsKey($FoodResourceLocation.parse(id));
 	} catch (e) {
+		console.warn(`[Gregnautics] TFG_fluidExists('${s}') упал: ${e}`);
 		return false;
 	}
 };

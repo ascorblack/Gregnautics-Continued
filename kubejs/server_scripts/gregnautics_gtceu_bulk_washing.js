@@ -328,7 +328,7 @@ const gregnauticsGtceuMaterial = materialName => {
 	}
 
 	try {
-		const material = GTMaterials.get(materialName);
+		let material = GTMaterials.get(materialName);
 		if (material !== null && material !== undefined) {
 			return material;
 		}
@@ -337,7 +337,7 @@ const gregnauticsGtceuMaterial = materialName => {
 
 	const fieldName = GREGNAUTICS_GTCEU_MATERIAL_FIELD_OVERRIDES[materialName] || gregnauticsGtceuPascalCase(materialName);
 	try {
-		const material = GTMaterials[fieldName];
+		let material = GTMaterials[fieldName];
 		return material === undefined ? null : material;
 	} catch (ignored) {
 		return null;
@@ -350,7 +350,7 @@ const gregnauticsGtceuByproductDust = (materialName, index) => {
 	}
 
 	try {
-		const material = gregnauticsGtceuMaterial(materialName);
+		let material = gregnauticsGtceuMaterial(materialName);
 		if (material === null || material === undefined || !material.hasProperty(PropertyKey.ORE)) {
 			return gregnauticsGtceuFallbackByproductDust(materialName, index);
 		}

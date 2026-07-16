@@ -25,24 +25,24 @@ TFCEvents.data(event => {
 function registerTFCHeats(event) {
 
 	// Ведро из синей стали
-	event.heat({ ingredient: 'tfc:metal/bucket/blue_steel', heat_capacity: 1.429, forging_temperature: 924, welding_temperature: 1232 })
+	event.heat({ ingredient: 'tfc:metal/bucket/blue_steel', heatCapacity: 1.429, forgingTemperature: 924, weldingTemperature: 1232 })
 
 	// Ведро из красной
-	event.heat({ ingredient: 'tfc:metal/bucket/red_steel', heat_capacity: 1.429, forging_temperature: 924, welding_temperature: 1232 })
+	event.heat({ ingredient: 'tfc:metal/bucket/red_steel', heatCapacity: 1.429, forgingTemperature: 924, weldingTemperature: 1232 })
 
 	// Seaweed and Kelp
-	event.heat({ ingredient: 'tfc:groundcover/seaweed', heat_capacity: 1.0 })
-	event.heat({ ingredient: 'tfc:plant/leafy_kelp', heat_capacity: 1.0 })
-	event.heat({ ingredient: 'tfc:plant/winged_kelp', heat_capacity: 1.0 })
+	event.heat({ ingredient: 'tfc:groundcover/seaweed', heatCapacity: 1.0 })
+	event.heat({ ingredient: 'tfc:plant/leafy_kelp', heatCapacity: 1.0 })
+	event.heat({ ingredient: 'tfc:plant/winged_kelp', heatCapacity: 1.0 })
 
 	// Baked Potato
-	event.heat({ ingredient: 'tfc:food/baked_potato', heat_capacity: 1.0 })
+	event.heat({ ingredient: 'tfc:food/baked_potato', heatCapacity: 1.0 })
 
 	// Soybean
-	event.heat({ ingredient: 'tfc:food/soybean', heat_capacity: 1.0 })
+	event.heat({ ingredient: 'tfc:food/soybean', heatCapacity: 1.0 })
 
 	// [PORT] тег tfc:kaolin_blocks (item) создаётся в tfg_port/tfc.tags.js — в самом TFC 1.21 его нет
-	event.heat({ ingredient: '#tfc:kaolin_blocks', heat_capacity: 3.0 })
+	event.heat({ ingredient: '#tfc:kaolin_blocks', heatCapacity: 3.0 })
 }
 
 
@@ -90,17 +90,17 @@ function registerTFCFuels(event) {
 
 
 function registerTFCLampFuels(event) {
-	event.lampFuel({ fluid: 'gtceu:creosote' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 1000 })
-	event.lampFuel({ fluid: 'gtceu:oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 1000 })
+	event.lampFuel({ fluid: 'gtceu:creosote' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 1000 })
+	event.lampFuel({ fluid: 'gtceu:oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 1000 })
 	// [PORT-FIX] GTM 8.0: oil_light/oil_medium/oil_heavy переименованы в light_oil/raw_oil/heavy_oil
-	event.lampFuel({ fluid: 'gtceu:light_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 1000 })
-	event.lampFuel({ fluid: 'gtceu:raw_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 1000 })
-	event.lampFuel({ fluid: 'gtceu:heavy_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 1000 })
-	event.lampFuel({ fluid: 'gtceu:seed_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 7000 })
-	event.lampFuel({ fluid: 'gtceu:fish_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 7000 })
+	event.lampFuel({ fluid: 'gtceu:light_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 1000 })
+	event.lampFuel({ fluid: 'gtceu:raw_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 1000 })
+	event.lampFuel({ fluid: 'gtceu:heavy_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 1000 })
+	event.lampFuel({ fluid: 'gtceu:seed_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 7000 })
+	event.lampFuel({ fluid: 'gtceu:fish_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 7000 })
 	// [PORT-Ф2] tfg:peanut_oil — флюид кастомного GT-материала TFG (upstream-баг регистрации материалов)
-	// event.lampFuel({ fluid: 'tfg:peanut_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: 7000 })
-	event.lampFuel({ fluid: 'gtceu:glowstone' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burn_rate: -1 })
+	// event.lampFuel({ fluid: 'tfg:peanut_oil' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: 7000 })
+	event.lampFuel({ fluid: 'gtceu:glowstone' /* [PORT-FIX] FluidIngredient — строкой */, lamps: '#tfc:lamps', burnRate: -1 })
 }
 
 

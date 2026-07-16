@@ -5,5 +5,5 @@
 TFCEvents.data(event => {
 	console.info('[Gregnautics] progress: tfg_port tfcbetterbf data start')
 
-	event.heat({ ingredient: 'tfcbetterbf:insulation', heat_capacity: 8.571 }) // [PORT-FIX] itemHeat -> heat codec form (null temps omitted)
+	event.heat({ ingredient: 'tfcbetterbf:insulation', heatCapacity: 8.571 }) // [PORT-FIX] itemHeat -> heat codec form (null temps omitted)
 })

@@ -29,9 +29,9 @@ const $GtDataBuiltInRegistries = Java.loadClass('net.minecraft.core.registries.B
  * event.heat(
 	{
 		ingredient: Ingredient,
-		heat_capacity: number,
-		forging_temperature: @Nullable number,
-		welding_temperature: @Nullable number
+		heatCapacity: number,
+		forgingTemperature: @Nullable number,
+		weldingTemperature: @Nullable number
 	},
 	id?: string
 	)
@@ -175,9 +175,9 @@ TFCEvents.data(event => {
 		if (!item.isEmpty()) {
 			event.heat({
 				ingredient: item.getId(),
-				heat_capacity: heatCapacity,
-				forging_temperature: forgingTemp,
-				welding_temperature: weldingTemp
+				heatCapacity: heatCapacity,
+				forgingTemperature: forgingTemp,
+				weldingTemperature: weldingTemp
 			}, 'tfg:item_heat/' + matPath + '/' + prefixName)
 		}
 	}
@@ -187,9 +187,9 @@ TFCEvents.data(event => {
 		if (!tool.isEmpty()) {
 			event.heat({
 				ingredient: tool.getId(),
-				heat_capacity: heatCapacity,
-				forging_temperature: forgingTemp,
-				welding_temperature: weldingTemp
+				heatCapacity: heatCapacity,
+				forgingTemperature: forgingTemp,
+				weldingTemperature: weldingTemp
 			}, 'tfg:item_heat/' + matPath + '/tool/' + toolName)
 		}
 	}
@@ -213,7 +213,7 @@ TFCEvents.data(event => {
 		}
 	}
 
-	event.heat({ ingredient: 'gtceu:compressed_coke_clay', heat_capacity: 0.1242 }, 'tfg:item_heat/gtceu/compressed_coke_clay') // [PORT-FIX] itemHeat -> heat, null-температуры опущены
+	event.heat({ ingredient: 'gtceu:compressed_coke_clay', heatCapacity: 0.1242 }, 'tfg:item_heat/gtceu/compressed_coke_clay') // [PORT-FIX] itemHeat -> heat, null-температуры опущены
 
 	/***********************************************************************************************************
 	*
@@ -272,8 +272,8 @@ TFCEvents.data(event => {
 		let fluidId = $GtDataBuiltInRegistries.FLUID.getKey(fluid).toString()
 		event.fluidHeat({
 			fluid: fluidId,
-			melt_temperature: m[1],
-			specific_heat_capacity: m[2]
+			meltTemperature: m[1],
+			specificHeatCapacity: m[2]
 		}, 'tfg:metal/' + m[3])
 	}
 })

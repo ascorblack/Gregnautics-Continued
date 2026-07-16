@@ -40,31 +40,31 @@ function tfgDataBlock(id) {
 
 /** @param {Internal.KubeTFCDataEvent} event */
 function registerTFGHeatData(event) {
-	event.heat({ ingredient: 'tfg:latex_soaked_gloves', heat_capacity: 1 });
+	event.heat({ ingredient: 'tfg:latex_soaked_gloves', heatCapacity: 1 });
 
 	global.MINECRAFT_DYE_NAMES.forEach((color) => {
-		event.heat({ ingredient: `tfg:decorative_vase/unfired/${color}`, heat_capacity: 1 });
+		event.heat({ ingredient: `tfg:decorative_vase/unfired/${color}`, heatCapacity: 1 });
 	});
-	event.heat({ ingredient: 'tfg:decorative_vase/unfired', heat_capacity: 1 });
+	event.heat({ ingredient: 'tfg:decorative_vase/unfired', heatCapacity: 1 });
 
-	event.heat({ ingredient: 'tfc:powder/native_copper', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/native_silver', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/native_gold', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/hematite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/cassiterite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/bismuthinite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/garnierite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/malachite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/magnetite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/limonite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/sphalerite', heat_capacity: 1 });
-	event.heat({ ingredient: 'tfc:powder/tetrahedrite', heat_capacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/native_copper', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/native_silver', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/native_gold', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/hematite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/cassiterite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/bismuthinite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/garnierite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/malachite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/magnetite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/limonite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/sphalerite', heatCapacity: 1 });
+	event.heat({ ingredient: 'tfc:powder/tetrahedrite', heatCapacity: 1 });
 
-	event.heat({ ingredient: 'tfg:unfired_rod_mold', heat_capacity: 1.0 });
-	event.heat({ ingredient: 'tfg:unfired_spindle_head_mold', heat_capacity: 1.0 });
-	event.heat({ ingredient: 'tfg:unfired_small_gear_mold', heat_capacity: 1.0 });
-	event.heat({ ingredient: 'tfg:unfired_nugget_mold', heat_capacity: 1.0 });
-	event.heat({ ingredient: 'tfg:unfired_lamp_mold', heat_capacity: 1.0 });
+	event.heat({ ingredient: 'tfg:unfired_rod_mold', heatCapacity: 1.0 });
+	event.heat({ ingredient: 'tfg:unfired_spindle_head_mold', heatCapacity: 1.0 });
+	event.heat({ ingredient: 'tfg:unfired_small_gear_mold', heatCapacity: 1.0 });
+	event.heat({ ingredient: 'tfg:unfired_nugget_mold', heatCapacity: 1.0 });
+	event.heat({ ingredient: 'tfg:unfired_lamp_mold', heatCapacity: 1.0 });
 
 	// [PORT] betterend отсутствует в сборке 1.21.1 — нагрев charnia_* вырезан
 	// event.itemHeat('betterend:charnia_orange', 0.25, ...) и т.д.

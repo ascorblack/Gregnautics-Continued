@@ -166,7 +166,7 @@ function gregnauticsIronCleanupMaterial(materialName) {
 
 	const fieldName = GREGNAUTICS_GTCEU_IRON_BYPRODUCT_MATERIAL_FIELDS[materialName] || gregnauticsIronCleanupPascalCase(materialName);
 	try {
-		const fieldMaterial = GTMaterials[fieldName];
+		let fieldMaterial = GTMaterials[fieldName];
 		if (fieldMaterial !== null && fieldMaterial !== undefined) {
 			return fieldMaterial;
 		}
@@ -174,7 +174,7 @@ function gregnauticsIronCleanupMaterial(materialName) {
 	}
 
 	try {
-		const material = GTMaterials.get(materialName);
+		let material = GTMaterials.get(materialName);
 		return material === undefined ? null : material;
 	} catch (ignored) {
 		return null;
@@ -196,7 +196,7 @@ function gregnauticsIronCleanupOreProperty(materialName) {
 
 function gregnauticsIronCleanupByproductMaterialName(materialName, index) {
 	try {
-		const material = gregnauticsIronCleanupMaterial(materialName);
+		let material = gregnauticsIronCleanupMaterial(materialName);
 		const oreProperty = gregnauticsIronCleanupOreProperty(materialName);
 		if (material === null || material === undefined || oreProperty === null || oreProperty === undefined) {
 			return null;
@@ -211,7 +211,7 @@ function gregnauticsIronCleanupByproductMaterialName(materialName, index) {
 
 function gregnauticsIronCleanupByproductMultiplier(materialName) {
 	try {
-		const oreProperty = gregnauticsIronCleanupOreProperty(materialName);
+		let oreProperty = gregnauticsIronCleanupOreProperty(materialName);
 		return oreProperty === null || oreProperty === undefined ? 1 : oreProperty.getByProductMultiplier();
 	} catch (ignored) {
 		return 1;
@@ -238,7 +238,7 @@ function gregnauticsIronCleanupReplacementDust(materialName, index) {
 
 function gregnauticsIronCleanupSeparatedMaterialNames(materialName) {
 	try {
-		const oreProperty = gregnauticsIronCleanupOreProperty(materialName);
+		let oreProperty = gregnauticsIronCleanupOreProperty(materialName);
 		if (oreProperty === null || oreProperty === undefined || oreProperty.getSeparatedInto() === null) {
 			return [];
 		}

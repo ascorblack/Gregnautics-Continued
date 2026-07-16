@@ -8,8 +8,8 @@ TFCEvents.data(event => {
 	console.info('[Gregnautics] progress: tfg_port createaddition data start')
 
 	// [PORT-FIX] kubejs_tfc 2.0: itemHeat(id, cap) -> event.heat({codec-объект}) (HeatDefinition)
-	event.heat({ ingredient: 'createaddition:cake_base', heat_capacity: 1.0 })
-	event.heat({ ingredient: 'createaddition:cake_base_baked', heat_capacity: 1.0 })
+	event.heat({ ingredient: 'createaddition:cake_base', heatCapacity: 1.0 })
+	event.heat({ ingredient: 'createaddition:cake_base_baked', heatCapacity: 1.0 })
 
 	// [PORT-FIX] kubejs_tfc 2.0: foodItem(id, builder) -> event.food({codec-объект}) (FoodDefinition, поля FoodData плоские)
 	event.food({

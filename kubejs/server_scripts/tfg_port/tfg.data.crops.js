@@ -11,13 +11,13 @@ TFCEvents.data(event => {
 		if (crop.genData !== true) return;
 
 		event.climateRange({
-			min_hydration: crop.minHydration,
-			max_hydration: crop.maxHydration,
+			minHydration: crop.minHydration,
+			maxHydration: crop.maxHydration,
 			// [PORT] в TFC 1.21 hydration_wiggle_range — целое (в данных TFG бывает 7.5)
-			hydration_wiggle_range: Math.round(crop.hydrationWiggle),
-			min_temperature: crop.minTemp,
-			max_temperature: crop.maxTemp,
-			temperature_wiggle_range: crop.tempWiggle
+			hydrationWiggleRange: Math.round(crop.hydrationWiggle),
+			minTemperature: crop.minTemp,
+			maxTemperature: crop.maxTemp,
+			temperatureWiggleRange: crop.tempWiggle
 		}, crop.id);
 	});
 });
