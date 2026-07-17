@@ -28,13 +28,20 @@ global.TFGDamageParseCounted = function (s) {
 	return m ? { n: parseInt(m[1]), rest: m[2] } : { n: 1, rest: String(s).trim() };
 };
 
-/** '#tag' / 'ns:item' -> JSON-ингредиент; массив -> массив вариантов; прочее как есть. */
+/** '#tag' / 'ns:item' -> JSON-ингредиент; массив -> варианты; Java ItemStack -> {item: id}. */
 global.TFGDamageIngredientJson = function (s) {
 	if (Array.isArray(s)) return s.map(x => global.TFGDamageIngredientJson(x));
-	if (typeof s !== 'string') return s;
-	let str = String(s).trim();
-	if (str.startsWith('#')) return { tag: str.substring(1) };
-	return { item: str };
+	if (typeof s === 'string') {
+		let str = String(s).trim();
+		if (str.startsWith('#')) return { tag: str.substring(1) };
+		return { item: str };
+	}
+	// [PORT-FIX 2026-07-17] Java ItemStack (напр. ChemicalHelper.get(...)) kubejs
+	// сериализует в {id, count} — это НЕ ингредиент, кодек падает («No key item»),
+	// рецепт выпадает (так сломались 12 рецептов труб tfg:temp/*). Распознаём
+	// ItemStack по методу copy() и берём только id предмета.
+	if (s && typeof s.copy === 'function' && s.id) return { item: String(s.id) };
+	return s;
 };
 
 /** Результат: 'Nx id' -> {id, count}; не-строки как есть. */
@@ -57,9 +64,21 @@ global.TFGDamageShapeless = function (event, result, ingredients) {
 			ings.push(global.TFGDamageIngredientJson(i));
 		}
 	});
+	// [PORT-FIX 2026-07-17] primary_ingredient для shapeless ФАКТИЧЕСКИ ОБЯЗАТЕЛЕН:
+	// кодек TFC помечает его Optional, но AdvancedShapelessRecipe.assemble() делает
+	// Optional.get() -> NoSuchElementException -> крафт молча не собирается
+	// (так сломались лог+пила и все конвертированные shapeless). Берём инструмент
+	// ('#...:tools/...'), иначе первый ингредиент. На урон не влияет — 
+	// getRemainingItems у tfchotornot дамажит все повреждаемые входы сам.
+	let primary = null;
+	ingredients.forEach(i => {
+		if (!primary && typeof i === 'string' && i.trim().startsWith('#') && i.indexOf(':tools/') >= 0) primary = i;
+	});
+	if (primary === null) primary = ingredients[0];
 	return event.custom({
 		type: 'tfchotornot:advanced_damage_inputs_shapeless_crafting',
 		ingredients: ings,
+		primary_ingredient: global.TFGDamageIngredientJson(primary),
 		result: global.TFGDamageResultJson(result)
 	});
 };
