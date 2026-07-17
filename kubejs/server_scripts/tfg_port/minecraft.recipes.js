@@ -484,7 +484,7 @@ ServerEvents.recipes(event => {
 
 	//#region Выход: Тигель, cauldron
 
-	event.shaped('minecraft:cauldron', [
+	global.TFGDamageShaped(event,'minecraft:cauldron', [
 		'ABA',
 		'AAA'
 	], {
@@ -504,7 +504,7 @@ ServerEvents.recipes(event => {
 
 	//#region Выход: Воронка, hopper
 
-	event.shaped('minecraft:hopper', [
+	global.TFGDamageShaped(event,'minecraft:hopper', [
 		'A A',
 		'ABA',
 		'DAE'
@@ -870,13 +870,13 @@ ServerEvents.recipes(event => {
 	// [PORT-FIX] тега tfc:chisels нет в TFC 1.21 — c:tools/chisel.
 	// [PORT-CHECK] калцит бедный/богатый: теги c:poor_raw_materials/calcite и c:rich_raw_materials/calcite пусты
 	// (калцита нет в GREGNAUTICS_TFC_ORE_MATERIALS, у TFC нет градаций калцита) — рецепты отключены:
-	// event.shapeless('1x minecraft:calcite', ['#c:poor_raw_materials/calcite', '#c:tools/chisel'])
+	// global.TFGDamageShapeless(event,'1x minecraft:calcite', ['#c:poor_raw_materials/calcite', '#c:tools/chisel'])
 	// 	.id('tfg:shapeless/calcite_from_poor_raw')
 
-	event.shapeless('2x minecraft:calcite', ['#c:raw_materials/calcite', '#c:tools/chisel'])
+	global.TFGDamageShapeless(event,'2x minecraft:calcite', ['#c:raw_materials/calcite', '#c:tools/chisel'])
 		.id('tfg:shapeless/calcite_from_raw')
 
-	// event.shapeless('4x minecraft:calcite', ['#c:rich_raw_materials/calcite', '#c:tools/chisel'])
+	// global.TFGDamageShapeless(event,'4x minecraft:calcite', ['#c:rich_raw_materials/calcite', '#c:tools/chisel'])
 	// 	.id('tfg:shapeless/calcite_from_rich_raw')
 
 	// #endregion
@@ -918,7 +918,7 @@ ServerEvents.recipes(event => {
 	//#endregion
 
 	//#region Smithing Table
-	event.shaped('minecraft:smithing_table', [
+	global.TFGDamageShaped(event,'minecraft:smithing_table', [
 		'C  ',
 		'BB ',
 		'AA '
@@ -1021,7 +1021,7 @@ ServerEvents.recipes(event => {
 		{ type: 'heavy_weighted', material: '#c:plates/iron' } // [PORT] forge: -> c:; [PORT-Ф4] recycle: GTMaterials.Iron, yield: 2
 	]
 	PRESSURE_PLATES.forEach(x => {
-		event.shaped(`minecraft:${x.type}_pressure_plate`, [
+		global.TFGDamageShaped(event,`minecraft:${x.type}_pressure_plate`, [
 			' B ',
 			'CDC',
 			' E '
@@ -1042,7 +1042,7 @@ ServerEvents.recipes(event => {
 		// [PORT-Ф4] TFGHelpers.registerMaterialInfo(`minecraft:${x.type}_pressure_plate`, [x.recycle, x.yield]) — хелпер мода TFG отсутствует
 	})
 
-	event.shapeless('3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#c:tools/saw']) // [PORT] forge:tools/saws -> c:tools/saw
+	global.TFGDamageShapeless(event,'3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#c:tools/saw']) // [PORT] forge:tools/saws -> c:tools/saw
 		.id(`tfg:shapeless/saw_blackstone_pressure_plate_to_button`)
 
 	// #endregion

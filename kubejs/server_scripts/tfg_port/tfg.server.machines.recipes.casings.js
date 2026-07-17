@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
 		.EUt(16)
 
 	// [PORT-Ф7] tfg:casings/sterling_silver_casing — блок TFG не зарегистрирован
-	// event.shaped('2x tfg:casings/sterling_silver_casing', [
+	// global.TFGDamageShaped(event,'2x tfg:casings/sterling_silver_casing', [
 	// 	'ABA',
 	// 	'ACA',
 	// 	'ADA'
@@ -242,7 +242,7 @@ ServerEvents.recipes(event => {
 	// Vacuum Intake
 	// [PORT-Ф7] tfg:casings/machine_casing_vacuum_engine_intake не зарегистрирован;
 	// [PORT-Ф2] роторов ultimet нет (TFG-флаг)
-	// event.shaped('tfg:casings/machine_casing_vacuum_engine_intake', [
+	// global.TFGDamageShaped(event,'tfg:casings/machine_casing_vacuum_engine_intake', [
 	// 	'USU',
 	// 	'WZW',
 	// 	'UTU'

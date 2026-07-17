@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
 //		['4x #c:nuggets/lead', '#c:plates/paper', '#c:dusts/gunpowder']
 //	).id('tfg_tacz:lead_shot');
 	
-//	event.shaped(Item.of('tacz:ammo', 4,'{AmmoId:"tacz:45_70"}'), [
+//	global.TFGDamageShaped(event,Item.of('tacz:ammo', 4,'{AmmoId:"tacz:45_70"}'), [
 //		'ABA',
 //		'ACA',
 //		'DEF'

@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
 		A: "copycats:copycat_board"
 	}).id("tfg:copycat_box")
 
-	event.shaped('copycats:copycat_fluid_pipe', [
+	global.TFGDamageShaped(event,'copycats:copycat_fluid_pipe', [
 		'BAB'
 	], {
 		A: '#c:tools/hammer', // [PORT] forge:tools/hammers -> c:tools/hammer

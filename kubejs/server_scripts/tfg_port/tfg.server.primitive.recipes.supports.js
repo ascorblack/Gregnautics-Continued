@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
 	// [PORT-FIX] damage_inputs_shaped_crafting удалён в kubejs_tfc 2.0 — обычный shaped
-	event.shaped('6x tfg:light_concrete_support', [
+	global.TFGDamageShaped(event,'6x tfg:light_concrete_support', [
 		'AB ',
 		'AC ',
 		'AC '
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	// [PORT-FIX] damage_inputs_shaped_crafting удалён — обычный shaped
-	event.shaped('6x tfg:dark_concrete_support', [
+	global.TFGDamageShaped(event,'6x tfg:dark_concrete_support', [
 		'AB ',
 		'AC ',
 		'AC '

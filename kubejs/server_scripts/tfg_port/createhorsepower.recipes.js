@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({id: 'createhorsepower:horse_crank' })
 
-	event.shaped('createhorsepower:horse_crank', [
+	global.TFGDamageShaped(event,'createhorsepower:horse_crank', [
 		' A ',
 		'EBD',
 		'CCC'
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 		E: '#c:tools/saw' // [PORT] forge:tools/saws -> c:tools/saw
 	}).id('tfg:shaped/horse_crank_bronze')
 
-	event.shaped('createhorsepower:horse_crank', [
+	global.TFGDamageShaped(event,'createhorsepower:horse_crank', [
 		' A ',
 		'EBD',
 		'CCC'
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 		E: '#c:tools/saw' // [PORT] forge:tools/saws -> c:tools/saw
 	}).id('tfg:shaped/horse_crank_bismuth_bronze')
 
-	event.shaped('createhorsepower:horse_crank', [
+	global.TFGDamageShaped(event,'createhorsepower:horse_crank', [
 		' A ',
 		'EBD',
 		'CCC'

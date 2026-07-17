@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
 
 	// For some reason, replaceInput isn't working on these
 	event.remove({ id: 'waterflasks:crafting/iron_flask' })
-	event.shaped('waterflasks:iron_flask', [
+	global.TFGDamageShaped(event,'waterflasks:iron_flask', [
 		' AB',
 		'CDC',
 		'EFE'
@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-Ф4] tfg:phantom_silk отсутствует (предмет tfg появится в фазе 4); remove тоже закомментирован, чтобы не оставить фласку без рецепта
 	// event.remove({ id: 'waterflasks:crafting/red_steel_flask' })
-	// event.shaped('waterflasks:red_steel_flask', [
+	// global.TFGDamageShaped(event,'waterflasks:red_steel_flask', [
 	// 	' AB',
 	// 	'CDC',
 	// 	'EFE'
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
 	// }).id('tfg:shaped/red_steel_flask_bladder')
 
 	// [PORT-Ф4] tfg:phantom_silk отсутствует (предмет tfg появится в фазе 4)
-	// event.shaped('waterflasks:red_steel_flask', [
+	// global.TFGDamageShaped(event,'waterflasks:red_steel_flask', [
 	// 	' AB',
 	// 	'CDC',
 	// 	'DFD'

@@ -12,7 +12,7 @@
 ServerEvents.recipes(event => {
 	console.info('[Gregnautics] progress: tfg_port tfg.server.primitive.recipes.arrows start')
 
-	event.shaped('tfg:unstrung_bow', [
+	global.TFGDamageShaped(event,'tfg:unstrung_bow', [
 		'AA',
 		'AB'
 	], {
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 		B: '#c:strings' // [PORT] forge:string -> c:strings
 	}).id('tfg:shaped/bow')
 
-	event.shapeless('4x minecraft:stick', ['tfc:tree_roots', '#c:tools/knife'])
+	global.TFGDamageShapeless(event,'4x minecraft:stick', ['tfc:tree_roots', '#c:tools/knife'])
 		.id('tfg:shapeless/roots_to_stick')
 
 	// Arrow Parts
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-FIX] damage_inputs_shapeless_crafting удалён в kubejs_tfc 2.0 —
 	// в TFC 1.21 урон инструментов в крафте идёт через crafting remainder автоматически.
-	event.shapeless('4x tfg:fletching', [
+	global.TFGDamageShapeless(event,'4x tfg:fletching', [
 		'minecraft:feather',
 		'#c:tools/knife'
 	]).id('tfg:shapeless/fletching')
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 
 	// Wraptor feathers
 	// [PORT-Ф4-TODO] tfg:wraptor_wool не зарегистрирован в 1.21.1 (Ф4 wraptor-контент)
-	// event.shapeless('4x tfg:fletching', [
+	// global.TFGDamageShapeless(event,'4x tfg:fletching', [
 	// 	'tfg:wraptor_wool',
 	// 	'#c:tools/knife'
 	// ]).id('tfg:shapeless/wraptor_feather_fletching')
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
 
 	// Glider feathers
 	// [PORT] wan_ancient_beasts отсутствует в 1.21.1
-	// event.shapeless('4x tfg:fletching', ['wan_ancient_beasts:glider_feather', '#c:tools/knife'])
+	// global.TFGDamageShapeless(event,'4x tfg:fletching', ['wan_ancient_beasts:glider_feather', '#c:tools/knife'])
 	// 	.id('tfg:shapeless/glider_feather_fletching')
 	//
 	// event.recipes.gtceu.assembler('tfg:assembler/glider_feather_fletching')

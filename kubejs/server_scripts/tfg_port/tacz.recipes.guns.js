@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 
 	
 //	//Region flintlock era
-//	event.shaped(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ulv_guns:flintlock",HasBulletInBarrel:1b}'), [
+//	global.TFGDamageShaped(event,Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ulv_guns:flintlock",HasBulletInBarrel:1b}'), [
 //		'ABC',
 //		' DD',
 //		'EFG'
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 		
 //	}).id('tfg_tacz:flintlock_pistol');
 //	/* NYI
-//	event.shaped(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ulv_guns:blunderbuss",HasBulletInBarrel:1b}'), [
+//	global.TFGDamageShaped(event,Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"ulv_guns:blunderbuss",HasBulletInBarrel:1b}'), [
 //		'ABC',
 //		'DDD',
 //		'EFG'
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
 		
 //	}).id('tacz:blunderbuss_shotgun');
 //	*/
-//	event.shaped(Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:springfield1873",HasBulletInBarrel:1b}'), [
+//	global.TFGDamageShaped(event,Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"tacz:springfield1873",HasBulletInBarrel:1b}'), [
 //		'ABC',
 //		'DDD',
 //		'EFG'

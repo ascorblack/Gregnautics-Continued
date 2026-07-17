@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.shapeless('4x firmalife:ice_shavings', ['#c:dusts/ice', '#c:tools/hammer']) // [PORT] tools/hammers -> tools/hammer
+	global.TFGDamageShapeless(event,'4x firmalife:ice_shavings', ['#c:dusts/ice', '#c:tools/hammer']) // [PORT] tools/hammers -> tools/hammer
 
 	// [PORT-Ф4-TODO] tfg:dry_ice не зарегистрирован в 1.21.1
 	// event.recipes.gtceu.mixer('tfg:ice_slush_from_dry_ice')
@@ -127,6 +127,6 @@ ServerEvents.recipes(event => {
 	event.shapeless('8x minecraft:snowball', ['minecraft:snow_block'])
 		.id('tfg:shapeless/snowball')
 
-	event.shapeless('8x minecraft:snow', ['minecraft:snow_block', '#c:tools/saw']) // [PORT] tools/saws -> tools/saw
+	global.TFGDamageShapeless(event,'8x minecraft:snow', ['minecraft:snow_block', '#c:tools/saw']) // [PORT] tools/saws -> tools/saw
 		.id('tfg:shapeless/snow')
 })

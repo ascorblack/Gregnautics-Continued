@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 	//Mechanisms
 	// [PORT-Ф4] tfg:flintlock_mechanism ещё не существует (фаза 4) — оба рецепта закомментированы
 	// (теги forge: уже переименованы в c: для будущего раскомментирования)
-	//event.shaped('tfg:flintlock_mechanism', [
+	//global.TFGDamageShaped(event,'tfg:flintlock_mechanism', [
 	//	'ABC',
 	//	'DEF',
 	//	'GHI'
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
 	//	I: '#c:tools/hammer' // [PORT] forge:tools/hammers -> c:tools/hammer
 	//}).id('tfg:shaped/flintlock_mechanism_iron');
 
-	//event.shaped('tfg:flintlock_mechanism', [
+	//global.TFGDamageShaped(event,'tfg:flintlock_mechanism', [
 	//	'ABC',
 	//	'DEF',
 	//	'GHI'

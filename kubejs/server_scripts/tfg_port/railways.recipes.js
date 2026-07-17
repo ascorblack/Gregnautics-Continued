@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 	// [PORT] registerRailwaysLocometalRecipes(event) — перенесено в railways.recipes.locometal.js (изолированные скоупы KubeJS 7)
 
 	// Семафор
-	event.shaped('railways:semaphore', [
+	global.TFGDamageShaped(event,'railways:semaphore', [
 		' A ',
 		'BCD',
 		'EAE'
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 		'screwlink_coupler'
 	]
 
-	event.shapeless('railways:link_and_pin', [
+	global.TFGDamageShapeless(event,'railways:link_and_pin', [
 		'minecraft:tripwire_hook',
 		'#c:plates/steel', // [PORT] forge: -> c:
 		'#c:screws/steel', // [PORT] forge: -> c:
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
 			.addMaterialInfo(true)
 	})
 
-	event.shapeless(`railways:small_buffer`, [
+	global.TFGDamageShapeless(event,`railways:small_buffer`, [
 		`#railways:deco_couplers`,
 		`#c:ingots/steel`, // [PORT] forge: -> c:
 		`#c:tools/hammer` // [PORT] forge:tools/hammers -> c:tools/hammer
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
 		.EUt(28)
 		.addMaterialInfo(true)
 
-	event.shapeless(`railways:big_buffer`, [
+	global.TFGDamageShapeless(event,`railways:big_buffer`, [
 		`railways:small_buffer`,
 		`#c:ingots/steel`, // [PORT] forge: -> c:
 		`#c:tools/hammer` // [PORT] forge:tools/hammers -> c:tools/hammer
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
 		.EUt(28)
 		.addMaterialInfo(true)
 
-	event.shaped('railways:buffer', [
+	global.TFGDamageShaped(event,'railways:buffer', [
 		'BAB',
 		'AAA',
 		'ACA'
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
 		.EUt(28)
 
 	// Переключатель пути поезда из андезита
-	event.shaped('railways:track_switch_andesite', [
+	global.TFGDamageShaped(event,'railways:track_switch_andesite', [
 		'BAB',
 		'CDC',
 		'ECF'
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
 		.EUt(28)
 
 	// Переключатель пути поезда из латуни
-	event.shaped('railways:track_switch_brass', [
+	global.TFGDamageShaped(event,'railways:track_switch_brass', [
 		'BAB',
 		'CDC',
 		'ECF'
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
 		.EUt(28)
 
 	// Свисток кондуктора
-	event.shaped('railways:conductor_whistle', [
+	global.TFGDamageShaped(event,'railways:conductor_whistle', [
 		'ABC'
 	], {
 		A: '#c:plates/brass', // [PORT] forge: -> c:
@@ -321,7 +321,7 @@ ServerEvents.recipes(event => {
 		.EUt(28)
 
 	// Удаленная линза
-	event.shaped('railways:remote_lens', [
+	global.TFGDamageShaped(event,'railways:remote_lens', [
 		'ABC',
 		'DE '
 	], {
@@ -343,7 +343,7 @@ ServerEvents.recipes(event => {
 
 	//#region Smokestacks
 
-	event.shaped('railways:smokestack_caboosestyle', [
+	global.TFGDamageShaped(event,'railways:smokestack_caboosestyle', [
 		'BCB',
 		'DA '
 	], {
@@ -385,7 +385,7 @@ ServerEvents.recipes(event => {
 	]
 
 	SNR_SMOKESTACK_MATERIALS.forEach(mat => {
-		event.shaped(`railways:smokestack_long${mat.base_mat}`, [
+		global.TFGDamageShaped(event,`railways:smokestack_long${mat.base_mat}`, [
 			'C  ',
 			'BAB'
 		], {
@@ -401,7 +401,7 @@ ServerEvents.recipes(event => {
 			.duration(200)
 			.EUt(28)
 
-		event.shaped(`railways:smokestack_coalburner${mat.base_mat}`, [
+		global.TFGDamageShaped(event,`railways:smokestack_coalburner${mat.base_mat}`, [
 			'B B',
 			'BCB',
 			'BAB'
@@ -418,7 +418,7 @@ ServerEvents.recipes(event => {
 			.duration(200)
 			.EUt(28)
 
-		event.shaped(`railways:smokestack_oilburner${mat.base_mat}`, [
+		global.TFGDamageShaped(event,`railways:smokestack_oilburner${mat.base_mat}`, [
 			'BCB',
 			'BAB'
 		], {
@@ -434,7 +434,7 @@ ServerEvents.recipes(event => {
 			.duration(200)
 			.EUt(28)
 
-		event.shaped(`railways:smokestack_streamlined${mat.base_mat}`, [
+		global.TFGDamageShaped(event,`railways:smokestack_streamlined${mat.base_mat}`, [
 			'C  ',
 			'BAB'
 		], {
@@ -450,7 +450,7 @@ ServerEvents.recipes(event => {
 			.duration(200)
 			.EUt(28)
 
-		event.shaped(`railways:smokestack_woodburner${mat.base_mat}`, [
+		global.TFGDamageShaped(event,`railways:smokestack_woodburner${mat.base_mat}`, [
 			' D ',
 			'CBC',
 			'BAB'
@@ -528,7 +528,7 @@ ServerEvents.recipes(event => {
 		.duration(200)
 		.EUt(32)
 
-	event.shaped(`24x railways:track_monorail`, [
+	global.TFGDamageShaped(event,`24x railways:track_monorail`, [
 		'PHP',
 		'BGB'
 	], {
@@ -585,7 +585,7 @@ ServerEvents.recipes(event => {
 			.EUt(16)
 			.circuit(1)
 
-		event.shaped(`16x railways:track_${x.rail}_narrow`, [
+		global.TFGDamageShaped(event,`16x railways:track_${x.rail}_narrow`, [
 			'R R',
 			'MHM',
 			' S '
@@ -613,7 +613,7 @@ ServerEvents.recipes(event => {
 			.EUt(16)
 			.circuit(2)
 
-		event.shaped(`16x railways:track_${x.rail}`, [
+		global.TFGDamageShaped(event,`16x railways:track_${x.rail}`, [
 			'R R',
 			'MHM',
 			'SSS'
@@ -641,7 +641,7 @@ ServerEvents.recipes(event => {
 			.EUt(16)
 			.circuit(3)
 
-		event.shaped(`16x railways:track_${x.rail}_wide`, [
+		global.TFGDamageShaped(event,`16x railways:track_${x.rail}_wide`, [
 			'R R',
 			'MHM',
 			'BSB'
@@ -671,7 +671,7 @@ ServerEvents.recipes(event => {
 		.EUt(16)
 		.circuit(2)
 
-	event.shaped('16x create:track', [
+	global.TFGDamageShaped(event,'16x create:track', [
 		'R R',
 		'MHM',
 		'SSS'
@@ -699,7 +699,7 @@ ServerEvents.recipes(event => {
 		.EUt(16)
 		.circuit(1)
 
-	event.shaped('16x railways:track_create_andesite_narrow', [
+	global.TFGDamageShaped(event,'16x railways:track_create_andesite_narrow', [
 		'R R',
 		'MHM',
 		' S '
@@ -728,7 +728,7 @@ ServerEvents.recipes(event => {
 		.EUt(16)
 		.circuit(3)
 
-	event.shaped('16x railways:track_create_andesite_wide', [
+	global.TFGDamageShaped(event,'16x railways:track_create_andesite_wide', [
 		'R R',
 		'MHM',
 		'BSB'
@@ -766,7 +766,7 @@ ServerEvents.recipes(event => {
 			.EUt(16)
 			.circuit(2)
 
-		event.shaped(`16x railways:track_tfc_${woodType}`, [
+		global.TFGDamageShaped(event,`16x railways:track_tfc_${woodType}`, [
 			'R R',
 			'MHM',
 			'SSS'
@@ -794,7 +794,7 @@ ServerEvents.recipes(event => {
 			.EUt(16)
 			.circuit(1)
 
-		event.shaped(`16x railways:track_tfc_${woodType}_narrow`, [
+		global.TFGDamageShaped(event,`16x railways:track_tfc_${woodType}_narrow`, [
 			'R R',
 			'MHM',
 			' S '
@@ -823,7 +823,7 @@ ServerEvents.recipes(event => {
 			.EUt(16)
 			.circuit(3)
 
-		event.shaped(`16x railways:track_tfc_${woodType}_wide`, [
+		global.TFGDamageShaped(event,`16x railways:track_tfc_${woodType}_wide`, [
 			'R R',
 			'MHM',
 			'BSB'

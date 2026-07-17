@@ -434,7 +434,7 @@ ServerEvents.recipes(event => {
 			B: x[1]
 		}).id(`createdeco:${x[0]}_window`)
 
-		event.shapeless(`2x createdeco:${x[0]}_window_pane`,
+		global.TFGDamageShapeless(event,`2x createdeco:${x[0]}_window_pane`,
 			[
 				`createdeco:${x[0]}_window`,
 				'#c:tools/saw' // [PORT] forge:tools/saws -> c:tools/saw

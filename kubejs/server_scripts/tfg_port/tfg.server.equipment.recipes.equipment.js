@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
 	// }).id('tfg:shaped/snowshoes');
 
 	// [PORT-Ф4-TODO] tfg:flippers не зарегистрирован
-	// event.shaped("tfg:flippers", [
+	// global.TFGDamageShaped(event,"tfg:flippers", [
 	// 	"L L",
 	// 	"LKL",
 	// 	"B B"
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
 	// }).id('tfg:shaped/flippers_rubber');
 
 	// [PORT] firmaciv и sns отсутствуют в сборке 1.21.1
-	// event.shaped("tfg:flippers", [
+	// global.TFGDamageShaped(event,"tfg:flippers", [
 	// 	" K ",
 	// 	"BHB"
 	// ], {
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
 	// }).id('tfg:shaped/flippers_leather');
 
 	// [PORT-Ф4-TODO] tfg:snorkel не зарегистрирован; тег tfg:water_breathing_ingredients нигде не наполняется
-	// event.shaped('tfg:snorkel', [
+	// global.TFGDamageShaped(event,'tfg:snorkel', [
 	// 	'BC ',
 	// 	'BLE',
 	// 	'LGL'

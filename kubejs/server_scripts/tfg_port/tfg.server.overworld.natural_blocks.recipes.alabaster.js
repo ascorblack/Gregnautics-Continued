@@ -16,13 +16,13 @@ ServerEvents.recipes(event => {
 	// [PORT-FIX] TFC 1.21 сам крафтит alabaster_brick из tfc:ore/gypsum — убираем и заменяем GT-сырьём
 	event.remove({ id: 'tfc:crafting/alabaster_brick' })
 
-	event.shapeless('4x tfc:alabaster_brick', ['#c:raw_materials/gypsum', '#c:tools/chisel'])
+	global.TFGDamageShapeless(event,'4x tfc:alabaster_brick', ['#c:raw_materials/gypsum', '#c:tools/chisel'])
 		.id('tfc:crafting/alabaster_brick/raw_gypsum')
 
 	// [PORT-Ф2] forge:poor_raw_materials / rich_raw_materials — теги бедных/богатых руд TFG-модификации материалов (Ф2)
-	// event.shapeless('2x tfc:alabaster_brick', ['#c:poor_raw_materials/gypsum', '#c:tools/chisel'])
+	// global.TFGDamageShapeless(event,'2x tfc:alabaster_brick', ['#c:poor_raw_materials/gypsum', '#c:tools/chisel'])
 	// 	.id('tfc:crafting/alabaster_brick/poor_raw_gypsum')
-	// event.shapeless('6x tfc:alabaster_brick', ['#c:rich_raw_materials/gypsum', '#c:tools/chisel'])
+	// global.TFGDamageShapeless(event,'6x tfc:alabaster_brick', ['#c:rich_raw_materials/gypsum', '#c:tools/chisel'])
 	// 	.id('tfc:crafting/alabaster_brick/rich_raw_gypsum')
 
 	// Alabaster Brick

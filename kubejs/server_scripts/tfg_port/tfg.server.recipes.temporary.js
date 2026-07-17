@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
 	]
 	broken_pipes.forEach(material => {
 		if (material.hasProperty(PropertyKey.FLUID_PIPE)) {
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeTinyFluid, material, 2), [
+			global.TFGDamageShaped(event,ChemicalHelper.get(TagPrefix.pipeTinyFluid, material, 2), [
 				' S ',
 				'HPW'
 			], {
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
 				S: '#c:tools/saw'
 			}).id(`tfg:temp/tiny_fluid_pipe_${material.getName()}`)
 
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeSmallFluid, material, 1), [
+			global.TFGDamageShaped(event,ChemicalHelper.get(TagPrefix.pipeSmallFluid, material, 1), [
 				'WPH'
 			], {
 				P: ChemicalHelper.get(TagPrefix.plate, material, 1),
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
 				W: '#c:tools/wrench'
 			}).id(`tfg:temp/small_fluid_pipe_${material.getName()}`)
 
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeNormalFluid, material, 1), [
+			global.TFGDamageShaped(event,ChemicalHelper.get(TagPrefix.pipeNormalFluid, material, 1), [
 				'PPP',
 				'W H'
 			], {
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
 				W: '#c:tools/wrench'
 			}).id(`tfg:temp/normal_fluid_pipe_${material.getName()}`)
 
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeLargeFluid, material, 1), [
+			global.TFGDamageShaped(event,ChemicalHelper.get(TagPrefix.pipeLargeFluid, material, 1), [
 				'PPP',
 				'W H',
 				'PPP'
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
 			}).id(`tfg:temp/large_fluid_pipe_${material.getName()}`)
 		}
 		else if (material.hasProperty(PropertyKey.ITEM_PIPE)) {
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeSmallItem, material, 1), [
+			global.TFGDamageShaped(event,ChemicalHelper.get(TagPrefix.pipeSmallItem, material, 1), [
 				'WPH'
 			], {
 				P: ChemicalHelper.get(TagPrefix.plate, material, 1),
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 				W: '#c:tools/wrench'
 			}).id(`tfg:temp/small_item_pipe_${material.getName()}`)
 
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeNormalItem, material, 1), [
+			global.TFGDamageShaped(event,ChemicalHelper.get(TagPrefix.pipeNormalItem, material, 1), [
 				'PPP',
 				'W H'
 			], {
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
 				W: '#c:tools/wrench'
 			}).id(`tfg:temp/normal_item_pipe_${material.getName()}`)
 
-			event.shaped(ChemicalHelper.get(TagPrefix.pipeLargeItem, material, 1), [
+			global.TFGDamageShaped(event,ChemicalHelper.get(TagPrefix.pipeLargeItem, material, 1), [
 				'PPP',
 				'W H',
 				'PPP'

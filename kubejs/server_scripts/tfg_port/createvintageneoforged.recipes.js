@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
 		F: '#c:springs/wrought_iron' // [PORT] forge: -> c:
 	}).addMaterialInfo().id('tfg:vi/shaped/curving_press')
 
-	event.shaped('createvintageneoforged:helve_hammer', [
+	global.TFGDamageShaped(event,'createvintageneoforged:helve_hammer', [
 		'F A',
 		'BBE',
 		'C D'

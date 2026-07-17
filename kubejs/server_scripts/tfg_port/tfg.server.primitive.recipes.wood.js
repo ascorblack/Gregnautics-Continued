@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
 	})
 
 	// Empty Wooden Form
-	event.shaped('gtceu:empty_wooden_form', [
+	global.TFGDamageShaped(event,'gtceu:empty_wooden_form', [
 		' AA',
 		'BAA'
 	], {
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 
 	// Wood gears
 	// [PORT-Ф2] gtceu:small_wood_gear не генерируется в GTM8 (у Wood нет small gear) — блок закомментирован
-	// event.shaped('gtceu:small_wood_gear', [
+	// global.TFGDamageShaped(event,'gtceu:small_wood_gear', [
 	// 	'AB ',
 	// 	'BCB',
 	// 	' B '
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
 	// 	C: 'tfc:glue'
 	// }).id('gtceu:shaped/small_gear_wood')
 
-	event.shaped('gtceu:wood_gear', [
+	global.TFGDamageShaped(event,'gtceu:wood_gear', [
 		'AB ',
 		'BCB',
 		' B '

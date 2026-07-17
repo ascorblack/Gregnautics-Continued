@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
 
     event.shaped("gtceu:coal_dust", ["A", "B"], {
         A: "tfc:ore/lignite",
-        B: "#forge:tools/mortars"
+        B: "#c:tools/mortar" // [PORT-FIX 2026-07-17] forge:tools/mortars мёртв в 1.21 — рецепт был нескрафчиваем
     }).id("gregnautics:mortar/lignite");
 
     event.recipes.tfc.quern("gtceu:coal_dust", "tfc:ore/lignite")

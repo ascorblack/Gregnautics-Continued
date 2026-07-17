@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 		event.remove({ id: `minecraft:dye_${dye}_bed` })
 		event.remove({ id: `tfc:crafting/vanilla/color/${dye}_concrete_powder` })
 
-		event.shapeless(`2x minecraft:${dye}_carpet`, [
+		global.TFGDamageShapeless(event,`2x minecraft:${dye}_carpet`, [
 			'#c:tools/saw', // [PORT] tfc:saws -> c:tools/saw
 			`minecraft:${dye}_wool`
 		]).id(`minecraft:${dye}_carpet`)

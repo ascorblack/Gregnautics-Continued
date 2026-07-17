@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 
 	//wood
 	// [PORT-FIX] damage_inputs_shaped_crafting удалён — обычный shaped
-	event.shaped('1x tfg:fishing_net/wood', [
+	global.TFGDamageShaped(event,'1x tfg:fishing_net/wood', [
 		' DC',
 		'GBE',
 		'AF '

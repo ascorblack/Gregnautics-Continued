@@ -238,7 +238,7 @@ ServerEvents.recipes(event => {
 		.duration(700)
 		.EUt(2720)
 
-	event.shaped('tfg:steel_drill_head', [
+	global.TFGDamageShaped(event,'tfg:steel_drill_head', [
 		'ABA',
 		'ABA',
 		'BCB'

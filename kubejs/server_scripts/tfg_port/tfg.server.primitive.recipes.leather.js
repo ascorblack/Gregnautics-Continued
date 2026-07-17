@@ -184,12 +184,12 @@ ServerEvents.recipes(event => {
 			.EUt(GTValues.VA[GTValues.ULV])
 
 		//Cutting
-		event.shapeless(`2x tfc:small_${stage}_hide`, [
+		global.TFGDamageShapeless(event,`2x tfc:small_${stage}_hide`, [
 			`1x tfc:medium_${stage}_hide`,
 			'#c:tools/shear' // [PORT] forge:shears -> c:tools/shear
 		]).id(`tfg:tfc/medium_to_small_${stage}_hide`)
 
-		event.shapeless(`3x tfc:small_${stage}_hide`, [
+		global.TFGDamageShapeless(event,`3x tfc:small_${stage}_hide`, [
 			`1x tfc:large_${stage}_hide`,
 			'#c:tools/shear'
 		]).id(`tfg:tfc/large_to_small_${stage}_hide`)

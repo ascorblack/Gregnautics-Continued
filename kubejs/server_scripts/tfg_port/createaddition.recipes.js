@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 	// event.recipes.gtceu.shaped('createaddition:digital_adapter', ...)
 
 	// Колючая проволка
-	event.shapeless('4x createaddition:barbed_wire', [
+	global.TFGDamageShapeless(event,'4x createaddition:barbed_wire', [
 		'#c:rods/wrought_iron', // [PORT] forge -> c
 		'#c:rods/long/wrought_iron',
 		'#c:rods/wrought_iron',

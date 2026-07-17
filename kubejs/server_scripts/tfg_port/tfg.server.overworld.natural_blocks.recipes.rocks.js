@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
 				.id(`tfg:chisel/${id}`);
 
 			// [PORT] damage_inputs_shapeless_crafting удалён — plain shapeless
-			event.shapeless(output, [input, '#c:tools/chisel'])
+			global.TFGDamageShapeless(event,output, [input, '#c:tools/chisel'])
 				.id(`tfg:shapeless/${id}`);
 		}
 
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 		// Loose to brick
 		if (rock.loose != null && rock.brick != null && rockItemExists(rock.loose) && rockItemExists(rock.brick)) {
 			if (!rock.isTFC) {
-				event.shapeless(rock.brick, [rock.loose, '#c:tools/chisel']) // [PORT] damage_inputs -> plain
+				global.TFGDamageShapeless(event,rock.brick, [rock.loose, '#c:tools/chisel']) // [PORT] damage_inputs -> plain
 					.id(`tfg:shapeless/${rockId}_loose_to_brick`);
 			}
 
@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
 
 		if (rock.mossyLoose != null && rock.brick != null && rockItemExists(rock.mossyLoose) && rockItemExists(rock.brick)) {
 			if (!rock.isTFC) {
-				event.shapeless(rock.brick, [rock.mossyLoose, '#c:tools/chisel']) // [PORT] damage_inputs -> plain
+				global.TFGDamageShapeless(event,rock.brick, [rock.mossyLoose, '#c:tools/chisel']) // [PORT] damage_inputs -> plain
 					.id(`tfg:shapeless/${rockId}_mossy_loose_to_brick`);
 			}
 
@@ -324,7 +324,7 @@ ServerEvents.recipes(event => {
 		// Bricks to cracked bricks
 		if (rock.bricks != null && rock.bricks.cracked != null && rockItemExists(rock.bricks.block) && rockItemExists(rock.bricks.cracked.block)) {
 			if (!rock.isTFC) {
-				event.shapeless(rock.bricks.cracked.block, [rock.bricks.block, '#c:tools/hammer']) // [PORT] damage_inputs -> plain; tfc:hammers -> c:tools/hammer
+				global.TFGDamageShapeless(event,rock.bricks.cracked.block, [rock.bricks.block, '#c:tools/hammer']) // [PORT] damage_inputs -> plain; tfc:hammers -> c:tools/hammer
 					.id(`tfg:shapeless/${rockId}_bricks_to_cracked`);
 			}
 
@@ -488,7 +488,7 @@ ServerEvents.recipes(event => {
 		// Supports
 		if (rock.support != null && rock.loose != null && rockItemExists(rock.support) && rockItemExists(rock.loose)) {
 			// [PORT] damage_inputs_shaped_crafting удалён — plain shaped
-			event.shaped(`8x ${rock.support}`, [
+			global.TFGDamageShaped(event,`8x ${rock.support}`, [
 				'AB ',
 				'AC ',
 				'AC '
@@ -508,7 +508,7 @@ ServerEvents.recipes(event => {
 		}
 
 		if (rock.support != null && rock.mossyLoose != null && rockItemExists(rock.support) && rockItemExists(rock.mossyLoose)) {
-			event.shaped(`8x ${rock.support}`, [
+			global.TFGDamageShaped(event,`8x ${rock.support}`, [
 				'AB ',
 				'AC ',
 				'AC '
@@ -740,5 +740,5 @@ ServerEvents.recipes(event => {
 	// 	.id(`tfg:quern/sedimentary_carbonate_to_flux`)
 
 	// [PORT-Ф2] shapeless с пустым тегом в 1.21 отбрасывается загрузчиком (failed recipe) — до Ф2 не регистрируем
-	// event.shapeless('2x tfc:powder/flux', ['#c:dusts/sedimentary_carbonate', '#c:tools/hammer'])
+	// global.TFGDamageShapeless(event,'2x tfc:powder/flux', ['#c:dusts/sedimentary_carbonate', '#c:tools/hammer'])
 })

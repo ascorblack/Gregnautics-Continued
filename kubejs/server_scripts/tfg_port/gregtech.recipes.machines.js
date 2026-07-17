@@ -711,7 +711,7 @@ ServerEvents.recipes(event => {
 	// DRUMS_AND_CRATES.forEach(material => {
 	// 	event.shapeless(`gtceu:${material}_drum`, [`gtceu:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
 	//
-	// 	event.shaped(`gtceu:${material}_drum`, [
+	// 	global.TFGDamageShaped(event,`gtceu:${material}_drum`, [
 	// 		' A ',
 	// 		'BCB',
 	// 		'BCB'
@@ -721,7 +721,7 @@ ServerEvents.recipes(event => {
 	// 		C: `#c:rods/long/${material}`
 	// 	}).id(`tfg:shaped/${material}_drum`)
 	//
-	// 	event.shaped(`gtceu:${material}_crate`, [
+	// 	global.TFGDamageShaped(event,`gtceu:${material}_crate`, [
 	// 		'CBC',
 	// 		'BAB',
 	// 		'CBC'
@@ -749,7 +749,7 @@ ServerEvents.recipes(event => {
 	// })
 
 	// Wooden crate
-	event.shaped('gtceu:wood_crate', [
+	global.TFGDamageShaped(event,'gtceu:wood_crate', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -766,7 +766,7 @@ ServerEvents.recipes(event => {
 		.EUt(16)
 		.circuit(5)
 
-	event.shaped('gtceu:wood_crate', [
+	global.TFGDamageShaped(event,'gtceu:wood_crate', [
 		'ABA',
 		'BCB',
 		'ABA'

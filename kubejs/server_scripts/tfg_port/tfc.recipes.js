@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
 
 	// Jar lids
 
-	event.shapeless('8x tfc:jar_lid', [
+	global.TFGDamageShapeless(event,'8x tfc:jar_lid', [
 		'gtceu:tin_ingot',
 		'#c:tools/hammer', // [PORT] forge:tools/hammers -> c:tools/hammer
 		'#c:tools/saw' // [PORT] forge:tools/saws -> c:tools/saw
@@ -328,7 +328,7 @@ ServerEvents.recipes(event => {
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
 
-	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#c:tools/knife']) // [PORT] forge:tools/knives -> c:tools/knife
+	global.TFGDamageShapeless(event,'minecraft:stick', ['tfc:groundcover/driftwood', '#c:tools/knife']) // [PORT] forge:tools/knives -> c:tools/knife
 		.id('tfg:shapeless/driftwood_to_stick')
 
 	// Buff Lamp Glass for easier early game

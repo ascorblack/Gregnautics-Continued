@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
 
 		// Lumber from log
 		if (logs && lumber && name) {
-			event.shapeless(`8x ${lumber}`,
+			global.TFGDamageShapeless(event,`8x ${lumber}`,
 				[logs, '#c:tools/saw']
 			)
 				.id(`tfg:shapeless/${name}_lumber_from_log`)
@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
 
 		if (plank && lumber && name) {
 			// Lumber from plank
-			event.shapeless(`4x ${lumber}`,
+			global.TFGDamageShapeless(event,`4x ${lumber}`,
 				[plank, '#c:tools/saw']
 			)
 				.id(`tfg:shapeless/${name}_lumber_from_plank`)
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
 
 		// Lumber from slab
 		if (slab && lumber && name) {
-			event.shapeless(`2x ${lumber}`,
+			global.TFGDamageShapeless(event,`2x ${lumber}`,
 				[slab, '#c:tools/saw']
 			)
 				.id(`tfg:shapeless/${name}_lumber_from_slab`)
@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
 
 		// Lumber from stair
 		if (stair && lumber && name) {
-			event.shapeless(`3x ${lumber}`,
+			global.TFGDamageShapeless(event,`3x ${lumber}`,
 				[stair, '#c:tools/saw']
 			)
 				.id(`tfg:shapeless/${name}_lumber_from_stair`)
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
 
 		// Support from logs
 		if (support && logs && name) {
-			event.shapeless(`8x ${support}`,
+			global.TFGDamageShapeless(event,`8x ${support}`,
 				[`2x ${logs}`, '#c:tools/saw']
 			)
 				.id(`tfg:shapeless/${name}_support_from_logs`)
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
 
 		// Pressure plate
 		if (pressure_plate && slab && name) {
-			event.shaped(pressure_plate, [
+			global.TFGDamageShaped(event,pressure_plate, [
 				' B ',
 				'ACA',
 				' D '
@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
 				.duration(50)
 				.EUt(GTValues.VA[GTValues.ULV])
 
-			event.shapeless(`3x ${button}`, [pressure_plate, '#c:tools/saw'])
+			global.TFGDamageShapeless(event,`3x ${button}`, [pressure_plate, '#c:tools/saw'])
 				.id(`tfg:shapeless/saw_${name}_pressure_plate_to_button`)
 		};
 
@@ -432,7 +432,7 @@ ServerEvents.recipes(event => {
 
 		// Sewing Table
 		if (sewing_table && log && plank && name) {
-			event.shaped(sewing_table, [
+			global.TFGDamageShaped(event,sewing_table, [
 				' AB',
 				'CCC',
 				'D D'
@@ -580,7 +580,7 @@ ServerEvents.recipes(event => {
 
 		// Crafting Station
 		if (crafting_station && lumber && workbench_as_material && name) {
-			event.shaped(crafting_station, [
+			global.TFGDamageShaped(event,crafting_station, [
 				'BCB',
 				'ADA',
 				'AEA'
@@ -637,7 +637,7 @@ ServerEvents.recipes(event => {
 
 		// Mosaic plank
 		// [PORT] damage_inputs_shapeless_crafting удалён — plain shapeless
-		event.shapeless(`${mosaic_plank}`, [`${plank}`, '#c:tools/chisel'])
+		global.TFGDamageShapeless(event,`${mosaic_plank}`, [`${plank}`, '#c:tools/chisel'])
 			.id(`tfg:shapeless/${wood}_mosaic_plank`);
 
 		event.stonecutting(`${plank}`, `${mosaic_plank}`);
@@ -647,14 +647,14 @@ ServerEvents.recipes(event => {
 
 		// Lumber from mosaic plank
 		if (woodOpt(lumber)) { // [PORT] tfg:wood/lumber/bamboo не зарегистрирован — гвард
-			event.shapeless(`4x ${lumber}`, [`${mosaic_plank}`, '#c:tools/saw'])
+			global.TFGDamageShapeless(event,`4x ${lumber}`, [`${mosaic_plank}`, '#c:tools/saw'])
 				.id(`tfg:shapeless/${wood}_lumber_from_mosaic_plank`);
 
 			global.generateCutterRecipe(event, `${mosaic_plank}`, `4x ${lumber}`, 50, 7, `${wood}_lumber_from_mosaic_plank`);
 		}
 
 		// Mosaic stair
-		event.shapeless(`${mosaic_stair}`, [`${stair}`, '#c:tools/chisel'])
+		global.TFGDamageShapeless(event,`${mosaic_stair}`, [`${stair}`, '#c:tools/chisel'])
 			.id(`tfg:shapeless/${wood}_mosaic_stair`);
 
 		event.stonecutting(`${stair}`, `${mosaic_stair}`);
@@ -664,14 +664,14 @@ ServerEvents.recipes(event => {
 
 		// Lumber from mosaic stairs
 		if (woodOpt(lumber)) {
-			event.shapeless(`3x ${lumber}`, [`${mosaic_stair}`, '#c:tools/saw'])
+			global.TFGDamageShapeless(event,`3x ${lumber}`, [`${mosaic_stair}`, '#c:tools/saw'])
 				.id(`tfg:shapeless/${wood}_lumber_from_mosaic_stair`);
 
 			global.generateCutterRecipe(event, `${mosaic_stair}`, `3x ${lumber}`, 50, 7, `${wood}_lumber_from_mosaic_stair`);
 		}
 
 		// Mosaic slab
-		event.shapeless(`${mosaic_slab}`, [`${slab}`, '#c:tools/chisel'])
+		global.TFGDamageShapeless(event,`${mosaic_slab}`, [`${slab}`, '#c:tools/chisel'])
 			.id(`tfg:shapeless/${wood}_mosaic_slab`);
 
 		event.stonecutting(`${slab}`, `${mosaic_slab}`);
@@ -681,7 +681,7 @@ ServerEvents.recipes(event => {
 
 		// Lumber from mosaic slab
 		if (woodOpt(lumber)) {
-			event.shapeless(`2x ${lumber}`, [`${mosaic_slab}`, '#c:tools/saw'])
+			global.TFGDamageShapeless(event,`2x ${lumber}`, [`${mosaic_slab}`, '#c:tools/saw'])
 				.id(`tfg:shapeless/${wood}_lumber_from_mosaic_slab`);
 
 			global.generateCutterRecipe(event, `${mosaic_slab}`, `2x ${lumber}`, 50, 7, `${wood}_lumber_from_mosaic_slab`);
@@ -1000,7 +1000,7 @@ ServerEvents.recipes(event => {
 		.duration(20)
 		.EUt(7)
 
-	event.shapeless('2x minecraft:stick', ['#minecraft:saplings', '#c:tools/knife'])
+	global.TFGDamageShapeless(event,'2x minecraft:stick', ['#minecraft:saplings', '#c:tools/knife'])
 		.id('tfg:strip_saplings')
 
 	event.recipes.gtceu.cutter('tfg:saplings_to_sticks')
@@ -1052,7 +1052,11 @@ ServerEvents.recipes(event => {
 		// Removed recipe changes
 		event.remove({ id: `tfc:crafting/wood/planks/${wood}` });
 		event.remove({ id: `tfc:crafting/wood/pressure_plate/${wood}` });
-		event.remove({ id: `tfc:crafting/wood/lumber/${wood}_from_logs` });
+		// [PORT-FIX 2026-07-17] НЕ удалять tfc:crafting/wood/lumber/*_from_logs!
+		// Мод TFC LumberJack кладёт под ЭТИМ ЖЕ id свой lychee:block_interacting
+		// (ПКМ пилой по установленному саппорту -> lumber) — удаление убивало всю
+		// ПКМ-цепочку бревно->саппорт->lumber. Гридовый рецепт TFC этим id уже
+		// перекрыт самим модом, так что удалять нечего.
 		event.remove({ id: `tfc:crafting/wood/button/${wood}` });
 		event.remove({ id: `tfc:crafting/wood/planks/${wood}_slab` });
 		event.remove({ id: `tfc:crafting/wood/lumber/${wood}_from_slabs` });

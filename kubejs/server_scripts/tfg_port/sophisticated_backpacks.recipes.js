@@ -433,7 +433,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-FIX] tfc:no_remainder_shaped_crafting удалён в TFC 1.21 / kubejs_tfc 2.0 — обычный shaped
 	// [PORT-CHECK] нож/миска могут возвращать remainder при крафте (раньше подавлялось обёрткой no_remainder)
-	event.shaped('sophisticatedbackpacks:feeding_upgrade', [
+	global.TFGDamageShaped(event,'sophisticatedbackpacks:feeding_upgrade', [
 		'ADA',
 		'BEF',
 		'CGC'

@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
 	// }).addMaterialInfo().id('tfg:create/shaped/schematicannon')
 
 	// Стол для схематик
-	event.shaped('create:schematic_table', [
+	global.TFGDamageShaped(event,'create:schematic_table', [
 		'AAA',
 		'CB '
 	], {
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
 	}).id('tfg:create/shaped/hand_crank')
 
 	// Емкость для миксера
-	event.shaped('create:basin', [
+	global.TFGDamageShaped(event,'create:basin', [
 		'ABA',
 		' A '
 	], {
@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
 	}).addMaterialInfo().id('tfg:create/shaped/depot')
 
 	// Лоток
-	event.shaped('create:chute', [
+	global.TFGDamageShaped(event,'create:chute', [
 		'A ',
 		'AB',
 		'A '
@@ -216,7 +216,7 @@ ServerEvents.recipes(event => {
 	}).addMaterialInfo().id('tfg:create/shaped/wooden_bracket')
 
 	// Жидкостная труба
-	event.shaped('create:fluid_pipe', [
+	global.TFGDamageShaped(event,'create:fluid_pipe', [
 		'BAB'
 	], {
 		A: '#c:tools/hammer',
@@ -238,7 +238,7 @@ ServerEvents.recipes(event => {
 	]).id('tfg:create/shapeless/fluid_valve')
 
 	// Ручка жидкостного люка
-	event.shaped('create:copper_valve_handle', [
+	global.TFGDamageShaped(event,'create:copper_valve_handle', [
 		' A ',
 		'BCD'
 	], {
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Шкив для шланга
-	event.shaped('create:hose_pulley', [
+	global.TFGDamageShaped(event,'create:hose_pulley', [
 		'DAE',
 		' B ',
 		'CFC'
@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Паровой двигатель
-	event.shaped('create:steam_engine', [
+	global.TFGDamageShaped(event,'create:steam_engine', [
 		'  A',
 		'DCC',
 		'FE '
@@ -351,7 +351,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Паровой свисток
-	event.shaped('create:steam_whistle', [
+	global.TFGDamageShaped(event,'create:steam_whistle', [
 		'AC',
 		'BD'
 	], {
@@ -370,7 +370,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Рука поршня
-	event.shaped('8x create:piston_extension_pole', [
+	global.TFGDamageShaped(event,'8x create:piston_extension_pole', [
 		'A ',
 		'BC',
 		'A '
@@ -389,7 +389,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Редстоуновый вал
-	event.shaped('8x create:gantry_shaft', [
+	global.TFGDamageShaped(event,'8x create:gantry_shaft', [
 		'A ',
 		'BC',
 		'A '
@@ -520,7 +520,7 @@ ServerEvents.recipes(event => {
 
 	// Механическая бурилка
 	// [PORT] greate отсутствует в сборке 1.21.1 (greate:steel_cogwheel); [PORT-Ф4] tfg:steel_drill_head — бурилка остаётся без рецепта
-	// event.shaped('create:mechanical_drill', [
+	// global.TFGDamageShaped(event,'create:mechanical_drill', [
 	// 	'EBF',
 	// 	'HCG',
 	// 	'ADA'
@@ -545,7 +545,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-Ф4] TFGHelpers.registerMaterialInfo('create:mechanical_drill', [GTMaterials.Wood, 1, GTMaterials.Steel, 8, GTMaterials.WroughtIron, 7]) — хелпер мода TFG отсутствует
 
-	event.shaped('create:mechanical_roller', [
+	global.TFGDamageShaped(event,'create:mechanical_roller', [
 		'GBG',
 		'ADA',
 		'EHF'
@@ -590,7 +590,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Механический собиратель
-	event.shaped('create:mechanical_harvester', [
+	global.TFGDamageShaped(event,'create:mechanical_harvester', [
 		'CDE',
 		' F ',
 		' A '
@@ -612,7 +612,7 @@ ServerEvents.recipes(event => {
 	// [PORT-Ф4] TFGHelpers.registerMaterialInfo('create:mechanical_harvester', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 2]) — хелпер мода TFG отсутствует
 
 	// Механический плуг
-	event.shaped('create:mechanical_plough', [
+	global.TFGDamageShaped(event,'create:mechanical_plough', [
 		'CDE',
 		' F ',
 		' A '
@@ -731,7 +731,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Механический крафтер
-	event.shaped('create:mechanical_crafter', [
+	global.TFGDamageShaped(event,'create:mechanical_crafter', [
 		' A ',
 		'DCE',
 		' F '
@@ -809,7 +809,7 @@ ServerEvents.recipes(event => {
 		.addMaterialInfo(true)
 
 	// Умный раздатчик/приемник из железа
-	event.shaped('create:andesite_funnel', [
+	global.TFGDamageShaped(event,'create:andesite_funnel', [
 		'AD',
 		'BC'
 	], {
@@ -836,7 +836,7 @@ ServerEvents.recipes(event => {
 	// [PORT-Ф4] TFGHelpers.registerMaterialInfo('create:andesite_funnel', [GTMaterials.WroughtIron, 1]) — хелпер мода TFG отсутствует
 
 	// Умный раздатчик/приемник из латуни
-	event.shaped('create:brass_funnel', [
+	global.TFGDamageShaped(event,'create:brass_funnel', [
 		' E',
 		'AD',
 		'BC'
@@ -988,7 +988,7 @@ ServerEvents.recipes(event => {
 	// [PORT-Ф4] TFGHelpers.registerMaterialInfo('create:deployer', [GTMaterials.Brass, 12/9, GTMaterials.BlackSteel, 1, GTMaterials.Wood, 1]) — хелпер мода TFG отсутствует
 
 	// Соединятор вагонеток
-	event.shapeless('create:minecart_coupling', [
+	global.TFGDamageShapeless(event,'create:minecart_coupling', [
 		'#tfg:metal_chains',
 		'#c:bolts',
 		'#tfg:metal_chains',
@@ -1325,7 +1325,7 @@ ServerEvents.recipes(event => {
 		C: '#c:shafts'
 	}).id('tfg:create/shaped/mechanical_piston')
 
-	event.shaped('create:sticky_mechanical_piston', [
+	global.TFGDamageShaped(event,'create:sticky_mechanical_piston', [
 		'A',
 		'B',
 		'C'
@@ -1335,7 +1335,7 @@ ServerEvents.recipes(event => {
 		C: 'create:mechanical_piston'
 	}).id('tfg:create/shaped/sticky_mechanical_piston_from_glue')
 
-	event.shaped('create:sticky_mechanical_piston', [
+	global.TFGDamageShaped(event,'create:sticky_mechanical_piston', [
 		'A',
 		'B',
 		'C'
@@ -1527,7 +1527,7 @@ ServerEvents.recipes(event => {
 
 	// #region Windmill Bearing
 
-	event.shaped('create:windmill_bearing', [
+	global.TFGDamageShaped(event,'create:windmill_bearing', [
 		'FA ',
 		'DBE',
 		' C '
@@ -1554,7 +1554,7 @@ ServerEvents.recipes(event => {
 
 	//#region Blaze burner
 
-	event.shaped('create:blaze_burner', [
+	global.TFGDamageShaped(event,'create:blaze_burner', [
 		'EFE',
 		'BAB',
 		'DCD'
@@ -1622,7 +1622,7 @@ ServerEvents.recipes(event => {
 	]
 
 	CREATE_FRAMED_GLASS_WINDOWS.forEach(x => {
-		event.shapeless(`2x create:${x}_pane`,
+		global.TFGDamageShapeless(event,`2x create:${x}_pane`,
 			[
 				`create:${x}`,
 				'#c:tools/saw'
@@ -1665,7 +1665,7 @@ ServerEvents.recipes(event => {
 			B: x[1]
 		}).id(`tfg:create/shaped/${x[0]}_window`)
 
-		event.shapeless(`2x create:${x[0]}_window_pane`,
+		global.TFGDamageShapeless(event,`2x create:${x[0]}_window_pane`,
 			[
 				`create:${x[0]}_window`,
 				'#c:tools/saw'
@@ -1702,7 +1702,7 @@ ServerEvents.recipes(event => {
 
 	//#region Create 6 Logistics
 
-	event.shaped('2x create:chain_conveyor', [
+	global.TFGDamageShaped(event,'2x create:chain_conveyor', [
 		'DAE',
 		'CBC',
 		' A '
@@ -1766,7 +1766,7 @@ ServerEvents.recipes(event => {
 		.duration(100)
 		.EUt(20)
 
-	event.shaped('create:item_hatch', [
+	global.TFGDamageShaped(event,'create:item_hatch', [
 		'A',
 		'B',
 		'C'
@@ -1776,7 +1776,7 @@ ServerEvents.recipes(event => {
 		C: 'create:chute',
 	}).id('tfg:create/shaped/item_hatch_tfc')
 
-	event.shaped('create:item_hatch', [
+	global.TFGDamageShaped(event,'create:item_hatch', [
 		'A',
 		'B',
 		'C'
@@ -1933,7 +1933,7 @@ ServerEvents.recipes(event => {
 
 		// [PORT-FIX] damage_inputs_shapeless_crafting удалён в kubejs_tfc 2.0 —
 		// в TFC 1.21 урон инструментов в крафте идёт через crafting remainder автоматически.
-		event.shapeless(x.cut, [x.base, '#c:tools/chisel', '#c:tools/file'])
+		global.TFGDamageShapeless(event,x.cut, [x.base, '#c:tools/chisel', '#c:tools/file'])
 			.id(`create:shapeless/chisel_${x.cut.split(':')[1]}`)
 
 		event.recipes.gtceu.laser_engraver(`engrave_${x.cut.split(':')[1]}`)
@@ -1964,7 +1964,7 @@ ServerEvents.recipes(event => {
 
 	//#endregion
 
-	event.shaped('create:white_seat', [
+	global.TFGDamageShaped(event,'create:white_seat', [
 		'DA ',
 		'CBC'
 	], {
@@ -2000,7 +2000,7 @@ ServerEvents.recipes(event => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.shaped('create:contraption_controls', [
+	global.TFGDamageShaped(event,'create:contraption_controls', [
 		'EAF',
 		'DBD',
 		' C '
@@ -2021,7 +2021,7 @@ ServerEvents.recipes(event => {
 		.circuit(18)
 		.addMaterialInfo(true)
 
-	event.shaped('create:wrench', [
+	global.TFGDamageShaped(event,'create:wrench', [
 		' BB',
 		' C ',
 		'AD '
@@ -2032,7 +2032,7 @@ ServerEvents.recipes(event => {
 		D: '#c:tools/hammer'
 	}).id('tfg:create/shaped/wrench')
 
-	event.shaped('create:goggles', [
+	global.TFGDamageShaped(event,'create:goggles', [
 		'BBB',
 		'AEA',
 		'C C'
@@ -2126,7 +2126,7 @@ ServerEvents.recipes(event => {
 		D: '#c:small_springs/red_alloy'
 	}).id('tfg:create/shaped/linked_controller')
 
-	event.shaped('create:rotation_speed_controller', [
+	global.TFGDamageShaped(event,'create:rotation_speed_controller', [
 		'ECE',
 		'BAB',
 		'DFG'
@@ -2170,7 +2170,7 @@ ServerEvents.recipes(event => {
 		C: 'minecraft:redstone'
 	}).id('tfg:shaped/desk_bell')
 
-	event.shaped('create:sequenced_gearshift', [
+	global.TFGDamageShaped(event,'create:sequenced_gearshift', [
 		'DBE',
 		'CAC',
 		'   '
@@ -2212,7 +2212,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-Ф4] TFGHelpers.registerMaterialInfo('create:mechanical_bearing', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 2]) — хелпер мода TFG отсутствует
 
-	event.shaped('create:gantry_carriage', [
+	global.TFGDamageShaped(event,'create:gantry_carriage', [
 		'DCE',
 		' A ',
 		' B '
@@ -2255,7 +2255,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-Ф4] TFGHelpers.registerMaterialInfo('create:weighted_ejector', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]) — хелпер мода TFG отсутствует
 
-	event.shaped('create:turntable', [
+	global.TFGDamageShaped(event,'create:turntable', [
 		'DA ',
 		'CBC'
 	], {
@@ -2271,7 +2271,7 @@ ServerEvents.recipes(event => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.shaped('create:gearshift', [
+	global.TFGDamageShaped(event,'create:gearshift', [
 		' C ',
 		'DAE',
 		' B '
@@ -2292,7 +2292,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-Ф4] TFGHelpers.registerMaterialInfo('create:gearshift', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Redstone, 1]) — хелпер мода TFG отсутствует
 
-	event.shaped('create:clutch', [
+	global.TFGDamageShaped(event,'create:clutch', [
 		' C ',
 		'DAE',
 		' B '

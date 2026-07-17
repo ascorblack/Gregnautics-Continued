@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
 
 	event.replaceInput({ id: 'create_connected:crafting/kinetics/redstone_link_wildcard' }, 'create:transmitter', 'minecraft:redstone_torch')
 
-	event.shaped('create_connected:kinetic_bridge', [
+	global.TFGDamageShaped(event,'create_connected:kinetic_bridge', [
 		'BCF',
 		'AEA',
 		'DCD'

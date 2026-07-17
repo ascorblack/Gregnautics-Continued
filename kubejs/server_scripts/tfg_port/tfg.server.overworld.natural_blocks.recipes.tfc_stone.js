@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
 	global.TFC_STONE_TYPES.forEach(stone => {
 
 		// Raw Pressure Plate
-		event.shaped(`tfc:rock/pressure_plate/${stone}`, [
+		global.TFGDamageShaped(event,`tfc:rock/pressure_plate/${stone}`, [
 			' B ',
 			'CDC',
 			' E '
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
 
 		global.generateCutterRecipe(event, `tfc:rock/pressure_plate/${stone}`, `6x tfc:rock/button/${stone}`, 50, 2, `${stone}_raw_button`) // [PORT-FIX] хелпер только через global.*
 
-		event.shapeless(`3x tfc:rock/button/${stone}`, [`tfc:rock/pressure_plate/${stone}`, '#c:tools/saw'])
+		global.TFGDamageShapeless(event,`3x tfc:rock/button/${stone}`, [`tfc:rock/pressure_plate/${stone}`, '#c:tools/saw'])
 			.id(`tfg:shapeless/${stone}_pressure_plate_to_button`)
 
 		// #region Stonecutting

@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
 
 	// Etching Tip
 	// [PORT] damage_inputs_shapeless_crafting удалён в kubejs_tfc 2.0 — TFC 1.21 сам возвращает повреждённый инструмент (auto-remainder).
-	event.shapeless('tfg:etching_diamond_tip', [
+	global.TFGDamageShapeless(event,'tfg:etching_diamond_tip', [
 		'#c:tools/hammer', // [PORT] forge:tools/hammers -> c:tools/hammer
 		'#c:tools/chisel', // [PORT-FIX] tfc:chisels нет в TFC 1.21
 		'minecraft:diamond'

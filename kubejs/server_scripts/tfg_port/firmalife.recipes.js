@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
 	//#endregion
 
 	// [PORT-FIX] c:screws/any_bronze (тег TFG) не портирован — пустой тег ломал рецепт; сужено до c:screws/bronze (GTCEu), расширить после порта tfg-тегов
-	event.shapeless('firmalife:barrel_stave', ['2x firmalife:treated_lumber', '#c:screws/bronze', '#c:tools/hammer']) // [PORT] forge: -> c:, tools/hammers -> tools/hammer
+	global.TFGDamageShapeless(event,'firmalife:barrel_stave', ['2x firmalife:treated_lumber', '#c:screws/bronze', '#c:tools/hammer']) // [PORT] forge: -> c:, tools/hammers -> tools/hammer
 		.id('firmalife:crafting/barrel_stave')
 
 
@@ -389,7 +389,7 @@ ServerEvents.recipes(event => {
 
 	//#region Reinforced Glass
 
-	event.shaped('9x firmalife:reinforced_glass', [
+	global.TFGDamageShaped(event,'9x firmalife:reinforced_glass', [
 		'AB'
 	], {
 		A: '#c:tools/saw', // [PORT] tfc:saws -> c:tools/saw (TFC 4.x перешёл на общие c:-теги инструментов)
@@ -471,7 +471,7 @@ ServerEvents.recipes(event => {
 
 	// [PORT-FIX] replaceIngredient(..., Item.empty) невалиден в 1.21 (air в ingredient_actions);
 	// ракушка и так расходуется крафтом, молоток вернётся через remainder.
-	event.shapeless('2x tfc:powder/flux', [
+	global.TFGDamageShapeless(event,'2x tfc:powder/flux', [
 		'firmalife:hollow_shell',
 		'#c:tools/hammer']) // [PORT] forge:tools/hammers -> c:tools/hammer
 		.id('tfg:shapeless/hollow_shell_to_flux')
