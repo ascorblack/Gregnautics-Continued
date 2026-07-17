@@ -1,6 +1,6 @@
 # Modlist
 
-Active mods: **238**
+Active mods: **237**
 
 | Mod | Version | modId | File |
 |---|---|---|---|
@@ -33,6 +33,7 @@ Active mods: **238**
 | ChatAnimation | 1.3.1 | `chatanimation` | `chatanimation-neoforge-1.3.1+mc1.21.jar` |
 | Cherished Worlds | 10.1.1+1.21.1 | `cherishedworlds` | `cherishedworlds-neoforge-10.1.1+1.21.1.jar` |
 | Chunky | 1.4.23 | `chunky` | `Chunky-NeoForge-1.4.23.jar` |
+| ClientSort | 2.2.2+1.21.1 | `clientsort` | `clientsort-neoforge-2.2.2+1.21.1.jar` |
 | Climbable Ropes for Create Aeronautics | 2.1.0 | `climbable_ropes` | `climbable_ropes-2.1.0.jar` |
 | Cloth Config v15 API | 15.0.140 | `cloth_config` | `cloth-config-15.0.140-neoforge.jar` |
 | Clumps | 19.0.0.1 | `clumps` | `Clumps-neoforge-1.21.1-19.0.0.1.jar` |
@@ -139,7 +140,6 @@ Active mods: **238**
 | I <3 TFC | 1.1.3 | `ihearttfc` | `I Heart TFC-1.21.1-1.1.3.jar` |
 | Immersive Paintings | 0.7.8 | `immersive_paintings` | `immersive_paintings-neoforge-1.21.1-0.7.8.jar` |
 | Inventory HUD+ | 3.4.28 | `inventoryhud` | `inventoryhud.neoforged.1.21.1-3.4.28.jar` |
-| Inventory Profiles Next | 2.2.5 | `inventoryprofilesnext` | `InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar` |
 | InvMove | 0.9.3 | `invmove` | `InvMove-0.9.3+1.21.1-NeoForge.jar` |
 | Iris | 1.8.14-beta.1+mc1.21.1 | `iris` | `iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` |
 | Jade | 15.10.5+neoforge | `jade` | `Jade-1.21.1-NeoForge-15.10.5.jar` |
@@ -155,7 +155,6 @@ Active mods: **238**
 | KubeJS Create | 2101.3.1-build.18 | `kubejs_create` | `kubejs-create-neoforge-2101.3.1-build.18.jar` |
 | KubeJS TFC | 2.0.1 | `kubejs_tfc` | `kubejs_tfc-1.21.1-2.0.1.jar` |
 | Let Me Despawn | 1.5.0 | `letmedespawn` | `letmedespawn-1.21.x-neoforge-1.5.0.jar` |
-| libIPN | 6.6.3 | `libipn` | `libIPN-neoforge-1.21.1-6.6.3.jar` |
 | Lithium | 0.15.4+mc1.21.1 | `lithium` | `lithium-neoforge-0.15.4+mc1.21.1.jar` |
 | Lithostitched | 1.7.13 | `lithostitched` | `lithostitched-1.7.13-neoforge-21.1.jar` |
 | LootJS | 1.21.1-3.7.0 | `lootjs` | `lootjs-neoforge-1.21.1-3.7.0.jar` |

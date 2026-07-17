@@ -13,7 +13,7 @@
   <g>
     <rect x="24" y="24" width="196" height="132" rx="12" class="card"/>
     <rect x="24" y="24" width="196" height="5" rx="2.5" class="accent-a"/>
-    <text x="122" y="84" text-anchor="middle" class="num">238</text>
+    <text x="122" y="84" text-anchor="middle" class="num">237</text>
     <text x="122" y="112" text-anchor="middle" class="cap">mods in the pack</text>
     <text x="122" y="132" text-anchor="middle" class="capsm">58 picked to replace 1.20-only</text>
   </g>
