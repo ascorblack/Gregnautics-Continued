@@ -74,6 +74,7 @@ StartupEvents.registry('block', event => {
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
 		.tagBlock('tfc:crops')
+		.existingProductItem('tfg:rapeseed_product')
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
@@ -83,7 +84,7 @@ StartupEvents.registry('block', event => {
 	event.create('tfg:rapeseed_wild', 'tfc:tall_wild_crop') // [PORT] wild_crop + .type('double') -> tall_wild_crop
 		.soundType('crop')
 		.seeds('tfg:rapeseed_seeds')
-		.food('tfg:rapeseed_seeds') // [PORT-CHECK] в оригинале 'tfg:rapeseed_product', но такой предмет нигде не регистрируется — в 1.21 нерезолвящийся Holder уронит генерацию лута; заменено на семена
+		.food('tfg:rapeseed_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')

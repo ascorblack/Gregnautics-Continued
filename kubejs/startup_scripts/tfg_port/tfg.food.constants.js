@@ -133,6 +133,15 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 			decay: 0.5
 		}
 	},{
+		// TFC 1.21 ships its own canola, but the original TFG crop still expects
+		// this distinct product. Keep both and unify them through recipe tags.
+		id: 'tfg:rapeseed_product',
+		texture: 'tfg:item/rapeseed_product',
+		nutrition: {
+			hunger: 0,
+			decay: 0.5
+		}
+	},{
 		id: 'tfg:roasted_sunflower_seeds',
 		texture: 'tfg:item/roasted_sunflower_seeds',
 		nutrition: {

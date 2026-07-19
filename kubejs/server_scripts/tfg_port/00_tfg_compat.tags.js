@@ -45,6 +45,13 @@ ServerEvents.tags('item', event => {
 	// его используют треки railways и др.
 	event.add('tfc:mortar', 'tfc:mortar');
 
+	// TFC 4.x added native canola after the original TFG recipes were written.
+	// These aggregate tags let both crop families participate in either recipe set.
+	event.add('gregnautics:canola_seeds', 'tfc:seeds/canola');
+	event.add('gregnautics:canola_seeds', 'tfg:rapeseed_seeds');
+	event.add('gregnautics:canola_products', 'tfc:canola');
+	event.add('gregnautics:canola_products', 'tfg:rapeseed_product');
+
 	// [PORT-FIX] Логи TFG-деревьев (Ф4): собственные tfg:wood/log/* не зарегистрированы,
 	// но AFC 2.1.1 поставляет те же породы (afc:wood/log/araucaria|mahoe|beech + теги afc:*_logs) —
 	// алиасим tfg:*_logs на них, иначе пустой тег валит shapeless-рецепты supports в recipes.wood.js
