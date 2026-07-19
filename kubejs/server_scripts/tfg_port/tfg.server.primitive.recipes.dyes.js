@@ -55,6 +55,19 @@ ServerEvents.recipes(event => {
 			.id(`tfg:barrel/dye/${dye}_concrete`);
 	})
 
+	// [PORT-FIX] TFG's removal loop above also deletes TFC's white-bed recipe
+	// and upstream TFG never recreates it. Restore TFC 4.2.5's exact recipe.
+	event.custom({
+		type: 'minecraft:crafting_shaped',
+		category: 'misc',
+		key: {
+			H: { tag: 'tfc:high_quality_cloth' },
+			L: { tag: 'tfc:lumber' }
+		},
+		pattern: ['HHH', 'LLL'],
+		result: { count: 1, id: 'minecraft:white_bed' }
+	}).id('minecraft:white_bed')
+
 	// White
 	event.remove({ id: 'minecraft:white_dye_from_lily_of_the_valley' })
 	event.remove({ id: 'gtceu:extractor/lily_of_the_valley_dye' })
