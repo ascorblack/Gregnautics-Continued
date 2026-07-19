@@ -551,8 +551,13 @@ ServerEvents.tags('block', event => {
 	event.add("tfc:glass_basin_blocks", "tfc:white_kaolin_clay");
 	event.add("tfc:glass_pouring_table", "tfc:white_kaolin_clay");
 
-	// Удаление тегов у руд
-	event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");
+	// [PORT-FIX 2026-07-18] УДАЛЕНО: event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+	// Эта строка (1:1 из TFG 1.20) снимала ВСЕ БЛОК-теги со всех 1125 tfc:ore/*,
+	// включая minecraft:mineable/pickaxe — а блок с requiresCorrectToolForDrops без
+	// mineable-тега не добывается НИЧЕМ и не дропает. В нашем порте вены КЛАДУТ
+	// tfc:ore (33 файла воргена: bismuthinite и др.) — это и был репорт игроков с CF
+	// «TFC ores are broken and no pickaxe can mine them». Снятие блок-тегов ничего
+	// не даёт для скрытия из JEI (это item-уровень) — строка была чистым вредом.
 
 	// Lets the basin be put on top of a charcoal forge
 	event.add("tfc:forge_invisible_whitelist", "create:basin");

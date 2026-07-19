@@ -437,6 +437,50 @@ ServerEvents.tags("fluid", event => {
 
 ServerEvents.recipes(event => {
 	console.info("[Gregnautics] progress: material_recipe_normalization recipes event start");
+
+	// [FIX 2026-07-18] Ручная металлургия TFC выдавала «мёртвые» предметы.
+	// Унификация оставляет в тегах ОДИН канонический предмет (у стержней/листов —
+	// GT-версию), а рецепты наковальни/сварки TFC продолжали выдавать TFC-версию:
+	// она скрыта из JEI и не принимается НИ ОДНИМ рецептом. Масштаб: rod 18,
+	// sheet 18, double_sheet 18 металлов (и слитки вроде стали).
+	//
+	// ВАЖНО: event.replaceInput/replaceOutput НЕ РАБОТАЮТ на кастомных типах
+	// tfc:anvil/tfc:welding (проверено: вызовы шли, JSON рецептов не менялся).
+	// Поэтому клонируем JSON рецепта со строковой заменой точных id и
+	// перерегистрируем под тем же id.
+	var manualMetallurgyRename = {};
+	GREGNAUTICS_UNIFY_MATERIALS.forEach(material => {
+		GREGNAUTICS_UNIFY_FORMS.forEach(form => {
+			if (!gregnauticsUnifyShouldReplaceRecipeForm(form)) {
+				return;
+			}
+			var canonical = gregnauticsUnifyCanonicalItem(material, form);
+			if (canonical === undefined || !gregnauticsUnifyItemExists(canonical)) {
+				return;
+			}
+			gregnauticsUnifyCandidates(material, form).forEach(item => {
+				if (item === canonical || !gregnauticsUnifyItemExists(item)) {
+					return;
+				}
+				manualMetallurgyRename['"' + item + '"'] = '"' + canonical + '"';
+			});
+		});
+	});
+	["tfc:anvil", "tfc:welding"].forEach(recipeType => {
+		event.forEachRecipe({ type: recipeType }, recipe => {
+			var raw = String(recipe.json);
+			var replaced = raw;
+			Object.keys(manualMetallurgyRename).forEach(from => {
+				replaced = replaced.split(from).join(manualMetallurgyRename[from]);
+			});
+			if (replaced === raw) {
+				return;
+			}
+			var id = String(recipe.getId());
+			event.remove({ id: id });
+			event.custom(JSON.parse(replaced)).id(id);
+		});
+	});
 	var castIronRecipeFilters = [
 		{ type: "minecraft:crafting_shaped" },
 		{ type: "minecraft:crafting_shapeless" },

@@ -44,16 +44,29 @@ ServerEvents.tags('block', event => {
 
 	// [PORT-CHECK] Ingredient.of('#tag') внутри tags-события резолвит item-теги по состоянию
 	// до применения наших правок (как и в 1.20); обёрнуто в try/catch на случай изменения поведения KubeJS 7.
+	// [PORT-FIX 2026-07-18] КРИТИЧНО: только gtceu:!
+	// Замысел оригинала (1.20) — спрятать ГТ-руды ванильного камня и ГТ-железо
+	// (в TFG железо идёт через руды TFC). Но в 1.21 наш же
+	// gregnautics_gtceu_tfc_mineral_compat.js вешает 'c:ores/iron' и ores_in_ground
+	// НА РУДЫ TFC — и removeAllTagsFrom БЕЗ фильтра снимал с БЛОКОВ tfc:ore/* ВСЕ
+	// теги, включая minecraft:mineable/pickaxe. Итог с CF-репортов: «TFC ores are
+	// broken and no pickaxe can mine them» — блоки с requiresCorrectToolForDrops
+	// без mineable-тега не добываются НИЧЕМ. Проверено на сервере: у
+	// tfc:ore/normal_native_copper/quartzite было 0 (ноль) тегов.
 	try {
-		let stone_ores = Ingredient.of('#c:ores_in_ground/stone').itemIds.toArray().map(String);
+		let stone_ores = Ingredient.of('#c:ores_in_ground/stone').itemIds.toArray().map(String)
+			.filter(id => id.startsWith('gtceu:'));
 		stone_ores.forEach(item => {
 			event.removeAllTagsFrom(item)
 		})
 
-		let iron_ores = Ingredient.of('#c:ores/iron').itemIds.toArray().map(String);
-		iron_ores.forEach(item => {
-			event.removeAllTagsFrom(item)
-		})
+		// [PORT-FIX 2026-07-18] Железный nuke по '#c:ores/iron' УДАЛЁН СОВСЕМ.
+		// В 1.20 он прятал GT-железо (в TFG железо шло только через руды TFC и
+		// GT-руды железа не генерились). В нашем 1.21-порте железные вены
+		// ПЕРЕПИСАНЫ НА gtceu-блоки в TFC-камнях (gabbro_goethite_ore,
+		// diorite_pyrite_ore, *_magnetite_ore...) — снятие с них всех тегов
+		// делало ГЕНЕРЯЩИЕСЯ рудные вены недобываемыми. Ванильно-каменные
+		// GT-варианты и так прячутся stone_ores-блоком выше.
 	} catch (e) {
 		console.warn(`[Gregnautics][PORT-CHECK] tfg.server.ores.tags.materials: не удалось резолвить теги руд в block-tags событии: ${e}`)
 	}
