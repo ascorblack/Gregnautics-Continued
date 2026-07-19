@@ -66,21 +66,28 @@ ServerEvents.recipes(event => {
 		'tfg:block/polycaprolactam_fabric_block'
 	)
 
-	// [PORT-FIX] damage_inputs_shapeless_crafting удалён в kubejs_tfc 2.0 — обычный shapeless
-	event.shapeless('8x firmalife:pineapple_yarn', [
+	global.TFGDamageShapeless(event, '8x firmalife:pineapple_yarn', [
 		'firmalife:pineapple_fiber',
 		'#tfg:tools/spindles'
 	]).id('tfg:shapeless/pineapple_yarn')
 
-	event.shapeless('8x tfc:wool_yarn', [
+	global.TFGDamageShapeless(event, '8x tfc:wool_yarn', [
 		'tfc:wool',
 		'#tfg:tools/spindles'
 	]).id('tfg:shapeless/wool_yarn')
 
-	event.shapeless('16x tfg:phantom_thread', [
+	global.TFGDamageShapeless(event, '16x tfg:phantom_thread', [
 		'minecraft:phantom_membrane',
 		'#tfg:tools/spindles'
 	]).id('tfg:shapeless/phantom_thread')
+
+	// Spindles TFC 1.0.5 defines this as a plain shapeless recipe, which consumes
+	// the spindle. Replace it with the same durability-aware recipe semantics.
+	event.remove({ id: 'tfc_spindles:string_from_wool' })
+	global.TFGDamageShapeless(event, '4x minecraft:string', [
+		'#minecraft:wool',
+		'#tfg:tools/spindles'
+	]).id('tfc_spindles:string_from_wool')
 
 	// Wool Yarn
 	event.recipes.gtceu.wiremill('tfg:tfc/wool_yarn')
@@ -275,8 +282,7 @@ ServerEvents.recipes(event => {
 	// #endregion
 
 	//#region flax line spinning
-	// [PORT-FIX] damage_inputs_shapeless_crafting удалён в kubejs_tfc 2.0 — обычный shapeless
-	event.shapeless('4x tfg:linen_thread', [
+	global.TFGDamageShapeless(event, '4x tfg:linen_thread', [
 		'tfg:flax_line',
 		'#tfg:tools/spindles'
 	]).id('tfg:shapeless/linen_thread')

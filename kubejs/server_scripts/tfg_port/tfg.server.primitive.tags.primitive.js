@@ -51,7 +51,9 @@ ServerEvents.tags('item', event => {
 	event.add('tfg:tools/ore_prospectors/blue_steel', 'tfc:metal/propick/blue_steel')
 	event.add('tfg:tools/ore_prospectors/red_steel', 'tfc:metal/propick/red_steel')
 
-	event.add('tfg:tools/spindles', 'tfc:spindle')
+	// Spindles TFC owns the 1.21 spindle items and exposes all tiers here.
+	// Keep TFG's metal spindles in this aggregate tag as well (startup tags).
+	event.add('tfg:tools/spindles', '#c:tools/spindle')
 
 	// Paper from wood
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
