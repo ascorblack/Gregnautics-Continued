@@ -290,13 +290,11 @@ ServerEvents.recipes(event => {
 		.duration(32)
 		.EUt(2)
 
-	// [PORT-Ф4-TODO] предмет tfg:rapeseed_product нигде не регистрируется в текущих startup-скриптах
-	// (см. комментарий в startup_scripts/tfg_port/tfg.core.blocks.crops.js) — рецепт закомментирован:
-	// event.recipes.gtceu.extractor(`rapeseed_oil`)
-	// 	.itemInputs('tfg:rapeseed_product')
-	// 	.outputFluids(Fluid.of('gtceu:seed_oil', 600))
-	// 	.duration(20 * 5)
-	// 	.EUt(GTValues.VHA[GTValues.ULV])
+	event.recipes.gtceu.extractor(`rapeseed_oil`)
+		.itemInputs('#gregnautics:canola_products')
+		.outputFluids(Fluid.of('gtceu:seed_oil', 600))
+		.duration(20 * 5)
+		.EUt(GTValues.VHA[GTValues.ULV])
 
 	event.recipes.gtceu.extractor(`sunflower_oil`)
 		.itemInputs('tfg:sunflower_product')
@@ -312,11 +310,10 @@ ServerEvents.recipes(event => {
 	// 	.EUt(GTValues.VHA[GTValues.ULV])
 
 	// [PORT-FIX] kubejs_tfc 2.0: конструктор barrel_sealed(input_fluid, duration); .inputs() заменён на .inputItem(), .outputFluid() сохранён
-	// [PORT-Ф4-TODO] tfg:rapeseed_product не зарегистрирован:
-	// event.recipes.tfc.barrel_sealed(Fluid.of('minecraft:water', 100), 1000)
-	// 	.inputItem('tfg:rapeseed_product')
-	// 	.outputFluid(Fluid.of('gtceu:seed_oil', 250))
-	// 	.id('tfg:barrel/rapeseed_to_oil')
+	event.recipes.tfc.barrel_sealed(Fluid.of('minecraft:water', 100), 1000)
+		.inputItem('#gregnautics:canola_products')
+		.outputFluid(Fluid.of('gtceu:seed_oil', 250))
+		.id('tfg:barrel/rapeseed_to_oil')
 
 	event.recipes.tfc.barrel_sealed(Fluid.of('minecraft:water', 100), 1000) // [PORT-FIX] kubejs_tfc 2.0: barrel_sealed(input_fluid, duration)
 		.inputItem('tfg:sunflower_product')
