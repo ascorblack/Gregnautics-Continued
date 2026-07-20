@@ -706,6 +706,10 @@ function gregnauticsRegisterSmallOreProcessing(event, ore, item) {
 
 		event.recipes.tfc.quern(smallDust, item)
 			.id(`gregnautics:quern/small_${ore.ore}`);
+
+		// [FIX 2026-07-20] Колёса дробления Create (в 1.20 это давал Greate-мост)
+		event.recipes.create.crushing([smallDust], item)
+			.id(`gregnautics:create/crushing/tfc_ore/small_${ore.ore}`);
 	}
 }
 
@@ -727,6 +731,10 @@ function gregnauticsRegisterPoorOreProcessing(event, ore, item) {
 			.chancedOutput(crushed, 1250)
 			.duration(40)
 			.EUt(2);
+
+		// [FIX 2026-07-20] Колёса дробления Create (в 1.20 это давал Greate-мост)
+		event.recipes.create.crushing([CreateItem.of(crushed, 0.75)], item)
+			.id(`gregnautics:create/crushing/tfc_ore/poor_${ore.ore}`);
 	}
 
 	if (gregnauticsItemExists(smallDust)) {
@@ -758,6 +766,10 @@ function gregnauticsRegisterNormalOreProcessing(event, ore, item) {
 
 	event.recipes.tfc.quern(crushed, item)
 		.id(`gregnautics:quern/${ore.ore}_crushed_ore_from_normal_raw_ore`);
+
+	// [FIX 2026-07-20] Колёса дробления Create (в 1.20 это давал Greate-мост)
+	event.recipes.create.crushing([crushed, CreateItem.of(crushed, 0.5)], item)
+		.id(`gregnautics:create/crushing/tfc_ore/normal_${ore.ore}`);
 }
 
 function gregnauticsRegisterRichOreProcessing(event, ore, item) {
@@ -783,6 +795,10 @@ function gregnauticsRegisterRichOreProcessing(event, ore, item) {
 
 	event.recipes.tfc.quern(gregnauticsStack(crushed, 2), item)
 		.id(`gregnautics:quern/${ore.ore}_crushed_ore_from_rich_raw_ore`);
+
+	// [FIX 2026-07-20] Колёса дробления Create (в 1.20 это давал Greate-мост)
+	event.recipes.create.crushing([gregnauticsStack(crushed, 2), CreateItem.of(crushed, 0.5)], item)
+		.id(`gregnautics:create/crushing/tfc_ore/rich_${ore.ore}`);
 }
 
 function gregnauticsRegisterTfcOreProcessing(event, ore, grade, item) {

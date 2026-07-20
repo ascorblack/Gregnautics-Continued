@@ -4,7 +4,6 @@
 	disable_toast: true
 	filename: "progression"
 	group: "19428C6E7A36D463"
-	icon: "gtceu:lapotronic_energy_orb"
 	id: "28EBC0FF82EFD94B"
 	order_index: 3
 	quest_links: [
@@ -380,19 +379,11 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"0DBC148D92A9F69F"
-			]
-			description: [
-				"{quests.development.hull_lv.desc}"
-			]
+			dependencies: ["0DBC148D92A9F69F"]
 			hide_dependency_lines: true
-			icon: "gtceu:lv_machine_hull"
 			id: "4252B1AF36FFB4F6"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "{quests.development.hull_lv.subtitle}"
-			title: "{quests.development.hull_lv.title}"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -402,18 +393,10 @@
 				"5C17BF90DA2AAEEE"
 				"26394C1290D70AB6"
 			]
-			description: [
-				"{quests.development.hull_mv.desc.1}"
-				"{@pagebreak}"
-				"{quests.development.hull_mv.desc.2}"
-			]
 			hide_dependency_lines: true
-			icon: "gtceu:mv_machine_hull"
 			id: "5E4FBB2287D9E635"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "{quests.development.hull_mv.subtitle}"
-			title: "{quests.development.hull_mv.title}"
 			x: 1.0d
 			y: -3.0d
 		}
@@ -424,16 +407,10 @@
 				"5063FDFFBE3E4855"
 				"5E76D4C24026157D"
 			]
-			description: [
-				"{quests.development.hull_hv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "gtceu:hv_machine_hull"
 			id: "1D717E742E50A6BD"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "{quests.development.hull_hv.subtitle}"
-			title: "{quests.development.hull_hv.title}"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -444,16 +421,10 @@
 				"25A863E014BB1AF5"
 				"3E2FE834084D2946"
 			]
-			description: [
-				"{quests.development.hull_ev.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "gtceu:ev_machine_hull"
 			id: "29C2A82490261F1C"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "{quests.development.hull_ev.subtitle}"
-			title: "{quests.development.hull_ev.title}"
 			x: 3.0d
 			y: -3.0d
 		}
@@ -464,16 +435,10 @@
 				"698B5F65F2DE4439"
 				"145F71A817C5996E"
 			]
-			description: [
-				"{quests.development.hull_iv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "gtceu:iv_machine_hull"
 			id: "66A23AC2EE9BC4AE"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "{quests.development.hull_iv.subtitle}"
-			title: "{quests.development.hull_iv.title}"
 			x: 4.0d
 			y: -3.0d
 		}
@@ -484,16 +449,10 @@
 				"47087361D6DE7DCF"
 				"7AE681E2AB31EA0D"
 			]
-			description: [
-				"{quests.development.hull_luv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "gtceu:luv_machine_hull"
 			id: "6906121936A688C0"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "{quests.development.hull_luv.subtitle}"
-			title: "{quests.development.hull_luv.title}"
 			x: 5.0d
 			y: -3.0d
 		}
@@ -504,16 +463,10 @@
 				"370FC1CDF5F9A9CC"
 				"359121584E056022"
 			]
-			description: [
-				"{quests.development.hull_zpm.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "gtceu:zpm_machine_hull"
 			id: "629E023752317A31"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "{quests.development.hull_zpm.subtitle}"
-			title: "{quests.development.hull_zpm.title}"
 			x: 6.0d
 			y: -3.0d
 		}
@@ -522,20 +475,15 @@
 				"15EC934CE8F4DC86"
 				"2C35D4E01AEC02AA"
 			]
-			description: [
-				"{quests.development.ulv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:ulv_universal_circuit"
 			id: "1C1976238A2FBEE0"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "2AD889754295F941"
-				item: "tfg:ulv_universal_circuit"
+				item: { count: 1, id: "tfg:ulv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.ulv.title}"
 			x: -1.0d
 			y: -1.0d
 		}
@@ -545,20 +493,15 @@
 				"5E76D4C24026157D"
 				"3D8174C64DDC268B"
 			]
-			description: [
-				"{quests.development.lv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:lv_universal_circuit"
 			id: "7707E5B061A7FFF7"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "4149ADB96051A419"
-				item: "tfg:lv_universal_circuit"
+				item: { count: 1, id: "tfg:lv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.lv.title}"
 			x: -1.0d
 			y: 0.0d
 		}
@@ -568,20 +511,15 @@
 				"38DE506FF5B32031"
 				"0DBC148D92A9F69F"
 			]
-			description: [
-				"{quests.development.mv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:mv_universal_circuit"
 			id: "45CA8DCA8226945A"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "44666202162E1A4B"
-				item: "tfg:mv_universal_circuit"
+				item: { count: 1, id: "tfg:mv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.mv.title}"
 			x: -1.0d
 			y: 1.0d
 		}
@@ -590,41 +528,29 @@
 				"5063FDFFBE3E4855"
 				"26394C1290D70AB6"
 			]
-			description: [
-				"{quests.development.hv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:hv_universal_circuit"
 			id: "54CF2016ED44CC45"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "3FDE8021CF8F3454"
-				item: "tfg:hv_universal_circuit"
+				item: { count: 1, id: "tfg:hv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.hv.title}"
 			x: -1.0d
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"49C1D61741AA288E"
-			]
-			description: [
-				"{quests.development.ev.desc}"
-			]
+			dependencies: ["49C1D61741AA288E"]
 			hide_dependency_lines: true
-			icon: "tfg:ev_universal_circuit"
 			id: "2A9ECD745E15A5D8"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "1812896EEEA3FE5B"
-				item: "tfg:ev_universal_circuit"
+				item: { count: 1, id: "tfg:ev_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.ev.title}"
 			x: -1.0d
 			y: 3.0d
 		}
@@ -633,20 +559,15 @@
 				"42CD789B8C40E424"
 				"698B5F65F2DE4439"
 			]
-			description: [
-				"{quests.development.iv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:iv_universal_circuit"
 			id: "5B0AC445672E14B6"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "5FAB6E6EB15D3ECD"
-				item: "tfg:iv_universal_circuit"
+				item: { count: 1, id: "tfg:iv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.iv.title}"
 			x: -1.0d
 			y: 4.0d
 		}
@@ -656,20 +577,15 @@
 				"47087361D6DE7DCF"
 				"145F71A817C5996E"
 			]
-			description: [
-				"{quests.development.luv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:luv_universal_circuit"
 			id: "140E91C53C30C096"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "0DAA2B1A9C206D9A"
-				item: "tfg:luv_universal_circuit"
+				item: { count: 1, id: "tfg:luv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.luv.title}"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -679,20 +595,15 @@
 				"327C3E02CD751453"
 				"7AE681E2AB31EA0D"
 			]
-			description: [
-				"{quests.development.zpm.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:zpm_universal_circuit"
 			id: "2E00E10D4E92F64D"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "12D2A967F5348D7C"
-				item: "tfg:zpm_universal_circuit"
+				item: { count: 1, id: "tfg:zpm_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.zpm.title}"
 			x: -1.0d
 			y: 6.0d
 		}
@@ -701,67 +612,40 @@
 				"79E4E53E9DF45549"
 				"359121584E056022"
 			]
-			description: [
-				"{quests.development.uv.desc}"
-			]
 			hide_dependency_lines: true
-			icon: "tfg:uv_universal_circuit"
 			id: "35EFFA6C85EFCA58"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "100577EC5C3F37C4"
-				item: "tfg:uv_universal_circuit"
+				item: { count: 1, id: "tfg:uv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.uv.title}"
 			x: -1.0d
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"3B49BD004F38E1A2"
-			]
-			description: [
-				"{quests.development.uhv.desc}"
-			]
+			dependencies: ["3B49BD004F38E1A2"]
 			hide_dependency_lines: true
-			icon: "tfg:uhv_universal_circuit"
 			id: "177ADFFD33DDA624"
 			progression_mode: "linear"
 			size: 1.0d
 			tasks: [{
 				id: "3E4D08045C74E4B8"
-				item: "tfg:uhv_universal_circuit"
+				item: { count: 1, id: "tfg:uhv_universal_circuit" }
 				type: "item"
 			}]
-			title: "{quests.development.uhv.title}"
 			x: -1.0d
 			y: 8.0d
 		}
 		{
-			description: [
-				"{quests.development.explanation.desc.1}"
-				"{@pagebreak}"
-				"{quests.development.explanation.desc.2}"
-				"{@pagebreak}"
-				"{quests.development.explanation.desc.3}"
-			]
-			icon: "gtceu:programmed_circuit"
 			id: "78885A5847FAE785"
-			subtitle: "{quests.development.explanation.subtitle}"
 			tasks: [{
 				id: "629C40E1C85EC9EC"
-				title: "{quests.development.explanation.task}"
 				type: "checkmark"
 			}]
-			title: "{quests.development.explanation.title}"
 			x: -1.0d
 			y: -3.0d
 		}
 	]
-	subtitle: [
-		"{quests.development.subtitle}"
-	]
-	title: "{quests.development}"
 }
