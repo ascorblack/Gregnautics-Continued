@@ -10,19 +10,24 @@ ServerEvents.recipes(event => {
 	event.remove({ mod: 'sophisticatedbackpacks', not: {type: 'sophisticatedbackpacks:backpack_dye'} })
 
 
-	// [PORT] sns отсутствует в сборке 1.21.1 — рецепт базового рюкзака закомментирован
-	// [PORT-CHECK] базовый рюкзак остаётся без рецепта крафта (все рецепты мода удалены выше) — нужен замещающий рецепт
-	// event.shaped('sophisticatedbackpacks:backpack', [
-	// 	'AED',
-	// 	'BCB',
-	// 	'BBB'
-	// ], {
-	// 	A: 'sns:reinforced_fiber',
-	// 	B: 'sns:bound_leather_strip',
-	// 	C: 'sns:pack_frame',
-	// 	D: 'minecraft:name_tag',
-	// 	E: 'sns:reinforced_fabric'
-	// }).id('tfg:sophisticated_backpacks/shaped/backpack')
+	// [PORT] sns отсутствует в сборке 1.21.1 — оригинальный рецепт базового рюкзака
+	// (reinforced_fiber/bound_leather_strip/pack_frame) невозможен.
+	// [FIX 2026-07-21] Репорт с CF (Romagek): «There is no crafting recipe for the
+	// backpack» — все рецепты мода удаляются выше, а замещающего не было: вся
+	// цепочка апгрейдов (iron -> gold -> ...) висела без входа. Замещающий рецепт
+	// из TFC-материалов сопоставимой доступности (кожа + верёвка + ткань + сундук):
+	event.shaped('sophisticatedbackpacks:backpack', [
+		'SES',
+		'LCL',
+		'LLL'
+	], {
+		// [FIX] #c:string в 1.21 — только ванильная нить (с пауков); шерстяная
+		// пряжа TFC туда не входит — добавляем явно, чтобы не гейтить рюкзак пауками.
+		S: ['#c:string', 'tfc:wool_yarn'],
+		E: '#c:cloth',
+		L: '#c:leathers', // кожа TFC = ванильная minecraft:leather, она в теге
+		C: '#c:chests/wooden'
+	}).id('tfg:sophisticated_backpacks/shaped/backpack')
 
 	event.custom({
 		type: "sophisticatedbackpacks:backpack_upgrade",
