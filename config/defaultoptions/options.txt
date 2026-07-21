@@ -258,7 +258,7 @@ key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
 key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
 key_key.carry.desc:key.keyboard.unknown
 key_key.ftbteams.open_gui:key.keyboard.unknown
-key_key.ftbchunks.map:key.keyboard.m
+key_key.ftbchunks.map:key.keyboard.unknown
 key_key.ftbchunks.toggle_minimap:key.keyboard.unknown
 key_key.ftbchunks.claim_manager:key.keyboard.unknown
 key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal

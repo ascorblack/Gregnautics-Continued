@@ -1,0 +1,25 @@
+# Дефолтные бинды сборки Gregnautics Continued (мод Default Options).
+#
+# ВАЖНО: именно ЭТОТ файл управляет клавишами. Ключи key_* внутри
+# defaultoptions/options.txt на бинды НЕ влияют — Default Options читает их
+# только отсюда (KeyMappingDefaultsHandler -> keybindings.txt). Из-за этого
+# правки биндов в options.txt (коммит dd6c264) у новых игроков не применялись.
+#
+# Формат: key_<имя бинда>:<клавиша>[:<модификатор>]
+# Клавиша key.keyboard.unknown = бинд снят.
+# Строки, не подходящие под формат (как эти комментарии), мод пропускает.
+# Игроку, который уже переназначил клавишу сам, дефолт не навязывается.
+
+# Tool Belt: "Open Belt Slot Inventory" по умолчанию висит на V и перехватывает
+# её у TFC "Place Block" (класть предметы на землю) — снимаем.
+key_key.toolbelt.slot:key.keyboard.unknown
+
+# FTB Chunks: "Open Map" (M). Карта FTB Chunks не дружит с нашей генерацией мира;
+# карту даёт Xaero's ("Open World Map"), её бинд не трогаем.
+key_key.ftbchunks.map:key.keyboard.unknown
+
+# Ранее заданные дефолты сборки (лежали в options.txt и потому не работали):
+# GregTech Armor Mode Switch = N (на русской раскладке — Т)
+key_gtceu.key.armor_mode_switch:key.keyboard.n
+# Iris "Reload Shaders" — не назначен (по умолчанию R, конфликт с перезарядкой TaCZ)
+key_iris.keybind.reload:key.keyboard.unknown
