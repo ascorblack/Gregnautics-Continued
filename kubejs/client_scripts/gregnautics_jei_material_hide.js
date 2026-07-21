@@ -179,8 +179,19 @@ function gregnauticsJeiExternalBars(name) {
 // after this event when only hide() is used, which breaks JEI registration with
 // "ingredients must not be empty". Duplicate material hiding is handled by
 // c:hidden_from_recipe_viewers tags in the server scripts instead.
-KubeJEIEvents.subtypes(event => {
-	const stone = Ingredient.of("minecraft:stone");
-	event.hide(stone);
-	event.add(stone);
-});
+//
+// [FIX 2026-07-21] Репорт: краш клиента после обновления. Мод kubejei НЕ доезжал
+// до CF-игроков (его не было ни в манифесте, ни в overrides/mods) -> KubeJEIEvents
+// не определён -> ReferenceError -> экран ошибок KubeJS у ВСЕХ CF-игроков, а клик
+// по записи роняет игру (баг KubeJS: кривой vscode://-URI на Windows).
+// kubejei теперь едет в overrides/mods, но guard оставляем навсегда: клиентский
+// скрипт не имеет права падать из-за отсутствующего необязательного мода.
+if (typeof KubeJEIEvents !== 'undefined') {
+	KubeJEIEvents.subtypes(event => {
+		const stone = Ingredient.of("minecraft:stone");
+		event.hide(stone);
+		event.add(stone);
+	});
+} else {
+	console.warn('[Gregnautics] мод kubejei не установлен — пропускаю KubeJEIEvents.subtypes (не критично)');
+}
