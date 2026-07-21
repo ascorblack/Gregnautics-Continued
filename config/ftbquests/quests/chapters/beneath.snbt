@@ -45,11 +45,7 @@
 			tasks: [
 				{
 					id: "3BC908D845427564"
-					observation_type: "block_tag"
-					observe_type: 1
-					timer: 0L
-					to_observe: "#tfg:hornfels"
-					type: "observation"
+					type: "checkmark"
 				}
 				{
 					id: "0B9D5400FFABD493"

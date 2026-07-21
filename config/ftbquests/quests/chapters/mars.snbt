@@ -82,11 +82,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "00C333C49F5BBFC2"
-				observation_type: "block"
-				observe_type: 0
-				timer: 0L
-				to_observe: "tfg:spice"
-				type: "observation"
+				type: "checkmark"
 			}]
 			x: 10.0d
 			y: -6.0d
@@ -185,7 +181,7 @@
 					observation_type: "block_tag"
 					observe_type: 1
 					timer: 0L
-					to_observe: "#tfc:crimson_logs"
+					to_observe: "#minecraft:crimson_stems"
 					type: "observation"
 				}
 				{
@@ -193,7 +189,7 @@
 					observation_type: "block_tag"
 					observe_type: 1
 					timer: 0L
-					to_observe: "#tfc:warped_logs"
+					to_observe: "#minecraft:warped_stems"
 					type: "observation"
 				}
 			]

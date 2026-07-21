@@ -14,46 +14,33 @@ TFCEvents.data(event => {
 	// [PORT-FIX] kubejs_tfc 2.0: foodItem(id, builder) -> event.food({codec-объект}) (FoodDefinition, поля FoodData плоские)
 	event.food({
 		ingredient: 'createaddition:cake_base',
-		hunger: 1,
-		saturation: 0.0,
-		decay_modifier: 3.0
-	})
+		food: { hunger: 1, water: 0, saturation: 0.0, intoxication: 0, nutrients: [0, 0, 0, 0, 0], decayModifier: 3.0 },
+		edible: true
+	}, 'gregnautics/cake_base')
 
 	event.food({
 		ingredient: 'createaddition:cake_base_baked',
-		hunger: 4,
-		saturation: 1.0,
-		decay_modifier: 2.0,
-		dairy: 0.4,
-		grain: 0.4
-	})
+		food: { hunger: 4, water: 0, saturation: 1.0, intoxication: 0, nutrients: [0.4, 0, 0, 0, 0.4], decayModifier: 2.0 },
+		edible: true
+	}, 'gregnautics/cake_base_baked')
 
 	event.food({
 		ingredient: 'tfc:cake',
-		hunger: 2,
-		saturation: 2.0,
-		decay_modifier: 2.0,
-		dairy: 0.8,
-		grain: 0.8
-	})
+		food: { hunger: 2, water: 0, saturation: 2.0, intoxication: 0, nutrients: [0.8, 0, 0, 0, 0.8], decayModifier: 2.0 },
+		edible: true
+	}, 'gregnautics/cake')
 
 	event.food({
 		ingredient: 'createaddition:chocolate_cake',
-		hunger: 2,
-		saturation: 2.0,
-		decay_modifier: 2.0,
-		dairy: 0.8,
-		grain: 0.8
-	})
+		food: { hunger: 2, water: 0, saturation: 2.0, intoxication: 0, nutrients: [0.8, 0, 0, 0, 0.8], decayModifier: 2.0 },
+		edible: true
+	}, 'gregnautics/chocolate_cake')
 
 	event.food({
 		ingredient: 'createaddition:honey_cake',
-		hunger: 2,
-		saturation: 2.0,
-		decay_modifier: 2.0,
-		dairy: 0.8,
-		grain: 0.8
-	})
+		food: { hunger: 2, water: 0, saturation: 2.0, intoxication: 0, nutrients: [0.8, 0, 0, 0, 0.8], decayModifier: 2.0 },
+		edible: true
+	}, 'gregnautics/honey_cake')
 
 	// [PORT] species отсутствует в сборке 1.21.1
 	// event.foodItem('species:birtday_cake', ...)

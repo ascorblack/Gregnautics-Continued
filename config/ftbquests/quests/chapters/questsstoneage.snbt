@@ -284,7 +284,7 @@
 					observation_type: "block_tag"
 					observe_type: 1
 					timer: 0L
-					to_observe: "#tfc:clay"
+					to_observe: "#tfc:clays"
 					type: "observation"
 				}
 				{
@@ -435,7 +435,7 @@
 					observation_type: "block_tag"
 					observe_type: 1
 					timer: 0L
-					to_observe: "#tfc:rock_anvils"
+					to_observe: "#tfc:anvils"
 					type: "observation"
 				}
 			]
