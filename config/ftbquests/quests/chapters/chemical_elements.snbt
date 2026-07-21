@@ -665,7 +665,7 @@
 			id: "1AFAFB838E3C036E"
 			tasks: [{
 				id: "56FEA0CCC63DEA40"
-				item: { components: { "tfc:heat": { } }, count: 1, id: "minecraft:iron_ingot" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(gtceu:wrought_iron_ingot)item(tfc:metal/ingot/wrought_iron)item(tfc:metal/ingot/cast_iron)item(minecraft:iron_ingot))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 7.0d

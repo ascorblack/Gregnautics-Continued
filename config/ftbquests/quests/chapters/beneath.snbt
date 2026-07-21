@@ -79,7 +79,7 @@
 			id: "255895B2DC8845F9"
 			tasks: [{
 				id: "1A2FD6386BD24048"
-				item: { components: { "tfc:heat": { } }, count: 1, id: "minecraft:gold_ingot" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:metal/ingot/gold)item(minecraft:gold_ingot))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 1.0d

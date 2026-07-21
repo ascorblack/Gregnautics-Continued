@@ -414,7 +414,7 @@
 			id: "6EEBBF78AFA3F42A"
 			tasks: [{
 				id: "302196CB1816F316"
-				item: { components: { "tfc:heat": { } }, count: 1, id: "minecraft:copper_ingot" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(tfc:metal/ingot/copper)item(minecraft:copper_ingot))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 17.0d
