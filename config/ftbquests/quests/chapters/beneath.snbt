@@ -262,8 +262,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "2C565E7E299BB939"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:rope_ladders)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
+				type: "checkmark"
 			}]
 			x: -7.0d
 			y: -6.0d

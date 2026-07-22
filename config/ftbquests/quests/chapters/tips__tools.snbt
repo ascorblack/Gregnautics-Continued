@@ -324,7 +324,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "56622AE6FBE714A2"
-				item: { count: 1, id: "minecraft:name_tag" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:leathers)item_tag(c:cloth)item(tfc:wool_yarn)item(minecraft:string))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 13.5d

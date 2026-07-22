@@ -9,7 +9,12 @@
 ServerEvents.recipes(event => {
 	console.info('[Gregnautics] progress: tfg_port tfc.recipes.removes start')
 
-	event.remove({ mod: 'tfc', type: 'tfc:welding' })
+	// [FIX 2026-07-22] УДАЛЁН blanket-remove всех tfc:welding (наследие TFG 1.20, где
+	// double ingots давал GregTech). В GTM8 GT-двойных слитков НЕТ, канон — TFC, и без
+	// ванильной сварки нельзя сварить НИ ОДИН double ingot -> нет металлических наковален
+	// -> прогрессия заблокирована (репорты OAnimalVelho/stoic_nightingale: «welding of double
+	// ingots», «stone anvil doesn't work»). Точечные замены TFG (high carbon стали и т.п.)
+	// переопределяют ваниль по тем же id и в blanket-remove не нуждаются.
 	event.remove({ id: /tfc:heating\/metal\/.*/ })
 	event.remove({ id: /tfc:heating\/ore\/.*/ })
 

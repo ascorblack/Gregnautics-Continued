@@ -25,4 +25,12 @@ ServerEvents.recipes(event => {
 		S: ['#c:string', 'tfc:wool_yarn'],
 		R: '#c:rings/copper'
 	}).id('gregnautics:crafting/saddle');
+
+	// [FIX 2026-07-22] Репорт Romagek: tfc:powder/graphite был БЕЗ продюсеров (минеральный
+	// компат заменил кверн-рецепты графита на GT-пыль), а fire clay (-> crucible!) требует
+	// именно tfc:powder/graphite x4. Конвертация 1:1 из GT-пыли (добывается из deep-веинов).
+	event.shapeless('tfc:powder/graphite', ['gtceu:graphite_dust'])
+		.id('gregnautics:crafting/graphite_powder_from_dust');
+	event.shapeless('gtceu:graphite_dust', ['tfc:powder/graphite'])
+		.id('gregnautics:crafting/graphite_dust_from_powder');
 });

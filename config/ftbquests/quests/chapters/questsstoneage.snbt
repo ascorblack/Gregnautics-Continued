@@ -58,8 +58,11 @@
 			size: 1.0d
 			tasks: [{
 				id: "3601D2311BB1383F"
-				stage: "tfg.stages.quests.drank_fresh_water_with_hand"
-				type: "gamestage"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:water"
+				type: "observation"
 			}]
 			x: 4.0d
 			y: 6.0d
@@ -451,12 +454,12 @@
 			tasks: [
 				{
 					id: "0A402FE870B1E880"
-					item: { components: { "ftbfiltersystem:filter": "item(gtceu:flint_axe)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/axe_head/igneous_intrusive)item(tfc:stone/axe_head/igneous_extrusive)item(tfc:stone/axe_head/metamorphic)item(tfc:stone/axe_head/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
 					id: "46C4A978101E25E5"
-					item: { components: { "ftbfiltersystem:filter": "item(gtceu:flint_knife)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/knife_head/igneous_intrusive)item(tfc:stone/knife_head/igneous_extrusive)item(tfc:stone/knife_head/metamorphic)item(tfc:stone/knife_head/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
@@ -470,12 +473,12 @@
 			tasks: [
 				{
 					id: "250DF47BB97E6583"
-					item: { components: { "ftbfiltersystem:filter": "item(gtceu:flint_axe)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/axe/igneous_intrusive)item(tfc:stone/axe/igneous_extrusive)item(tfc:stone/axe/metamorphic)item(tfc:stone/axe/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
 					id: "4562967E5C199597"
-					item: { components: { "ftbfiltersystem:filter": "item(gtceu:flint_knife)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item(tfc:stone/knife/igneous_intrusive)item(tfc:stone/knife/igneous_extrusive)item(tfc:stone/knife/metamorphic)item(tfc:stone/knife/sedimentary))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]

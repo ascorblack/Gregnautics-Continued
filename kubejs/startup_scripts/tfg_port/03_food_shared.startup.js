@@ -481,7 +481,19 @@ global.fluidIngredientInputParser = function (inputArray) {
 		let match = s.match(/^(.+)\s+(\d+)$/);
 		let fluid = match ? match[1] : s;
 		let count = match ? parseInt(match[2]) : 1000;
-		formattedInputs.push(TFC.ingredient.fluidContents(fluid, count));
+		// [FIX 2026-07-22] '#тег' ронял fluidContents(Fluid,int) («Could not create ID from
+		// '#c:milks'») — 3 вечные ошибки KubeJS с 0.1.0, рецепты brioche/куриных сырков молча
+		// пропадали. Для тегов — перегрузка fluidContents(SizedFluidIngredient).
+		if (String(fluid).indexOf('#') === 0) {
+			const $SFI = Java.loadClass('net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient');
+			const $TagKey = Java.loadClass('net.minecraft.tags.TagKey');
+			const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
+			const $RL = Java.loadClass('net.minecraft.resources.ResourceLocation');
+			const tag = $TagKey.create($Registries.FLUID, $RL.parse(String(fluid).substring(1)));
+			formattedInputs.push(TFC.ingredient.fluidContents($SFI.of(tag, count)));
+		} else {
+			formattedInputs.push(TFC.ingredient.fluidContents(fluid, count));
+		}
 	});
 
 	return formattedInputs;
@@ -551,21 +563,24 @@ global.generateMixingFoodRecipes = function (event, inputItems, inputFluid, outp
 			let itemIngredients = [];
 			inputItems.forEach(input => {
 				if (!input) return;
-				const p = global.TFG_parseItem(input);
-				for (let i = 0; i < p.count; i++) itemIngredients.push(global.TFG_jsonNotRotten(p.id, 1));
+				// [FIX 2026-07-22] const p объявлялся ДВАЖДЫ в одной функции (ниже ещё раз для
+				// outputItem) — Rhino кидает «redeclaration of var p», как только исполнение
+				// доходит до обоих (раньше маскировалось ID-ошибкой '#c:milks'). Только let + разные имена!
+				let pin = global.TFG_parseItem(input);
+				for (let i = 0; i < pin.count; i++) itemIngredients.push(global.TFG_jsonNotRotten(pin.id, 1));
 			});
 			json.item_ingredients = itemIngredients;
 		}
 		if (inputFluid) json.fluid_ingredients = global.TFG_jsonFluid(typeof inputFluid === 'string' ? inputFluid : inputFluid[0]);
 
 		if (outputItem) {
-			const p = global.TFG_parseItem(outputItem);
-			json.result_item = { "id": p.id, "count": p.count };
+			let pout = global.TFG_parseItem(outputItem);
+			json.result_item = { "id": pout.id, "count": pout.count };
 		}
 		if (outputFluid) {
-			const f = global.TFG_remapFluid(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]);
-			const m = String(f).match(/^(\S+?)\s+(\d+)$/);
-			json.result_fluid = { "id": m ? m[1] : f, "amount": m ? parseInt(m[2]) : 1000 };
+			let ff = global.TFG_remapFluid(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]);
+			let mm = String(ff).match(/^(\S+?)\s+(\d+)$/);
+			json.result_fluid = { "id": mm ? mm[1] : ff, "amount": mm ? parseInt(mm[2]) : 1000 };
 		}
 
 		event.custom(json).id(`tfg:mixing_bowl/${id}`);
@@ -615,9 +630,9 @@ global.generateMealFoodRecipes = function (event, inputItems, inputFluid, output
 			recipe.itemOutput(outputProvider ? outputProvider : TFC.isp.of(outputItem).copyOldestFood());
 		}
 		if (outputFluid) {
-			const f = global.TFG_remapFluid(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]);
-			const m = String(f).match(/^(\S+?)\s+(\d+)$/);
-			recipe.fluidOutput(Fluid.of(m ? m[1] : f, m ? parseInt(m[2]) : 1000));
+			let ff = global.TFG_remapFluid(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]);
+			let mm = String(ff).match(/^(\S+?)\s+(\d+)$/);
+			recipe.fluidOutput(Fluid.of(mm ? mm[1] : ff, mm ? parseInt(mm[2]) : 1000));
 		}
 
 		recipe.id(`tfg:pot/${id}`);
